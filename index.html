@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SLA Capital — Nationwide DSCR, Fix &amp; Flip, and New Construction Lender</title>
-  <meta name="description" content="SLA Capital is a nationwide non-QM lender specializing in DSCR rental loans, Fix &amp; Flip financing, and New Construction lending for real estate investors. Get qualified in minutes.">
-  <link rel="canonical" href="https://slacapital.ai/" />
-  <link rel="stylesheet" href="/assets/brand.css" />
 
-  <!-- Open Graph -->
+  <!-- Primary keyword: "private lender for real estate investors" -->
+  <title>Private Lender for Real Estate Investors — DSCR, Fix &amp; Flip, New Construction | SLA Capital</title>
+  <meta name="description" content="Founder-led private lender funding DSCR, Fix &amp; Flip, and New Construction loans in 42 states. 72-hour funding, 10-day average close, clear pricing, no retrades. Get qualified in minutes." />
+  <link rel="canonical" href="https://slacapital.ai/" />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="SLA Capital — Nationwide Non-QM Lender" />
-  <meta property="og:description" content="DSCR, Fix &amp; Flip, and New Construction loans for real estate investors. Get qualified in minutes." />
+  <meta property="og:site_name" content="SLA Capital" />
+  <meta property="og:title" content="Private Lender for Real Estate Investors — SLA Capital" />
+  <meta property="og:description" content="72-hour funding for DSCR, Fix &amp; Flip, and New Construction loans. Founder-led, no retrades, 42 states." />
   <meta property="og:url" content="https://slacapital.ai/" />
   <meta property="og:image" content="https://slacapital.ai/assets/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- JSON-LD: LenderOrganization / FinancialService -->
+  <link rel="stylesheet" href="/assets/brand.css" />
+
+  <!-- JSON-LD: FinancialService — describes SLA to search engines + AI answer boxes -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,23 +29,66 @@
     "alternateName": "Sir Lends A Lot LLC",
     "url": "https://slacapital.ai",
     "logo": "https://slacapital.ai/assets/logo.svg",
-    "description": "Nationwide non-QM lender specializing in DSCR rental loans, Fix & Flip financing, and New Construction lending for real estate investors.",
-    "areaServed": "United States",
+    "description": "Founder-led private lender funding DSCR, Fix & Flip, and New Construction loans for real estate investors in 42 states.",
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "slogan": "Your quest for financing ends here.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Loan Programs",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "DSCR Rental Loans", "url": "https://slacapital.ai/rental/" } },
-        { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Fix & Flip Loans", "url": "https://slacapital.ai/fix-n-flip/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Fix & Flip Loans",   "url": "https://slacapital.ai/fix-n-flip/" } },
         { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "New Construction Loans", "url": "https://slacapital.ai/new-construction/" } }
       ]
     }
   }
   </script>
+
+  <!-- JSON-LD: FAQPage — the six most-asked investor questions, structured for
+       rich results in Google search + AI answer boxes. Answers match the
+       visible FAQ section at the bottom of the page so schema-validators pass. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast can SLA Capital close a loan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Fix & Flip loans can close in as little as 72 hours. Our average across all programs is 10 days, versus 3+ weeks at most institutional lenders." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many states does SLA Capital lend in?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SLA Capital funds investor loans in 42 states across the United States." }
+      },
+      {
+        "@type": "Question",
+        "name": "What loan programs does SLA Capital offer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We offer DSCR rental loans (30-year fixed, rates from 5.25%), Fix & Flip bridge loans (rates from 9.5–12%, up to 100% financing for premier borrowers), and New Construction loans (rates from 10%, up to 85% of total project costs)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I close a loan in an LLC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. All SLA Capital loans are made to business entities. LLCs, corporations, and partnerships are all supported — most of our borrowers close in an LLC for asset protection." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between a DSCR loan and a Fix & Flip loan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A DSCR loan is long-term rental financing (typically 30-year fixed) qualified off the property's rental income. A Fix & Flip loan is short-term bridge financing sized off the after-repair value (ARV) — used to purchase and rehab a property before selling or refinancing." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does SLA Capital finance rehab costs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Fix & Flip loans finance up to 100% of rehab costs, disbursed via draws as work is completed. New Construction loans also include interest-reserve budgeting and vertical construction draws." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- SITE NAV — copy from _partials.html -->
+  <!-- SITE NAV — kept in sync with _partials.html -->
   <nav class="site-nav">
     <div class="container nav-inner">
       <a href="/" class="brand">SLA Capital</a>
@@ -57,78 +105,232 @@
     </div>
   </nav>
 
-  <!-- HERO — placeholder content, real copy to come from the existing site -->
-  <section class="section" style="padding-top:80px">
-    <div class="container" style="text-align:center;max-width:820px">
-      <div class="eyebrow">Nationwide non-QM lender</div>
-      <h1 class="hero-title">Investor loans, funded fast.</h1>
-      <p class="lede">DSCR, Fix &amp; Flip, and New Construction financing for real estate investors — from single-asset rentals to portfolio scale.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px">
+  <!-- HERO -->
+  <section class="section" style="padding-top:80px;padding-bottom:64px">
+    <div class="container" style="text-align:center;max-width:900px">
+      <div class="eyebrow">Private lender · 42 states</div>
+      <h1 class="hero-title" style="margin-bottom:20px">
+        Funding in 72 hours.<br>Clear pricing. No retrades.
+      </h1>
+      <p class="lede" style="max-width:680px;margin:0 auto 32px">
+        Private lending built by investors who actually invest. DSCR, Fix &amp; Flip, and New Construction loans for real estate investors — from a founder-led team with 500+ flips of their own.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
         <a href="/apply/" class="btn btn-primary btn-lg">Get Qualified in Minutes</a>
         <a href="mailto:apply@slacapital.com" class="btn btn-ghost btn-lg">Talk to a Loan Officer</a>
       </div>
     </div>
   </section>
 
-  <!-- LOAN PROGRAMS -->
-  <section class="section section-tinted" id="loanprograms">
+  <!-- PROOF BAR — stat strip. Skimmable, SEO-neutral, high-conversion. -->
+  <section class="section-tight section-tinted">
     <div class="container">
-      <div style="text-align:center;margin-bottom:48px">
+      <div class="grid grid-4" style="text-align:center;gap:32px">
+        <div>
+          <div style="font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--primary);line-height:1">72<span style="font-size:20px">h</span></div>
+          <p style="margin-top:8px;color:var(--muted);font-size:14px">Fastest funding on record</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--primary);line-height:1">10<span style="font-size:20px">days</span></div>
+          <p style="margin-top:8px;color:var(--muted);font-size:14px">Average close, all programs</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--primary);line-height:1">500+</div>
+          <p style="margin-top:8px;color:var(--muted);font-size:14px">Flips completed by our founders</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--primary);line-height:1">70<span style="font-size:20px">%</span></div>
+          <p style="margin-top:8px;color:var(--muted);font-size:14px">Of borrowers come back for another deal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOAN PROGRAMS -->
+  <section class="section" id="loanprograms">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px;max-width:680px;margin-left:auto;margin-right:auto">
         <div class="eyebrow">Loan Programs</div>
         <h2>Built for every deal you close.</h2>
+        <p class="lede">Real rates, real leverage, real terms. Pick your program and get a quote same day.</p>
       </div>
       <div class="grid grid-3">
-        <a class="card" href="/rental/" style="text-decoration:none;color:inherit">
+
+        <a class="card" href="/rental/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column">
           <div class="chip" style="margin-bottom:16px">30-year fixed</div>
-          <h3>DSCR</h3>
-          <p>Rental-income-qualified loans on single-asset SFRs and portfolios. Nationwide, no personal DTI.</p>
-          <div style="color:var(--primary);font-weight:600">Explore DSCR →</div>
+          <h3>DSCR Rental Loans</h3>
+          <p>Long-term rental financing qualified off the property's income — not your personal DTI. Single-asset SFRs and portfolios of 2–10 properties on one loan.</p>
+          <ul style="list-style:none;padding:0;margin:12px 0 20px 0;font-size:14px;color:var(--muted)">
+            <li>✓ Rates from <strong style="color:var(--text)">5.25%</strong></li>
+            <li>✓ Only <strong style="color:var(--text)">3-month</strong> seasoning on refinances</li>
+            <li>✓ Nationwide, LLC-friendly</li>
+          </ul>
+          <div style="color:var(--primary);font-weight:600;margin-top:auto">Explore DSCR →</div>
         </a>
-        <a class="card" href="/fix-n-flip/" style="text-decoration:none;color:inherit">
+
+        <a class="card" href="/fix-n-flip/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column">
           <div class="chip" style="margin-bottom:16px">Bridge</div>
-          <h3>Fix &amp; Flip</h3>
-          <p>Purchase + rehab financing sized off the ARV. Fast close, up to 90% of purchase, 100% of rehab.</p>
-          <div style="color:var(--primary);font-weight:600">Explore Fix &amp; Flip →</div>
+          <h3>Fix &amp; Flip Loans</h3>
+          <p>Purchase + rehab financing sized off ARV. Fast close, high leverage. Made by flippers, for flippers — draws that don't fight you.</p>
+          <ul style="list-style:none;padding:0;margin:12px 0 20px 0;font-size:14px;color:var(--muted)">
+            <li>✓ Rates from <strong style="color:var(--text)">9.5–12%</strong></li>
+            <li>✓ Up to <strong style="color:var(--text)">100% financing</strong> for premier borrowers</li>
+            <li>✓ Funding in as little as <strong style="color:var(--text)">72 hours</strong></li>
+          </ul>
+          <div style="color:var(--primary);font-weight:600;margin-top:auto">Explore Fix &amp; Flip →</div>
         </a>
-        <a class="card" href="/new-construction/" style="text-decoration:none;color:inherit">
+
+        <a class="card" href="/new-construction/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column">
           <div class="chip" style="margin-bottom:16px">Ground-up</div>
-          <h3>New Construction</h3>
-          <p>Land acquisition, vertical construction, and interest-reserve budgeting on a single loan.</p>
-          <div style="color:var(--primary);font-weight:600">Explore New Construction →</div>
+          <h3>New Construction Loans</h3>
+          <p>Land acquisition, vertical construction, and interest reserve on a single loan. Draws structured to keep your build on schedule.</p>
+          <ul style="list-style:none;padding:0;margin:12px 0 20px 0;font-size:14px;color:var(--muted)">
+            <li>✓ Rates from <strong style="color:var(--text)">10%</strong></li>
+            <li>✓ Up to <strong style="color:var(--text)">85%</strong> of total project cost</li>
+            <li>✓ Up to <strong style="color:var(--text)">75%</strong> of land value</li>
+          </ul>
+          <div style="color:var(--primary);font-weight:600;margin-top:auto">Explore New Construction →</div>
         </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SLA — differentiators, keyword-rich but human -->
+  <section class="section section-tinted" id="why">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px">
+        <div class="eyebrow">Why SLA</div>
+        <h2>We fund deals other lenders won't touch.</h2>
+      </div>
+      <div class="grid grid-3">
+        <div>
+          <h4>Founder-led underwriting</h4>
+          <p>Every deal gets reviewed by someone who's actually closed one. No offshore underwriting mill, no rate-sheet robots — real judgment on real deals.</p>
+        </div>
+        <div>
+          <h4>10-day average close</h4>
+          <p>Institutional lenders take 3+ weeks. We average 10 days, and Fix &amp; Flip loans can fund in 72 hours when the file is clean. Speed is the product.</p>
+        </div>
+        <div>
+          <h4>No retrades</h4>
+          <p>The rate you're quoted is the rate you close at. We don't shift terms at the closing table because the market moved 5 bps.</p>
+        </div>
+        <div>
+          <h4>Rehab draws that work</h4>
+          <p>Simple draw process built for real construction timelines. Same-day approvals when photos and receipts are in. No games.</p>
+        </div>
+        <div>
+          <h4>Portfolio scale</h4>
+          <p>Roll 2–10 rentals into one DSCR loan. Ground-up multi-unit builds on one construction line. Built for investors who are actually building a book.</p>
+        </div>
+        <div>
+          <h4>Nationwide, 42 states</h4>
+          <p>Lending in 42 states with the same terms and the same team. Move markets without changing lenders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS — real names lifted from current site. Adds SEO E-A-T
+       (Experience, Authority, Trust) signal and social proof. -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="eyebrow">What borrowers say</div>
+        <h2>Trusted by investors closing real deals.</h2>
+      </div>
+      <div class="grid grid-3">
+        <blockquote class="card" style="margin:0;font-style:normal">
+          <p style="font-size:17px;line-height:1.5;margin-bottom:16px">"SLA has become my go-to lender after all kinds of headache with Kiavi and some of the other lenders out there."</p>
+          <footer style="color:var(--muted);font-size:14px"><strong style="color:var(--text)">Tim Waggoner</strong> · SLA borrower</footer>
+        </blockquote>
+        <blockquote class="card" style="margin:0;font-style:normal">
+          <p style="font-size:17px;line-height:1.5;margin-bottom:16px">"Since we do some larger renovations we always had struggles finding lenders that made the draw process easy."</p>
+          <footer style="color:var(--muted);font-size:14px"><strong style="color:var(--text)">Jason Norman</strong> · SLA borrower</footer>
+        </blockquote>
+        <blockquote class="card" style="margin:0;font-style:normal">
+          <p style="font-size:17px;line-height:1.5;margin-bottom:16px">"A lot of lenders blow smoke and delay things — so I'm sending people to SLA all the time."</p>
+          <footer style="color:var(--muted);font-size:14px"><strong style="color:var(--text)">Cody Cressey</strong> · SLA borrower</footer>
+        </blockquote>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section" id="about-us">
-    <div class="container" style="max-width:820px;text-align:center">
-      <div class="eyebrow">About</div>
-      <h2>SLA Capital — Sir Lends A Lot LLC.</h2>
-      <p class="lede">Placeholder copy from the current site goes here. Direct, no-fluff summary of who we lend to and why.</p>
+  <section class="section section-tinted" id="about-us">
+    <div class="container">
+      <div style="max-width:820px;margin:0 auto;text-align:center">
+        <div class="eyebrow">About SLA Capital</div>
+        <h2>Private lender, built by investors.</h2>
+        <p class="lede">SLA Capital — Sir Lends A Lot LLC — is a nationwide non-QM lender headquartered by real estate investors, for real estate investors. Our founders have closed <strong>500+ flips</strong> of their own. That experience shapes every credit decision, every draw, every close. When you talk to SLA, you're talking to someone who's actually done the deal you're trying to fund.</p>
+        <div style="margin-top:32px">
+          <a href="/rental/" class="btn btn-ghost">See loan programs</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- FAQ — SEO gold when paired with FAQPage schema above. -->
+  <section class="section" id="faq">
+    <div class="container" style="max-width:820px">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="eyebrow">Common questions</div>
+        <h2>Frequently asked.</h2>
+      </div>
+
+      <details class="card" style="margin-bottom:12px">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">How fast can SLA Capital close a loan?</summary>
+        <p style="margin-top:12px;color:var(--muted)">Fix &amp; Flip loans can close in as little as 72 hours. Our average close across all programs is 10 days, versus 3+ weeks at most institutional lenders.</p>
+      </details>
+
+      <details class="card" style="margin-bottom:12px">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">How many states does SLA Capital lend in?</summary>
+        <p style="margin-top:12px;color:var(--muted)">SLA Capital funds investor loans in 42 states across the United States.</p>
+      </details>
+
+      <details class="card" style="margin-bottom:12px">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">What loan programs does SLA Capital offer?</summary>
+        <p style="margin-top:12px;color:var(--muted)">We offer <a href="/rental/">DSCR rental loans</a> (30-year fixed, rates from 5.25%), <a href="/fix-n-flip/">Fix &amp; Flip bridge loans</a> (rates from 9.5–12%, up to 100% financing for premier borrowers), and <a href="/new-construction/">New Construction loans</a> (rates from 10%, up to 85% of total project costs).</p>
+      </details>
+
+      <details class="card" style="margin-bottom:12px">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">Can I close a loan in an LLC?</summary>
+        <p style="margin-top:12px;color:var(--muted)">Yes. All SLA Capital loans are made to business entities — LLCs, corporations, and partnerships. Most of our borrowers close in an LLC for asset protection.</p>
+      </details>
+
+      <details class="card" style="margin-bottom:12px">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">What's the difference between a DSCR loan and a Fix &amp; Flip loan?</summary>
+        <p style="margin-top:12px;color:var(--muted)">A DSCR loan is long-term rental financing (typically 30-year fixed) qualified off the property's rental income. A Fix &amp; Flip loan is short-term bridge financing sized off the after-repair value (ARV) — used to purchase and rehab a property before selling or refinancing.</p>
+      </details>
+
+      <details class="card">
+        <summary style="font-weight:600;font-size:18px;cursor:pointer;color:var(--secondary)">Does SLA Capital finance rehab costs?</summary>
+        <p style="margin-top:12px;color:var(--muted)">Yes. Fix &amp; Flip loans finance up to 100% of rehab costs, disbursed via draws as work is completed. New Construction loans also include interest-reserve budgeting and vertical construction draws.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / FINAL CTA -->
   <section class="section section-dark" id="contact-us">
-    <div class="container" style="text-align:center">
-      <div class="eyebrow" style="color:var(--highlight)">Contact</div>
-      <h2 style="color:#fff">Talk to a Loan Officer.</h2>
-      <p style="color:rgba(255,255,255,0.75);max-width:560px;margin:0 auto 32px">Send us the deal and one of our loan officers will get back to you the same business day.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+    <div class="container" style="text-align:center;max-width:720px">
+      <div class="eyebrow" style="color:var(--highlight)">Get started</div>
+      <h2 style="color:#fff">Your quest for financing ends here.</h2>
+      <p style="color:rgba(255,255,255,0.78);font-size:19px;margin-bottom:32px">Send us the deal. One of our loan officers gets back to you the same business day — because we're a decision-maker, not a middleman.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
         <a href="/apply/" class="btn btn-primary btn-lg">Submit a Loan Application</a>
         <a href="mailto:apply@slacapital.com" class="btn btn-ghost btn-lg" style="color:#fff;border-color:#fff">apply@slacapital.com</a>
       </div>
     </div>
   </section>
 
-  <!-- SITE FOOTER — copy from _partials.html -->
+  <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="grid grid-4">
         <div>
           <h4>SLA Capital</h4>
-          <p style="color:rgba(255,255,255,0.6);font-size:14px">Sir Lends A Lot LLC. Nationwide non-QM lender.</p>
+          <p style="color:rgba(255,255,255,0.6);font-size:14px">Sir Lends A Lot LLC. Nationwide non-QM lender. 42 states.</p>
         </div>
         <div>
           <h4>Loan Programs</h4>
