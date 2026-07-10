@@ -1,0 +1,239 @@
+/*
+ * brand.css — SLA Capital marketing site design tokens.
+ * Extracted from the WordPress/Elementor build at slacapital.com so
+ * the rebuild renders identically. Import this at the top of every
+ * page and use the CSS variables + utility classes below instead of
+ * hex codes or raw font names.
+ */
+
+/* ── Fonts (loaded from Google Fonts, self-hostable later) ─── */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap');
+
+/* ── Tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Brand palette */
+  --primary:       #DA7238;   /* warm orange — CTAs, primary buttons */
+  --primary-hover: #b95c25;   /* darker hover state, derived */
+  --secondary:     #281D28;   /* dark plum — headings, nav, dark surfaces */
+  --highlight:     #FFBC7D;   /* light peach — subtle accents, chips */
+  --neutral:       #F2F2F2;   /* light gray backgrounds */
+  --text:          #000000;
+  --muted:         #6b6470;   /* body-secondary text */
+  --surface:       #FFFFFF;
+  --border:        #E0DCDC;
+  --success:       #166534;
+  --danger:        #7c1f1f;
+
+  /* Type */
+  --font-body:    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Roboto Slab', Georgia, serif;
+
+  /* Type scale (matches Elementor's usage counts on the live site) */
+  --fs-body:   16px;
+  --fs-sm:     14px;
+  --fs-lg:     19px;
+  --fs-h4:     22px;
+  --fs-h3:     25px;
+  --fs-h2:     30px;
+  --fs-h1:     40px;
+  --fs-hero:   53px;
+
+  /* Rhythm */
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 1px 3px rgba(40,29,40,0.08);
+  --shadow:    0 6px 24px rgba(40,29,40,0.10);
+  --shadow-lg: 0 16px 48px rgba(40,29,40,0.14);
+
+  /* Spacing */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px;
+  --space-4: 16px; --space-5: 24px; --space-6: 32px;
+  --space-7: 48px; --space-8: 64px; --space-9: 96px;
+
+  /* Layout */
+  --container:      1120px;
+  --container-wide: 1280px;
+}
+
+/* ── Reset (tight, not aggressive) ─────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Typography ────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--secondary);
+  line-height: 1.2;
+  margin: 0 0 var(--space-4) 0;
+}
+h1 { font-size: var(--fs-h1); font-weight: 600; }
+h2 { font-size: var(--fs-h2); font-weight: 600; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+h4 { font-size: var(--fs-h4); font-weight: 600; }
+.hero-title { font-size: var(--fs-hero); font-weight: 700; letter-spacing: -0.02em; }
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+p { margin: 0 0 var(--space-4) 0; }
+.lede { font-size: var(--fs-lg); color: var(--muted); }
+
+/* ── Layout primitives ──────────────────────────────────────── */
+.container      { max-width: var(--container);      margin: 0 auto; padding: 0 var(--space-5); }
+.container-wide { max-width: var(--container-wide); margin: 0 auto; padding: 0 var(--space-5); }
+.section        { padding: var(--space-9) 0; }
+.section-tight  { padding: var(--space-7) 0; }
+.section-dark   { background: var(--secondary); color: #fff; }
+.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4 { color: #fff; }
+.section-tinted { background: var(--neutral); }
+
+/* Grid helpers */
+.grid          { display: grid; gap: var(--space-6); }
+.grid-2        { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3        { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4        { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 14px 28px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.05s ease;
+  text-decoration: none;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary   { background: var(--primary);  color: #fff; }
+.btn-primary:hover   { background: var(--primary-hover); color: #fff; text-decoration: none; }
+.btn-secondary { background: var(--secondary); color: #fff; }
+.btn-secondary:hover { background: #3a2b3a; color: #fff; text-decoration: none; }
+.btn-ghost     { background: transparent; color: var(--secondary); border-color: var(--secondary); }
+.btn-ghost:hover     { background: var(--secondary); color: #fff; text-decoration: none; }
+.btn-lg { padding: 18px 36px; font-size: var(--fs-lg); }
+
+/* ── Cards ─────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.card-tinted { background: var(--neutral); border: 0; }
+
+/* ── Nav + Footer ──────────────────────────────────────────── */
+.site-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-3) 0;
+}
+.site-nav .nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-5);
+}
+.site-nav a {
+  color: var(--secondary);
+  font-weight: 500;
+}
+.site-nav .brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondary);
+}
+.nav-links {
+  display: flex; align-items: center; gap: var(--space-6);
+  list-style: none; margin: 0; padding: 0;
+}
+.nav-links a { text-decoration: none; }
+.nav-links a:hover { color: var(--primary); }
+@media (max-width: 800px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: inline-flex !important; }
+}
+.nav-toggle { display: none; }
+
+.site-footer {
+  background: var(--secondary);
+  color: rgba(255,255,255,0.75);
+  padding: var(--space-8) 0 var(--space-5);
+  margin-top: var(--space-9);
+}
+.site-footer h4 { color: #fff; font-size: var(--fs-h4); margin-bottom: var(--space-4); }
+.site-footer a  { color: rgba(255,255,255,0.75); text-decoration: none; }
+.site-footer a:hover { color: #fff; }
+.site-footer .footer-bottom {
+  margin-top: var(--space-7);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: var(--fs-sm);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* ── Utility chips + tags ──────────────────────────────────── */
+.chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--highlight);
+  color: var(--secondary);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* ── Form primitives ───────────────────────────────────────── */
+.field { margin-bottom: var(--space-4); }
+.field label {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: var(--space-2);
+}
+.field input, .field textarea, .field select {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: var(--fs-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.field input:focus, .field textarea:focus, .field select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(218,114,56,0.15);
+}

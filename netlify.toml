@@ -1,0 +1,63 @@
+# netlify.toml — SLA Capital marketing site config.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# ── 301 redirects for SEO continuity ────────────────────────
+# Preserve every URL that has inbound links from the current
+# WordPress build. Add new entries here as they surface.
+
+[[redirects]]
+  from   = "/apply-2/"
+  to     = "/apply/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/apply-2"
+  to     = "/apply/"
+  status = 301
+  force  = true
+
+# Alias /loans/dscr/ → /rental/ for future URL cleanup, but keep
+# /rental/ as canonical to preserve the current site's rankings.
+[[redirects]]
+  from   = "/loans/dscr/*"
+  to     = "/rental/:splat"
+  status = 301
+  force  = true
+
+# ── Cache-Control ────────────────────────────────────────────
+# HTML is served fresh so content edits show up immediately.
+# Static assets get long cache lifetimes since they're rarely edited.
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=60, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+# ── Security ─────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# ── API namespace (for the lead form + future public endpoints) ─
+[[redirects]]
+  from   = "/api/lead-submit"
+  to     = "/.netlify/functions/lead-submit"
+  status = 200
+  force  = true

@@ -1,0 +1,70 @@
+<!--
+  _partials.html — shared snippets that every page copies verbatim.
+  Not served on its own; the sections below are pasted into each real
+  page's HTML. Kept in one place so nav/footer stay in sync during the
+  build-out. Once we have a couple pages built we'll decide whether to
+  keep hand-copying or introduce a tiny include step (netlify build
+  plugin or a Node build script).
+-->
+
+<!-- ┌─── SITE NAV ─────────────────────────────────────────────┐ -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">SLA Capital</a>
+    <ul class="nav-links">
+      <li><a href="/rental/">DSCR</a></li>
+      <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
+      <li><a href="/new-construction/">New Construction</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/current-jobs/">Careers</a></li>
+      <li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li>
+      <li><a href="/apply/" class="btn btn-primary">Apply Now</a></li>
+    </ul>
+    <button class="nav-toggle btn btn-ghost" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<!-- └──────────────────────────────────────────────────────────┘ -->
+
+<!-- ┌─── SITE FOOTER ──────────────────────────────────────────┐ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid grid-4">
+      <div>
+        <h4>SLA Capital</h4>
+        <p style="color:rgba(255,255,255,0.6);font-size:14px">Sir Lends A Lot LLC. Nationwide non-QM lender.</p>
+      </div>
+      <div>
+        <h4>Loan Programs</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2">
+          <li><a href="/rental/">DSCR</a></li>
+          <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
+          <li><a href="/new-construction/">New Construction</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2">
+          <li><a href="/#about-us">About Us</a></li>
+          <li><a href="/current-jobs/">Careers</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/#contact-us">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servicing</h4>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2">
+          <li><a href="https://portal.sitewire.co/" target="_blank" rel="noopener">Construction Draw</a></li>
+          <li><a href="https://myfci.com/Login" target="_blank" rel="noopener">FCI</a></li>
+          <li><a href="https://my.servicingpros.com/signin/borrower" target="_blank" rel="noopener">Servicing Pros</a></li>
+          <li><a href="https://www.selenefinance.com/" target="_blank" rel="noopener">Selene Servicing</a></li>
+          <li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 SLA Capital · Sir Lends A Lot LLC · All rights reserved.</div>
+      <div><a href="/privacy-policy/">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+<!-- └──────────────────────────────────────────────────────────┘ -->
