@@ -166,7 +166,7 @@ function footer() {
         <div>
           <h4>SLA Capital</h4>
           <p style="color:rgba(255,255,255,0.6);font-size:14px;margin-bottom:16px">Sir Lends A Lot LLC. AI-Enhanced private lender. 42 states.</p>
-          <p style="color:rgba(255,255,255,0.9);font-size:14px;line-height:1.7;margin:0"><strong style="color:#fff">Contact</strong><br><a href="mailto:apply@slacapital.com" style="color:rgba(255,255,255,0.85)">apply@slacapital.com</a></p>
+          <p style="color:rgba(255,255,255,0.9);font-size:14px;line-height:1.7;margin:0"><strong style="color:#fff">Contact</strong><br><a href="tel:+15098467349" style="color:rgba(255,255,255,0.85)">(509) 846-7349</a><br><a href="mailto:apply@slacapital.com" style="color:rgba(255,255,255,0.85)">apply@slacapital.com</a></p>
         </div>
         <div><h4>Loan Programs</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="/rental/">DSCR</a></li><li><a href="/fix-n-flip/">Fix &amp; Flip</a></li><li><a href="/new-construction/">New Construction</a></li></ul></div>
         <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="/#about-us">About Us</a></li><li><a href="/current-jobs/">Careers</a></li><li><a href="/blog/">Blog</a></li><li><a href="mailto:apply@slacapital.com">Contact</a></li></ul></div>
