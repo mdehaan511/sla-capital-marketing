@@ -20,6 +20,21 @@
   status = 301
   force  = true
 
+# Apply CTAs bounce to the portal's neutral apply page, which sorts
+# borrowers to the correct LO by email. 302 so it's cheap to retarget
+# when the neutral routing page moves. Both slash forms covered.
+[[redirects]]
+  from   = "/apply"
+  to     = "https://portal.slacapital.ai/apply.html"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/apply/"
+  to     = "https://portal.slacapital.ai/apply.html"
+  status = 302
+  force  = true
+
 # Alias /loans/dscr/ → /rental/ for future URL cleanup, but keep
 # /rental/ as canonical to preserve the current site's rankings.
 [[redirects]]
