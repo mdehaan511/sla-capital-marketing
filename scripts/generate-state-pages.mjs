@@ -163,10 +163,14 @@ function footer() {
   <footer class="site-footer">
     <div class="container">
       <div class="grid grid-4">
-        <div><h4>SLA Capital</h4><p style="color:rgba(255,255,255,0.6);font-size:14px">Sir Lends A Lot LLC. AI-Enhanced private lender. 42 states.</p></div>
+        <div>
+          <h4>SLA Capital</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:14px;margin-bottom:16px">Sir Lends A Lot LLC. AI-Enhanced private lender. 42 states.</p>
+          <p style="color:rgba(255,255,255,0.9);font-size:14px;line-height:1.7;margin:0"><strong style="color:#fff">Contact</strong><br><a href="mailto:apply@slacapital.com" style="color:rgba(255,255,255,0.85)">apply@slacapital.com</a></p>
+        </div>
         <div><h4>Loan Programs</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="/rental/">DSCR</a></li><li><a href="/fix-n-flip/">Fix &amp; Flip</a></li><li><a href="/new-construction/">New Construction</a></li></ul></div>
-        <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="/#about-us">About Us</a></li><li><a href="/current-jobs/">Careers</a></li><li><a href="/blog/">Blog</a></li><li><a href="/#contact-us">Contact</a></li></ul></div>
-        <div><h4>Servicing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="https://portal.sitewire.co/" target="_blank" rel="noopener">Construction Draw</a></li><li><a href="https://myfci.com/Login" target="_blank" rel="noopener">FCI</a></li><li><a href="https://my.servicingpros.com/signin/borrower" target="_blank" rel="noopener">Servicing Pros</a></li><li><a href="https://www.selenefinance.com/" target="_blank" rel="noopener">Selene Servicing</a></li><li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li></ul></div>
+        <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="/#about-us">About Us</a></li><li><a href="/current-jobs/">Careers</a></li><li><a href="/blog/">Blog</a></li><li><a href="mailto:apply@slacapital.com">Contact</a></li></ul></div>
+        <div><h4>Loan Servicing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2"><li><a href="https://portal.sitewire.co/" target="_blank" rel="noopener">Construction Draw</a></li><li><a href="https://myfci.com/Login" target="_blank" rel="noopener">FCI</a></li><li><a href="https://my.servicingpros.com/signin/borrower" target="_blank" rel="noopener">Servicing Pros</a></li><li><a href="https://www.selenefinance.com/" target="_blank" rel="noopener">Selene Servicing</a></li><li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li></ul></div>
       </div>
       <div class="footer-bottom"><div>© 2026 SLA Capital · Sir Lends A Lot LLC · All rights reserved.</div><div><a href="/privacy-policy/">Privacy Policy</a></div></div>
     </div>
@@ -294,8 +298,9 @@ ${nav(productSlugForNav)}
       <p class="lede">${product.heroBody(state)}</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px">
         <a href="/apply/" class="btn btn-primary btn-lg">Get Qualified in Minutes</a>
-        <a href="mailto:apply@slacapital.com" class="btn btn-ghost btn-lg">Talk to a Loan Officer</a>
+        <a href="mailto:apply@slacapital.com?subject=${encodeURIComponent(state.name + ' ' + product.fullLabel.replace('&amp;', '&') + ' — Deal')}" class="btn btn-ghost btn-lg">Email Your Deal</a>
       </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--muted)">SLA Capital — a Sir Lends A Lot LLC Company</p>
     </div>
   </section>
 
