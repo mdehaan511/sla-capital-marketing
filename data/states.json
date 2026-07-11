@@ -1,0 +1,744 @@
+{
+  "$schema": "state-data-v1",
+  "docs": "One entry per state SLA Capital lends in. `slug` becomes the URL segment. `metros` are the 7 most active submarkets we mention; the 8th tile is auto-added as 'Everywhere else — statewide coverage'. `signals` are the three market-truths we lead the 'Why <State>' section with. `taxNote` mentions no state income tax where applicable — omit for states with income tax. `whyInvestor` is the answer to the 'is <State> a good state for investors?' FAQ — write it state-specific and confident.",
+  "states": [
+    {
+      "slug": "alabama", "name": "Alabama", "abbr": "AL",
+      "metros": [
+        { "name": "Huntsville", "detail": "Madison County — Redstone Arsenal + Cummings Research Park" },
+        { "name": "Birmingham", "detail": "Jefferson County — Hoover, Vestavia Hills, Trussville, Homewood" },
+        { "name": "Mobile", "detail": "Mobile County — Gulf Coast SFR + small-multi" },
+        { "name": "Montgomery", "detail": "Montgomery County — state capital + Maxwell AFB demand" },
+        { "name": "Tuscaloosa", "detail": "Tuscaloosa County — University of Alabama market" },
+        { "name": "Auburn / Opelika", "detail": "Lee County — Auburn University + Kia Georgia adjacencies" },
+        { "name": "Dothan & Anniston", "detail": "Southeast + Northeast Alabama secondary markets" }
+      ],
+      "signals": [
+        { "title": "Huntsville tech + defense growth", "body": "Huntsville has been among the fastest-growing US metros for years, driven by aerospace, defense, and technology employment around Redstone Arsenal, NASA's Marshall Space Flight Center, and Cummings Research Park." },
+        { "title": "Affordable acquisition basis", "body": "Birmingham, Montgomery, and Alabama secondary markets offer entry price-points that make the rent-to-price math work. Real cash-on-cash returns even after debt service." },
+        { "title": "Landlord-friendly law", "body": "Alabama uses non-judicial foreclosure and has landlord-friendly statutes with predictable timelines. Holding costs stay projectable for cash-flow modeling." }
+      ],
+      "whyInvestor": "Alabama is a top cash-flow state in the Southeast. Huntsville tech and defense growth anchor sustained rental demand. Birmingham offers deep SFR inventory at affordable basis. Non-judicial foreclosure and landlord-friendly law keep holds projectable."
+    },
+    {
+      "slug": "arkansas", "name": "Arkansas", "abbr": "AR",
+      "metros": [
+        { "name": "Little Rock", "detail": "Pulaski County — state capital + healthcare hub" },
+        { "name": "Northwest Arkansas", "detail": "Bentonville, Fayetteville, Rogers, Springdale — Walmart HQ region" },
+        { "name": "Fort Smith", "detail": "Sebastian County — Arkansas River Valley" },
+        { "name": "Jonesboro", "detail": "Craighead County — Arkansas State University" },
+        { "name": "Hot Springs", "detail": "Garland County — LTR + tourism-adjacent demand" },
+        { "name": "Conway", "detail": "Faulkner County — Little Rock-adjacent + UCA demand" },
+        { "name": "Pine Bluff & Texarkana", "detail": "Southern Arkansas secondary markets" }
+      ],
+      "signals": [
+        { "title": "Northwest Arkansas Walmart economy", "body": "Bentonville and the surrounding Northwest Arkansas metro have grown around Walmart's global HQ, its supplier network, and Tyson Foods. Sustained employment growth drives real rental demand." },
+        { "title": "Affordable acquisition basis", "body": "Little Rock, Fort Smith, and Arkansas secondary markets offer entry price-points that make cash-flow math work. Real cash-on-cash returns for buy-and-hold investors." },
+        { "title": "Landlord-friendly", "body": "Arkansas statutes are considered landlord-friendly with predictable eviction timelines. Holding costs stay projectable." }
+      ],
+      "whyInvestor": "Arkansas is a strong cash-flow market. Northwest Arkansas (Walmart HQ + supplier ecosystem) anchors long-term employment and rental demand. Little Rock adds state-capital + healthcare stability. Affordable acquisition basis makes the yield math work."
+    },
+    {
+      "slug": "colorado", "name": "Colorado", "abbr": "CO",
+      "metros": [
+        { "name": "Denver Metro", "detail": "Denver County + Aurora, Lakewood, Thornton, Westminster" },
+        { "name": "Colorado Springs", "detail": "El Paso County — Peterson SFB + Fort Carson demand" },
+        { "name": "Fort Collins", "detail": "Larimer County — Colorado State University market" },
+        { "name": "Boulder", "detail": "Boulder County — CU + tech corridor" },
+        { "name": "Pueblo", "detail": "Pueblo County — Southern Colorado SFR" },
+        { "name": "Grand Junction", "detail": "Mesa County — Western Slope market" },
+        { "name": "Greeley & Loveland", "detail": "Northern Colorado secondary markets" }
+      ],
+      "signals": [
+        { "title": "Sustained tech + defense employment", "body": "Denver and Colorado Springs anchor deep tech, aerospace, and defense employer bases (Lockheed Martin, Ball Aerospace, USSF, Northrop Grumman) that support rental demand across the Front Range." },
+        { "title": "Population inflow", "body": "Colorado continues to attract in-migration from higher-cost coastal metros. Rental demand along the Front Range stays deep across every metro." },
+        { "title": "Mountain STR corridor", "body": "Colorado ski and mountain markets host active short-term rental corridors where local zoning permits. Our DSCR program supports STR income scenarios." }
+      ],
+      "whyInvestor": "Colorado is a sustained-growth investor state. Front Range tech + defense employment (Denver, Colorado Springs, Boulder) anchors long-term rental demand. Population inflow keeps market depth strong. Mountain STR corridors add flexibility for investors who want STR + LTR mixed strategies."
+    },
+    {
+      "slug": "connecticut", "name": "Connecticut", "abbr": "CT",
+      "metros": [
+        { "name": "Hartford", "detail": "Hartford County — insurance + healthcare hub" },
+        { "name": "Bridgeport & Stamford", "detail": "Fairfield County — NYC-metro adjacencies" },
+        { "name": "New Haven", "detail": "New Haven County — Yale market" },
+        { "name": "Waterbury", "detail": "New Haven County — SFR + small-multi cash-flow" },
+        { "name": "Norwich & New London", "detail": "Eastern Connecticut secondary markets" },
+        { "name": "Danbury", "detail": "Fairfield County — Western CT commuter market" },
+        { "name": "Stamford", "detail": "Fairfield County — NYC financial-services commuter demand" }
+      ],
+      "signals": [
+        { "title": "NYC-metro commuter demand", "body": "Fairfield County (Stamford, Norwalk, Bridgeport, Danbury) is a core NYC commuter belt. Rental demand stays deep among finance, tech, and healthcare professionals working in Manhattan." },
+        { "title": "Insurance + healthcare anchors", "body": "Hartford is one of the largest insurance-industry hubs in the US. Stable employment drives predictable long-term rental demand across the metro." },
+        { "title": "Yale + healthcare in New Haven", "body": "Yale University, Yale-New Haven Hospital, and a growing biotech corridor anchor rental demand across the New Haven metro." }
+      ],
+      "whyInvestor": "Connecticut is a mixed-strategy investor market. Fairfield County commuter demand drives premium rentals for NYC-metro workers. Hartford insurance and New Haven Yale/biotech provide stable employment anchors. Rental demand stays consistent across every major metro."
+    },
+    {
+      "slug": "delaware", "name": "Delaware", "abbr": "DE",
+      "metros": [
+        { "name": "Wilmington", "detail": "New Castle County — banking + Philly-metro adjacencies" },
+        { "name": "Dover", "detail": "Kent County — state capital + Dover AFB demand" },
+        { "name": "Newark", "detail": "New Castle County — University of Delaware market" },
+        { "name": "Middletown", "detail": "New Castle County — fast-growing Wilmington-adjacent" },
+        { "name": "Rehoboth Beach", "detail": "Sussex County — coastal LTR + STR corridor" },
+        { "name": "Milford & Georgetown", "detail": "Sussex County — secondary markets" },
+        { "name": "Bear & Smyrna", "detail": "SFR corridor between Wilmington and Dover" }
+      ],
+      "signals": [
+        { "title": "Banking + business anchor", "body": "Wilmington hosts a deep banking, financial services, and corporate legal ecosystem (Delaware's business-friendly corporate law drives concentration of Chancery Court cases and Fortune 500 registrations)." },
+        { "title": "Coastal STR opportunity", "body": "Rehoboth Beach, Lewes, Bethany Beach, and the Sussex County coastal corridor host active short-term rental markets. Our DSCR program supports STR income where zoning permits." },
+        { "title": "Philadelphia adjacencies", "body": "Northern Delaware is effectively a Philadelphia commuter belt. Rental demand from Philly-metro workers stays consistent across Wilmington and its suburbs." }
+      ],
+      "whyInvestor": "Delaware is a compact but dense investor market. Wilmington banking + Philly-metro commuter demand drives premium rentals. Rehoboth Beach and the Sussex County coast add STR opportunity. Consistent rental demand across the state."
+    },
+    {
+      "slug": "florida", "name": "Florida", "abbr": "FL", "taxNote": "no state income tax",
+      "metros": [
+        { "name": "Miami–Dade", "detail": "Miami, Miami Beach, Doral, Hialeah — LTR + STR scenarios" },
+        { "name": "Tampa Bay", "detail": "Tampa, St. Petersburg, Clearwater, Brandon" },
+        { "name": "Orlando", "detail": "Metro Orlando — including Kissimmee, Davenport, Lake Nona (STR corridor)" },
+        { "name": "Jacksonville", "detail": "Duval County, Ponte Vedra, St. Augustine" },
+        { "name": "Fort Lauderdale", "detail": "Broward County, Coral Springs, Hollywood, Pompano Beach" },
+        { "name": "Cape Coral–Fort Myers", "detail": "Southwest Florida — Naples, Bonita Springs, Estero" },
+        { "name": "Sarasota & Panhandle", "detail": "Sarasota, Bradenton, Pensacola, Panama City" }
+      ],
+      "signals": [
+        { "title": "No state income tax", "body": "Rental income and capital gains from Florida properties are not subject to state income tax — a meaningful yield boost over the hold period." },
+        { "title": "Sustained population inflow", "body": "Florida continues to attract high volumes of domestic migration — retirees, remote workers, and families relocating from higher-tax states. Rental demand stays deep across every metro." },
+        { "title": "STR + LTR flexibility", "body": "Metros like Orlando, Miami, and the Gulf Coast have active short-term rental markets alongside long-term rentals — Florida investors often run mixed strategies on the same portfolio." }
+      ],
+      "whyInvestor": "Florida is one of the largest single-family rental markets in the U.S. No state income tax, sustained population inflow, and strong demand for both long-term and short-term rentals. Florida landlord-tenant law is generally landlord-friendly at the state level."
+    },
+    {
+      "slug": "georgia", "name": "Georgia", "abbr": "GA",
+      "metros": [
+        { "name": "Metro Atlanta", "detail": "Marietta, Alpharetta, Kennesaw, Sandy Springs, Roswell, Duluth" },
+        { "name": "Atlanta South & East", "detail": "Snellville, Lawrenceville, Lithonia, Stone Mountain, Douglasville" },
+        { "name": "Savannah", "detail": "Chatham County — LTR + coastal STR scenarios" },
+        { "name": "Augusta", "detail": "Richmond & Columbia counties — Fort Eisenhower demand" },
+        { "name": "Athens", "detail": "UGA-adjacent SFR and student housing" },
+        { "name": "Macon", "detail": "Central Georgia — strong yield markets" },
+        { "name": "Columbus", "detail": "Fort Moore-adjacent rental demand" }
+      ],
+      "signals": [
+        { "title": "Affordable acquisition basis", "body": "Metro Atlanta and Georgia secondary markets still offer entry-price points well below coastal metros — enabling meaningful cash-on-cash returns for buy-and-hold investors and workable margins on BRRRR strategies." },
+        { "title": "Landlord-friendly law", "body": "Georgia is a non-judicial foreclosure state with a predictable eviction timeline and landlord-friendly statutes. Holding costs stay projectable, which matters for cash-flow modeling on rental portfolios." },
+        { "title": "Sustained metro growth", "body": "Metro Atlanta continues to lead the Southeast in job creation and population inflow, supporting deep long-term rental demand across every submarket in the region." }
+      ],
+      "whyInvestor": "Metro Atlanta is one of the most active BRRRR markets in the country — a combination of affordable acquisition basis, deep rental demand from sustained population growth, and a non-judicial foreclosure process that keeps holding costs predictable. Georgia's landlord-tenant statutes are considered landlord-friendly."
+    },
+    {
+      "slug": "hawaii", "name": "Hawaii", "abbr": "HI",
+      "metros": [
+        { "name": "Honolulu (Oahu)", "detail": "Waikiki, Kapolei, Kailua — LTR + STR where zoning permits" },
+        { "name": "West Oahu", "detail": "Ewa Beach, Waipahu, Kapolei — SFR corridor" },
+        { "name": "Maui", "detail": "Kihei, Lahaina, Wailea — STR + LTR mix" },
+        { "name": "Big Island (Hawaii County)", "detail": "Kona, Hilo, Waikoloa" },
+        { "name": "Kauai", "detail": "Lihue, Poipu, Princeville — resort STR corridor" },
+        { "name": "Ko Olina & Kapolei", "detail": "West Oahu resort + LTR mix" },
+        { "name": "Windward Oahu", "detail": "Kaneohe, Kailua — premium LTR" }
+      ],
+      "signals": [
+        { "title": "STR corridor", "body": "Hawaii's resort corridors host some of the most active short-term rental markets in the country where zoning permits STR use. Our DSCR program supports STR income scenarios." },
+        { "title": "Constrained supply", "body": "Hawaii's islands have inherently constrained developable land supply, which supports long-term property values and rental rates over the hold period." },
+        { "title": "Deep tourism + military demand", "body": "Tourism-driven employment and consistent military stationing (Pearl Harbor, Schofield, MCB Hawaii) anchor sustained rental demand across Oahu in particular." }
+      ],
+      "whyInvestor": "Hawaii is a specialty market. STR + LTR mixed strategies work in resort corridors where zoning permits. Constrained land supply supports long-term property values. Military and tourism employment anchors rental demand on Oahu especially."
+    },
+    {
+      "slug": "idaho", "name": "Idaho", "abbr": "ID",
+      "metros": [
+        { "name": "Boise Metro", "detail": "Meridian, Nampa, Caldwell, Eagle — fastest-growing corridor" },
+        { "name": "Idaho Falls", "detail": "Bonneville County — Eastern Idaho" },
+        { "name": "Coeur d'Alene", "detail": "Kootenai County — Northern Idaho + Spokane adjacencies" },
+        { "name": "Twin Falls", "detail": "Twin Falls County — Magic Valley SFR" },
+        { "name": "Pocatello", "detail": "Bannock County — Idaho State University" },
+        { "name": "Lewiston", "detail": "Nez Perce County — Snake River corridor" },
+        { "name": "Sun Valley & McCall", "detail": "Resort STR corridors (zoning-dependent)" }
+      ],
+      "signals": [
+        { "title": "Sustained migration inflow", "body": "Idaho has been among the fastest-growing states in the US by net domestic migration for years. Rental demand across Boise metro in particular stays deep." },
+        { "title": "Boise metro growth", "body": "Meridian and Nampa are among the fastest-growing cities in the country. Employment and population growth support long-term rental demand across the Treasure Valley." },
+        { "title": "Landlord-friendly", "body": "Idaho statutes are landlord-friendly with predictable eviction timelines. Holding costs stay projectable across the state." }
+      ],
+      "whyInvestor": "Idaho is a top-inflow state. Boise metro (Meridian, Nampa, Eagle) has been among the fastest-growing corridors in the country. Sustained migration and job growth anchor rental demand. Landlord-friendly law rounds it out."
+    },
+    {
+      "slug": "illinois", "name": "Illinois", "abbr": "IL",
+      "metros": [
+        { "name": "Chicago Metro", "detail": "Cook County + suburban Chicago (Lake, DuPage, Will counties)" },
+        { "name": "Rockford", "detail": "Winnebago County — Northern Illinois SFR" },
+        { "name": "Peoria", "detail": "Peoria County — Central Illinois + Caterpillar demand" },
+        { "name": "Springfield", "detail": "Sangamon County — state capital" },
+        { "name": "Champaign–Urbana", "detail": "University of Illinois market" },
+        { "name": "Bloomington–Normal", "detail": "State Farm HQ + ISU market" },
+        { "name": "Quad Cities (IL side)", "detail": "Rock Island, Moline — cross-river metro with Iowa" }
+      ],
+      "signals": [
+        { "title": "Chicago metro depth", "body": "Cook County and suburban Chicago (Lake, DuPage, Will, Kane counties) offer deep SFR + small-multi inventory with real cash-flow at the right basis." },
+        { "title": "University + employer anchors", "body": "Champaign-Urbana (Illinois), Bloomington-Normal (State Farm + ISU), and Peoria (Caterpillar) anchor stable rental demand outside Chicago." },
+        { "title": "Cash-flow secondary markets", "body": "Rockford, Peoria, and Springfield offer some of the highest cash-on-cash yields in the Midwest — attractive for portfolio investors focused on income vs. appreciation." }
+      ],
+      "whyInvestor": "Illinois is a two-market state for investors: Chicago metro depth for scale and long-term hold value, plus Rockford / Peoria / Springfield secondary markets for pure cash-flow yield. Deep SFR inventory across the state supports every strategy."
+    },
+    {
+      "slug": "indiana", "name": "Indiana", "abbr": "IN",
+      "metros": [
+        { "name": "Indianapolis Metro", "detail": "Marion County + Carmel, Fishers, Noblesville, Greenwood, Avon" },
+        { "name": "Fort Wayne", "detail": "Allen County — SFR + small-multi cash-flow" },
+        { "name": "Evansville", "detail": "Vanderburgh County — high-yield Midwest markets" },
+        { "name": "South Bend", "detail": "St. Joseph County — Notre Dame demand + Michiana" },
+        { "name": "Bloomington", "detail": "Monroe County — Indiana University market" },
+        { "name": "Lafayette", "detail": "Tippecanoe County — Purdue University demand" },
+        { "name": "Terre Haute & Muncie", "detail": "Central Indiana secondary markets — Ball State + ISU demand" }
+      ],
+      "signals": [
+        { "title": "Affordable acquisition basis", "body": "Indianapolis and Indiana secondary markets offer entry price-points that make the yield math work — real cash-on-cash returns even after debt service." },
+        { "title": "Central Indiana growth", "body": "Metro Indianapolis has seen sustained employment and population growth, with logistics, life sciences, and manufacturing employers anchoring long-term rental demand." },
+        { "title": "Landlord-friendly", "body": "Indiana statutes are considered landlord-friendly with predictable eviction timelines. Holding costs stay projectable for cash-flow modeling." }
+      ],
+      "whyInvestor": "Indiana is one of the deeper cash-flow rental markets in the Midwest. Affordable acquisition basis across Indianapolis, Fort Wayne, and secondary markets drives real cash-on-cash yields. Central Indiana continues to see population and employment growth. Landlord-friendly statutes support projectable holds."
+    },
+    {
+      "slug": "iowa", "name": "Iowa", "abbr": "IA",
+      "metros": [
+        { "name": "Des Moines Metro", "detail": "Polk + Dallas counties — insurance + fintech hub" },
+        { "name": "Cedar Rapids", "detail": "Linn County — Eastern Iowa" },
+        { "name": "Davenport & Quad Cities (IA side)", "detail": "Scott County — cross-river metro" },
+        { "name": "Iowa City", "detail": "Johnson County — University of Iowa + hospital demand" },
+        { "name": "Ames", "detail": "Story County — Iowa State University" },
+        { "name": "Sioux City", "detail": "Woodbury County — Western Iowa" },
+        { "name": "Waterloo", "detail": "Black Hawk County — Northeast Iowa" }
+      ],
+      "signals": [
+        { "title": "Des Moines fintech + insurance", "body": "Des Moines is one of the largest insurance hubs in the US and hosts a growing fintech sector (Principal, Wells Fargo campus, EMC Insurance). Stable employment drives rental demand." },
+        { "title": "Affordable basis + high yield", "body": "Iowa secondary markets offer some of the highest cash-on-cash yields in the Midwest — attractive for portfolio investors focused on income." },
+        { "title": "University anchors", "body": "Iowa City (U of Iowa + hospital system) and Ames (Iowa State) provide stable, university-anchored rental demand." }
+      ],
+      "whyInvestor": "Iowa is a strong cash-flow Midwest market. Des Moines anchors on insurance + fintech employment. University demand (Iowa City, Ames) adds stability. Secondary markets deliver high cash-on-cash yields for portfolio investors."
+    },
+    {
+      "slug": "kansas", "name": "Kansas", "abbr": "KS",
+      "metros": [
+        { "name": "Overland Park & Olathe", "detail": "Johnson County — Kansas City metro (KS side)" },
+        { "name": "Wichita", "detail": "Sedgwick County — aviation manufacturing hub" },
+        { "name": "Topeka", "detail": "Shawnee County — state capital" },
+        { "name": "Lawrence", "detail": "Douglas County — University of Kansas" },
+        { "name": "Manhattan", "detail": "Riley County — Kansas State + Fort Riley demand" },
+        { "name": "Kansas City (KS)", "detail": "Wyandotte County — KC metro west side" },
+        { "name": "Salina & Hutchinson", "detail": "Central Kansas secondary markets" }
+      ],
+      "signals": [
+        { "title": "Johnson County commuter belt", "body": "Overland Park, Olathe, Leawood, and Lenexa are among the fastest-growing high-income suburbs in the KC metro. Deep rental demand for professionals working in Kansas City." },
+        { "title": "Wichita aviation anchor", "body": "Wichita hosts Textron Aviation, Spirit AeroSystems, and a deep aerospace manufacturing base. Stable employment drives long-term rental demand." },
+        { "title": "University + military anchors", "body": "Lawrence (KU) and Manhattan (Kansas State + Fort Riley) provide stable, university- and military-anchored rental demand." }
+      ],
+      "whyInvestor": "Kansas is a mixed investor market. Johnson County commuter suburbs deliver premium LTR to KC-metro professionals. Wichita aviation industry anchors long-term demand. Lawrence and Manhattan add university + military stability."
+    },
+    {
+      "slug": "kentucky", "name": "Kentucky", "abbr": "KY",
+      "metros": [
+        { "name": "Louisville Metro", "detail": "Jefferson County + St. Matthews, Middletown, PRP, Jeffersontown" },
+        { "name": "Lexington", "detail": "Fayette County — UK + horse-country market" },
+        { "name": "Bowling Green", "detail": "Warren County — WKU + Corvette / GM plant demand" },
+        { "name": "Northern Kentucky", "detail": "Covington, Newport, Florence — Cincinnati metro adjacencies" },
+        { "name": "Owensboro", "detail": "Daviess County — Ohio River SFR market" },
+        { "name": "Elizabethtown", "detail": "Hardin County — Fort Knox demand + Louisville-adjacent" },
+        { "name": "Richmond & Georgetown", "detail": "Lexington-adjacent Toyota + college markets" }
+      ],
+      "signals": [
+        { "title": "Louisville logistics anchor", "body": "Louisville hosts UPS Worldport (the world's largest air-freight hub) and multiple Ford truck plants. That anchors long-term employment and steady rental demand across the metro." },
+        { "title": "Lexington & UK", "body": "Lexington combines horse-country + University of Kentucky + a growing tech and healthcare base. Rental demand stays deep and predictable." },
+        { "title": "Affordable, projectable holds", "body": "Kentucky acquisition basis stays affordable relative to gross rents. Non-judicial foreclosure and standard eviction timelines keep holds projectable." }
+      ],
+      "whyInvestor": "Louisville logistics anchor (UPS Worldport + Ford) drives steady rental demand. Lexington adds horse-country + UK + healthcare. Acquisition basis stays affordable relative to gross rents, and non-judicial foreclosure keeps holds projectable."
+    },
+    {
+      "slug": "louisiana", "name": "Louisiana", "abbr": "LA",
+      "metros": [
+        { "name": "New Orleans Metro", "detail": "Orleans + Jefferson parishes — LTR + STR corridors" },
+        { "name": "Baton Rouge", "detail": "East Baton Rouge Parish — state capital + LSU" },
+        { "name": "Shreveport", "detail": "Caddo Parish — Northwest Louisiana" },
+        { "name": "Lafayette", "detail": "Lafayette Parish — Acadiana + oil/gas services" },
+        { "name": "Lake Charles", "detail": "Calcasieu Parish — petrochemical corridor" },
+        { "name": "Monroe", "detail": "Ouachita Parish — Northeast Louisiana" },
+        { "name": "Alexandria", "detail": "Central Louisiana secondary market" }
+      ],
+      "signals": [
+        { "title": "New Orleans tourism + STR", "body": "New Orleans hosts one of the most active STR markets in the South where zoning permits. Our DSCR program supports STR income on qualifying properties." },
+        { "title": "Baton Rouge + LSU", "body": "Baton Rouge combines state-capital employment with LSU + the LSU medical complex, driving stable long-term rental demand." },
+        { "title": "Petrochemical + industrial anchors", "body": "Lake Charles, Baton Rouge, and the Mississippi River industrial corridor host deep petrochemical and industrial employment that supports steady rental demand." }
+      ],
+      "whyInvestor": "Louisiana is a mixed-strategy market. New Orleans supports LTR + STR mixed portfolios. Baton Rouge combines state-capital + LSU stability. Industrial corridors along the Mississippi anchor cash-flow SFR."
+    },
+    {
+      "slug": "maine", "name": "Maine", "abbr": "ME",
+      "metros": [
+        { "name": "Portland Metro", "detail": "Cumberland County — Portland + South Portland + Westbrook" },
+        { "name": "Bangor", "detail": "Penobscot County — Central Maine" },
+        { "name": "Augusta & Lewiston", "detail": "State capital + Androscoggin County" },
+        { "name": "Auburn", "detail": "Androscoggin County — Lewiston-adjacent" },
+        { "name": "Kennebunk & York", "detail": "Southern Maine coastal STR corridor" },
+        { "name": "Brunswick", "detail": "Cumberland County — Bowdoin + former NAS Brunswick redevelopment" },
+        { "name": "Rockland & Camden", "detail": "Midcoast STR corridors" }
+      ],
+      "signals": [
+        { "title": "Portland growth", "body": "Portland has become one of the fastest-growing metros in the Northeast, with tech, healthcare, and food-and-beverage employment supporting deep rental demand across the metro." },
+        { "title": "Coastal STR corridor", "body": "Southern Maine and Midcoast Maine host active seasonal STR markets. Our DSCR program supports STR income on qualifying properties." },
+        { "title": "Constrained supply", "body": "Maine housing supply is constrained by both geography and slow permitting timelines, which supports long-term property values and rental rates." }
+      ],
+      "whyInvestor": "Portland has grown into one of the most in-demand Northeast metros. Coastal STR corridors add seasonal income flexibility. Constrained supply supports long-term value."
+    },
+    {
+      "slug": "maryland", "name": "Maryland", "abbr": "MD",
+      "metros": [
+        { "name": "Baltimore Metro", "detail": "Baltimore County + Baltimore City" },
+        { "name": "Prince George's County", "detail": "DC-metro commuter belt + Bowie, Laurel, Upper Marlboro" },
+        { "name": "Montgomery County", "detail": "Rockville, Silver Spring, Gaithersburg, Bethesda — DC-metro" },
+        { "name": "Frederick", "detail": "Frederick County — Western Maryland" },
+        { "name": "Annapolis", "detail": "Anne Arundel County — state capital + USNA demand" },
+        { "name": "Hagerstown", "detail": "Washington County — Western MD SFR" },
+        { "name": "Salisbury & Eastern Shore", "detail": "Wicomico County + coastal markets" }
+      ],
+      "signals": [
+        { "title": "DC-metro commuter demand", "body": "Prince George's and Montgomery counties are core DC-metro commuter belts. Rental demand from federal workers, contractors, and biotech/pharma employees stays consistent." },
+        { "title": "Federal + biotech anchors", "body": "The Maryland side of the DC metro hosts NIH, FDA, NSA (Fort Meade), and a deep biotech corridor (Bethesda, Rockville, Gaithersburg). Stable long-term employment." },
+        { "title": "Baltimore SFR depth", "body": "Baltimore City and County offer deep SFR inventory with real cash-flow opportunity for portfolio investors focused on income." }
+      ],
+      "whyInvestor": "Maryland delivers two rental strategies: DC-metro commuter belts (Prince George's, Montgomery) for premium LTR to federal/biotech workers, and Baltimore SFR for cash-flow yield. Both work — pick your play."
+    },
+    {
+      "slug": "massachusetts", "name": "Massachusetts", "abbr": "MA",
+      "metros": [
+        { "name": "Boston Metro", "detail": "Suffolk + Middlesex counties — premium LTR" },
+        { "name": "Worcester", "detail": "Worcester County — Central Massachusetts SFR" },
+        { "name": "Springfield", "detail": "Hampden County — Western MA + cash-flow markets" },
+        { "name": "Lowell & Lawrence", "detail": "Merrimack Valley — Boston-adjacent cash-flow" },
+        { "name": "Cape Cod", "detail": "Barnstable County — coastal STR corridor" },
+        { "name": "New Bedford & Fall River", "detail": "South Coast — high-yield SFR" },
+        { "name": "Framingham & Natick", "detail": "MetroWest Boston commuter suburbs" }
+      ],
+      "signals": [
+        { "title": "Boston tech + biotech", "body": "Kendall Square, the Longwood Medical Area, and Route 128 anchor the deepest biotech and tech employer bases in the country outside Silicon Valley. Rental demand stays premium." },
+        { "title": "University market density", "body": "Boston metro hosts more universities per capita than any US metro. Cambridge, Boston University, Northeastern, and dozens more anchor consistent student and post-grad rental demand." },
+        { "title": "Cash-flow secondaries", "body": "Springfield, Worcester, New Bedford, and Fall River offer real cash-on-cash yields — the yield markets New England investors use to balance premium Boston-metro appreciation plays." }
+      ],
+      "whyInvestor": "Massachusetts pairs premium Boston-metro appreciation plays with cash-flow secondaries (Springfield, Worcester, Fall River, New Bedford). Biotech + tech employer depth is unmatched. Universities anchor rental demand across every metro."
+    },
+    {
+      "slug": "michigan", "name": "Michigan", "abbr": "MI",
+      "metros": [
+        { "name": "Detroit Metro", "detail": "Wayne + Oakland + Macomb counties — SFR + urban" },
+        { "name": "Grand Rapids", "detail": "Kent County — West Michigan growth market" },
+        { "name": "Ann Arbor", "detail": "Washtenaw County — University of Michigan + tech" },
+        { "name": "Lansing & East Lansing", "detail": "State capital + Michigan State University" },
+        { "name": "Kalamazoo", "detail": "Kalamazoo County — WMU + pharma (Pfizer) demand" },
+        { "name": "Flint", "detail": "Genesee County — high-yield SFR" },
+        { "name": "Traverse City & Northern MI", "detail": "Resort STR corridors (zoning-dependent)" }
+      ],
+      "signals": [
+        { "title": "Detroit auto + EV comeback", "body": "The Detroit metro has been rebuilding around EV manufacturing (Ford, GM, Stellantis), tech, and financial services (Rocket, Dan Gilbert investments). Rental demand across the metro has strengthened." },
+        { "title": "Grand Rapids growth", "body": "Grand Rapids has been one of the fastest-growing Midwest metros over the past decade, with medical, education, and manufacturing employers anchoring long-term demand." },
+        { "title": "University + cash-flow mix", "body": "Ann Arbor (Michigan) and East Lansing (MSU) provide premium university-anchored demand. Detroit and Flint offer some of the highest cash-flow yields in the Midwest." }
+      ],
+      "whyInvestor": "Michigan pairs Detroit metro EV/auto comeback with Grand Rapids growth and Ann Arbor / East Lansing university stability. Detroit and Flint offer some of the highest cash-flow SFR yields in the country for portfolio investors."
+    },
+    {
+      "slug": "mississippi", "name": "Mississippi", "abbr": "MS",
+      "metros": [
+        { "name": "Jackson Metro", "detail": "Hinds + Madison + Rankin counties — state capital" },
+        { "name": "Gulfport & Biloxi", "detail": "Harrison County — Gulf Coast SFR + STR" },
+        { "name": "Hattiesburg", "detail": "Forrest County — Southern Mississippi + USM demand" },
+        { "name": "Tupelo", "detail": "Lee County — Northeast Mississippi" },
+        { "name": "Meridian", "detail": "Lauderdale County — East Central MS" },
+        { "name": "Southaven", "detail": "DeSoto County — Memphis metro adjacencies" },
+        { "name": "Starkville & Oxford", "detail": "Mississippi State + Ole Miss university markets" }
+      ],
+      "signals": [
+        { "title": "Affordable acquisition basis", "body": "Mississippi acquisition basis stays among the lowest in the country relative to gross rents. Real cash-on-cash returns for portfolio investors focused on income." },
+        { "title": "Memphis-metro spillover", "body": "DeSoto County (Southaven, Olive Branch, Hernando) is effectively part of the Memphis metro. Rental demand from Memphis-area professionals crossing the state line stays consistent." },
+        { "title": "Landlord-friendly", "body": "Mississippi statutes are landlord-friendly with predictable timelines. Holding costs stay projectable across the state." }
+      ],
+      "whyInvestor": "Mississippi is one of the highest-yield SFR markets in the country. DeSoto County spillover from Memphis, Jackson state-capital demand, and Gulf Coast SFR round out a strong cash-flow strategy set."
+    },
+    {
+      "slug": "missouri", "name": "Missouri", "abbr": "MO",
+      "metros": [
+        { "name": "Kansas City Metro", "detail": "Jackson County + Lee's Summit, Independence, Blue Springs, Overland Park (KS)" },
+        { "name": "St. Louis", "detail": "St. Louis City + County — Clayton, University City, Kirkwood" },
+        { "name": "Springfield", "detail": "Greene County — Southwest MO SFR" },
+        { "name": "Columbia", "detail": "Boone County — University of Missouri market" },
+        { "name": "Jefferson City", "detail": "Cole County — state capital demand" },
+        { "name": "Joplin", "detail": "Jasper County — Southwest MO secondary" },
+        { "name": "Cape Girardeau & St. Joseph", "detail": "Southeast + Northwest MO secondary markets" }
+      ],
+      "signals": [
+        { "title": "Kansas City metro growth", "body": "KC has seen sustained metro growth and remains one of the more affordable major metros in the country by rent-to-price ratio. Strong logistics + biotech + tech employers." },
+        { "title": "St. Louis SFR depth", "body": "St. Louis offers deep SFR inventory at low entry basis — one of the highest cash-on-cash yield markets in the country for buy-and-hold investors." },
+        { "title": "Predictable holding costs", "body": "Missouri's eviction and foreclosure processes are predictable. Landlord-friendly statutes keep holds projectable for portfolio investors." }
+      ],
+      "whyInvestor": "Missouri is a strong cash-flow Midwest market. Kansas City remains one of the more affordable major metros by rent-to-price ratio. St. Louis offers deep SFR inventory with real cash-on-cash yields. Predictable eviction + foreclosure timelines round it out."
+    },
+    {
+      "slug": "montana", "name": "Montana", "abbr": "MT",
+      "metros": [
+        { "name": "Billings", "detail": "Yellowstone County — largest Montana metro" },
+        { "name": "Missoula", "detail": "Missoula County — University of Montana + growth" },
+        { "name": "Bozeman", "detail": "Gallatin County — fastest-growing Montana city" },
+        { "name": "Great Falls", "detail": "Cascade County — Malmstrom AFB demand" },
+        { "name": "Helena", "detail": "Lewis and Clark County — state capital" },
+        { "name": "Kalispell & Whitefish", "detail": "Flathead County — Glacier NP corridor" },
+        { "name": "Butte & Anaconda", "detail": "Historic mining region — cash-flow secondary markets" }
+      ],
+      "signals": [
+        { "title": "Bozeman + Missoula growth", "body": "Bozeman has been one of the fastest-growing US micropolitans for years. Missoula adds sustained U of Montana + healthcare demand. Rental demand along Montana's I-90 corridor stays deep." },
+        { "title": "Migration inflow", "body": "Montana continues to attract in-migration from higher-cost coastal metros — supporting steady rental demand across the state's main metros." },
+        { "title": "Glacier + Yellowstone STR", "body": "Kalispell, Whitefish, and Bozeman host active STR markets adjacent to Glacier and Yellowstone. Our DSCR program supports STR income where zoning permits." }
+      ],
+      "whyInvestor": "Montana pairs sustained growth (Bozeman, Missoula) with STR opportunity in Glacier and Yellowstone-adjacent corridors. Migration inflow keeps rental demand strong across the I-90 corridor."
+    },
+    {
+      "slug": "nebraska", "name": "Nebraska", "abbr": "NE",
+      "metros": [
+        { "name": "Omaha Metro", "detail": "Douglas + Sarpy counties — insurance + fintech hub" },
+        { "name": "Lincoln", "detail": "Lancaster County — state capital + Nebraska Huskers" },
+        { "name": "Bellevue", "detail": "Sarpy County — Offutt AFB demand" },
+        { "name": "Grand Island", "detail": "Hall County — Central Nebraska" },
+        { "name": "Kearney", "detail": "Buffalo County — UNK + agriculture" },
+        { "name": "Fremont & Norfolk", "detail": "Eastern Nebraska secondary markets" },
+        { "name": "Papillion & La Vista", "detail": "Sarpy County — fastest-growing Omaha suburbs" }
+      ],
+      "signals": [
+        { "title": "Omaha insurance + fintech", "body": "Omaha is home to Berkshire Hathaway, Mutual of Omaha, Union Pacific, and a growing fintech and data-center cluster. Stable long-term employment drives rental demand." },
+        { "title": "University + military anchors", "body": "Lincoln (UNL) and Bellevue (Offutt AFB) provide stable university- and military-anchored demand across the metro belt." },
+        { "title": "Affordable + high-yield", "body": "Nebraska acquisition basis stays affordable relative to gross rents. Cash-on-cash yields make sense for portfolio investors focused on income." }
+      ],
+      "whyInvestor": "Nebraska is anchored by Omaha's Fortune-500 employer base (Berkshire Hathaway, Mutual of Omaha, Union Pacific) plus fintech growth. Lincoln adds state-capital + UNL stability. Yields make sense for income-focused portfolios."
+    },
+    {
+      "slug": "new-hampshire", "name": "New Hampshire", "abbr": "NH", "taxNote": "no state income tax on wages",
+      "metros": [
+        { "name": "Manchester", "detail": "Hillsborough County — largest NH metro" },
+        { "name": "Nashua", "detail": "Hillsborough County — Boston-adjacent commuter market" },
+        { "name": "Portsmouth", "detail": "Rockingham County — Seacoast tech + defense" },
+        { "name": "Concord", "detail": "Merrimack County — state capital" },
+        { "name": "Dover & Rochester", "detail": "Strafford County — Seacoast SFR" },
+        { "name": "Salem", "detail": "Rockingham County — MA-border commuter market" },
+        { "name": "Keene & Lebanon", "detail": "Western NH secondary markets — Dartmouth-adjacent" }
+      ],
+      "signals": [
+        { "title": "No state income tax on wages", "body": "New Hampshire has no income tax on wages — a real benefit for rental owners running properties here. (Investment income tax on dividends and interest exists but has been phasing out.)" },
+        { "title": "Boston-metro commuter belt", "body": "Nashua, Manchester, and Salem are core Boston-metro commuter markets. Rental demand from professionals working in Massachusetts stays consistent." },
+        { "title": "Seacoast tech + defense", "body": "Portsmouth and the Seacoast host tech (Bottomline Technologies) and defense (Portsmouth Naval Shipyard) employment that supports long-term rental demand." }
+      ],
+      "whyInvestor": "New Hampshire pairs no-income-tax-on-wages advantage with Boston-metro commuter demand (Nashua, Salem, Manchester). Seacoast tech + defense employment anchors long-term rentals. Constrained supply supports property values."
+    },
+    {
+      "slug": "new-jersey", "name": "New Jersey", "abbr": "NJ",
+      "metros": [
+        { "name": "Newark & Jersey City", "detail": "Essex + Hudson counties — NYC-metro premium LTR" },
+        { "name": "Bergen County", "detail": "Hackensack, Fort Lee, Paramus — NYC commuter belt" },
+        { "name": "Middlesex County", "detail": "New Brunswick, Edison, Woodbridge — pharma + Rutgers" },
+        { "name": "Monmouth County", "detail": "Red Bank, Freehold, Long Branch — shore corridor" },
+        { "name": "Trenton & Princeton", "detail": "Mercer County — state capital + Princeton" },
+        { "name": "Camden & Cherry Hill", "detail": "Philly-metro South Jersey commuter belt" },
+        { "name": "Atlantic City & Cape May", "detail": "Coastal STR + LTR corridors" }
+      ],
+      "signals": [
+        { "title": "NYC + Philly metro depth", "body": "New Jersey is uniquely positioned between two of the largest US metros. Bergen, Hudson, Essex counties feed NYC; Camden and Cherry Hill feed Philadelphia. Deep dual-market rental demand." },
+        { "title": "Pharma + finance anchors", "body": "Central New Jersey hosts one of the deepest pharma employer bases in the world (Merck, J&J, Bristol Myers). Northern New Jersey adds finance and tech. Stable long-term employment." },
+        { "title": "Shore STR corridor", "body": "The Jersey Shore hosts one of the most active summer STR markets in the country. Our DSCR program supports STR income where zoning permits." }
+      ],
+      "whyInvestor": "New Jersey feeds two Fortune-500 metros (NYC + Philadelphia) with commuter-belt rentals. Central Jersey pharma anchors long-term stability. Shore corridors add STR income flexibility."
+    },
+    {
+      "slug": "new-mexico", "name": "New Mexico", "abbr": "NM",
+      "metros": [
+        { "name": "Albuquerque Metro", "detail": "Bernalillo County + Rio Rancho" },
+        { "name": "Santa Fe", "detail": "Santa Fe County — state capital + arts market" },
+        { "name": "Las Cruces", "detail": "Doña Ana County — Southern NM + NMSU" },
+        { "name": "Rio Rancho", "detail": "Sandoval County — fast-growing ABQ suburb" },
+        { "name": "Roswell & Carlsbad", "detail": "Southeast NM — Permian Basin adjacencies" },
+        { "name": "Farmington", "detail": "San Juan County — Four Corners energy market" },
+        { "name": "Taos", "detail": "Northern NM — resort STR corridor" }
+      ],
+      "signals": [
+        { "title": "Sandia + Los Alamos anchors", "body": "Albuquerque and Santa Fe rental demand is anchored by Sandia National Labs and Los Alamos National Laboratory — stable federal employment for the long term." },
+        { "title": "Kirtland AFB", "body": "Kirtland Air Force Base in Albuquerque supports steady military rental demand." },
+        { "title": "STR corridors", "body": "Santa Fe and Taos host active STR markets. Our DSCR program supports STR income where zoning permits." }
+      ],
+      "whyInvestor": "New Mexico anchors on federal employment (Sandia, Los Alamos, Kirtland AFB). Santa Fe and Taos add STR opportunity. Affordable acquisition basis supports real cash-flow across ABQ and secondary markets."
+    },
+    {
+      "slug": "new-york", "name": "New York", "abbr": "NY",
+      "metros": [
+        { "name": "NYC Outer Boroughs", "detail": "Bronx, Queens, Brooklyn, Staten Island — SFR + small-multi" },
+        { "name": "Long Island", "detail": "Nassau + Suffolk counties — commuter belt" },
+        { "name": "Westchester County", "detail": "White Plains, Yonkers, New Rochelle — NYC-metro" },
+        { "name": "Rochester", "detail": "Monroe County — Upstate SFR cash-flow" },
+        { "name": "Buffalo", "detail": "Erie County — Western NY high-yield SFR" },
+        { "name": "Syracuse", "detail": "Onondaga County — Central NY + SU market" },
+        { "name": "Albany Metro", "detail": "Capital region — Albany, Schenectady, Troy" }
+      ],
+      "signals": [
+        { "title": "NYC-metro commuter depth", "body": "Long Island, Westchester, and the outer boroughs feed NYC's employer base — one of the deepest premium-rental markets in the country. Demand stays constant across every cycle." },
+        { "title": "Upstate cash-flow markets", "body": "Rochester, Buffalo, and Syracuse offer some of the highest cash-on-cash yields in the Northeast. Real income for portfolio investors focused on cash flow vs. appreciation." },
+        { "title": "University + healthcare anchors", "body": "Rochester (U of Rochester + Rochester Institute of Technology), Syracuse (SU), and Albany (SUNY + state government) provide stable rental demand outside NYC-metro." }
+      ],
+      "whyInvestor": "New York State runs two rental strategies: NYC-metro commuter belts (Long Island, Westchester) for premium LTR to Manhattan workers, and Upstate NY (Rochester, Buffalo, Syracuse) for high cash-flow yield. Both work at scale."
+    },
+    {
+      "slug": "north-carolina", "name": "North Carolina", "abbr": "NC",
+      "metros": [
+        { "name": "Charlotte Metro", "detail": "Concord, Huntersville, Matthews, Mint Hill, Fort Mill (SC-adjacent)" },
+        { "name": "Raleigh", "detail": "Cary, Apex, Wake Forest, Garner, Holly Springs" },
+        { "name": "Durham + Chapel Hill", "detail": "Research Triangle core — Morrisville, Hillsborough" },
+        { "name": "Greensboro", "detail": "Piedmont Triad — plus High Point, Kernersville" },
+        { "name": "Winston-Salem", "detail": "Forsyth County + smaller Triad markets" },
+        { "name": "Asheville", "detail": "Buncombe County — LTR + mountain STR corridor" },
+        { "name": "Wilmington", "detail": "Coastal SFR, plus Leland, Hampstead, Wrightsville" }
+      ],
+      "signals": [
+        { "title": "Charlotte + Triangle job engines", "body": "Charlotte is a top-five US banking hub. The Research Triangle (Raleigh-Durham-Chapel Hill) anchors an unusually dense concentration of tech, biotech, and higher-education employers. Both metros pull in steady, high-income renters." },
+        { "title": "Landlord-friendly, non-judicial", "body": "North Carolina is a non-judicial foreclosure state with a predictable eviction process and landlord-friendly statutes. Holding costs stay projectable for cash-flow modeling." },
+        { "title": "Sustained population inflow", "body": "NC has ranked among the top states for net domestic migration for years running. That inflow shows up as sustained rental demand in every metro from the mountains to the coast." }
+      ],
+      "whyInvestor": "NC is a top-tier investor state. Charlotte and the Research Triangle are sustained-growth job markets attracting steady in-migration. Non-judicial foreclosure and landlord-friendly statutes keep timelines predictable. Rental demand is deep across every metro."
+    },
+    {
+      "slug": "ohio", "name": "Ohio", "abbr": "OH",
+      "metros": [
+        { "name": "Columbus", "detail": "Franklin County — New Albany, Pataskala, Dublin, Westerville (Intel corridor)" },
+        { "name": "Cleveland", "detail": "Cuyahoga County — Lakewood, Parma, Cleveland Heights, Shaker Heights" },
+        { "name": "Cincinnati", "detail": "Hamilton County — plus Northern Kentucky adjacencies" },
+        { "name": "Dayton", "detail": "Montgomery County — Wright-Patterson demand" },
+        { "name": "Akron", "detail": "Summit County — SFR + small-multi" },
+        { "name": "Toledo", "detail": "Lucas County — high-yield Midwest cash-flow" },
+        { "name": "Youngstown & Canton", "detail": "Mahoning + Stark counties — yield-heavy secondary markets" }
+      ],
+      "signals": [
+        { "title": "Affordable acquisition basis", "body": "Columbus, Cleveland, Cincinnati, and Dayton all offer entry price-points well below coastal metros. That gap is where real cash-on-cash yields live for buy-and-hold investors." },
+        { "title": "Intel + Columbus growth", "body": "Intel's multi-billion-dollar semiconductor investment in Licking County is anchoring long-term employment growth around Columbus. Rental demand in the metro and its northeast suburbs has strengthened accordingly." },
+        { "title": "Predictable holding costs", "body": "Ohio's eviction process is straightforward and timelines run predictably. That matters when you're modeling cash flow on a rental hold across multiple properties." }
+      ],
+      "whyInvestor": "Ohio is one of the strongest cash-flow rental markets in the country. Affordable acquisition basis relative to gross rents drives real cash-on-cash yields across Columbus, Cleveland, Cincinnati, and Dayton. Predictable eviction timelines keep holds projectable."
+    },
+    {
+      "slug": "oklahoma", "name": "Oklahoma", "abbr": "OK",
+      "metros": [
+        { "name": "Oklahoma City Metro", "detail": "Oklahoma County + Edmond, Norman, Moore, Yukon" },
+        { "name": "Tulsa Metro", "detail": "Tulsa County + Broken Arrow, Owasso, Bixby" },
+        { "name": "Norman", "detail": "Cleveland County — OU market" },
+        { "name": "Lawton", "detail": "Comanche County — Fort Sill demand" },
+        { "name": "Enid & Ardmore", "detail": "Central + Southern OK secondary markets" },
+        { "name": "Stillwater", "detail": "Payne County — Oklahoma State University" },
+        { "name": "Muskogee & Bartlesville", "detail": "Northeast Oklahoma secondary markets" }
+      ],
+      "signals": [
+        { "title": "Energy + aerospace anchors", "body": "Oklahoma City and Tulsa host deep energy (Devon, Chesapeake) and aerospace (Boeing, American Airlines Tulsa MRO) employer bases. Stable long-term employment supports rental demand." },
+        { "title": "Affordable + high-yield", "body": "Oklahoma acquisition basis stays among the lowest relative to gross rents in the country. Real cash-on-cash returns for buy-and-hold investors." },
+        { "title": "Landlord-friendly", "body": "Oklahoma statutes are landlord-friendly with predictable eviction timelines. Holding costs stay projectable." }
+      ],
+      "whyInvestor": "Oklahoma is one of the highest-yield SFR markets in the country. OKC + Tulsa energy and aerospace anchors drive stable demand. Fort Sill (Lawton) and OU/OSU provide military + university stability. Landlord-friendly law rounds it out."
+    },
+    {
+      "slug": "oregon", "name": "Oregon", "abbr": "OR",
+      "metros": [
+        { "name": "Portland Metro", "detail": "Multnomah + Washington + Clackamas counties" },
+        { "name": "Eugene", "detail": "Lane County — University of Oregon market" },
+        { "name": "Salem", "detail": "Marion County — state capital" },
+        { "name": "Bend", "detail": "Deschutes County — Central Oregon growth + STR corridor" },
+        { "name": "Medford & Ashland", "detail": "Southern Oregon secondary markets" },
+        { "name": "Corvallis", "detail": "Benton County — Oregon State University" },
+        { "name": "Beaverton & Hillsboro", "detail": "Silicon Forest — Intel + Nike anchors" }
+      ],
+      "signals": [
+        { "title": "Silicon Forest tech anchor", "body": "Washington County (Beaverton, Hillsboro) hosts Intel's largest US site plus Nike's global HQ. Deep tech + design employment drives rental demand across the metro." },
+        { "title": "Bend growth + STR", "body": "Bend has been one of the fastest-growing metros in the Pacific Northwest. Active STR corridors on the east side of the Cascades add flexibility. Our DSCR program supports STR income where zoning permits." },
+        { "title": "University + capital demand", "body": "Eugene (Oregon), Corvallis (OSU), and Salem (state capital) round out stable, predictable rental demand outside the Portland metro." }
+      ],
+      "whyInvestor": "Oregon is anchored by Portland's Silicon Forest (Intel, Nike) plus growing Central Oregon (Bend). Universities and state-capital demand round out the state. STR corridors add flexibility for mixed strategies."
+    },
+    {
+      "slug": "pennsylvania", "name": "Pennsylvania", "abbr": "PA",
+      "metros": [
+        { "name": "Philadelphia Metro", "detail": "Philly + Bucks + Montgomery + Delaware counties" },
+        { "name": "Pittsburgh", "detail": "Allegheny County — tech + healthcare hub" },
+        { "name": "Allentown & Lehigh Valley", "detail": "Lehigh + Northampton — logistics corridor" },
+        { "name": "Harrisburg", "detail": "Dauphin + Cumberland counties — state capital" },
+        { "name": "Lancaster", "detail": "Lancaster County — SFR + suburban growth" },
+        { "name": "Erie", "detail": "Erie County — Northwest PA cash-flow market" },
+        { "name": "Scranton & Wilkes-Barre", "detail": "Northeast PA — NYC/Philly overflow + cash-flow SFR" }
+      ],
+      "signals": [
+        { "title": "Pittsburgh tech + healthcare", "body": "Pittsburgh has repositioned around Carnegie Mellon-driven robotics + AI, plus a deep healthcare employer base (UPMC). Steady, high-quality employment drives rental demand." },
+        { "title": "Lehigh Valley logistics", "body": "The Lehigh Valley (Allentown, Bethlehem, Easton) has become one of the largest East Coast logistics and distribution hubs — Amazon, FedEx, and dozens of anchor tenants. Long-term rental demand." },
+        { "title": "Deep cash-flow secondaries", "body": "Erie, Scranton, Wilkes-Barre, and Harrisburg offer some of the highest cash-on-cash yields in the Northeast. Real income for portfolio investors focused on cash flow." }
+      ],
+      "whyInvestor": "Pennsylvania pairs Philadelphia + Pittsburgh anchor metros with a deep set of cash-flow secondaries (Erie, Scranton, Wilkes-Barre, Harrisburg). Lehigh Valley logistics adds a major growth angle. Real yield markets for portfolio investors."
+    },
+    {
+      "slug": "rhode-island", "name": "Rhode Island", "abbr": "RI",
+      "metros": [
+        { "name": "Providence Metro", "detail": "Providence + Cranston + Warwick + Pawtucket" },
+        { "name": "Newport", "detail": "Newport County — LTR + coastal STR corridor" },
+        { "name": "Woonsocket", "detail": "Providence County — Northern RI SFR" },
+        { "name": "East Providence", "detail": "Providence County — cross-river market" },
+        { "name": "Cranston", "detail": "Providence County — largest Providence suburb" },
+        { "name": "Kingston & Narragansett", "detail": "Washington County — URI + South County beach" },
+        { "name": "Bristol & Warren", "detail": "East Bay coastal SFR" }
+      ],
+      "signals": [
+        { "title": "Providence university density", "body": "Providence hosts Brown University, RISD, Providence College, and Johnson & Wales. Deep student and post-grad rental demand year-round." },
+        { "title": "Newport STR corridor", "body": "Newport is one of the most active summer STR markets in the Northeast where zoning permits. Our DSCR program supports STR income scenarios." },
+        { "title": "Boston-metro spillover", "body": "Providence has emerged as a real Boston-metro spillover market as Massachusetts rents rise. Rental demand from Massachusetts commuters stays consistent." }
+      ],
+      "whyInvestor": "Rhode Island packs a lot into a small footprint: Providence university density drives constant rental demand, Newport supports high-value STR, and the state has become a Boston-metro spillover for cost-conscious commuters."
+    },
+    {
+      "slug": "south-carolina", "name": "South Carolina", "abbr": "SC",
+      "metros": [
+        { "name": "Charleston", "detail": "Charleston County — plus Mount Pleasant, North Charleston, Summerville" },
+        { "name": "Columbia", "detail": "Richland + Lexington counties — capital + Fort Jackson demand" },
+        { "name": "Greenville", "detail": "Upstate SC — BMW/Michelin manufacturing hub" },
+        { "name": "Spartanburg", "detail": "Upstate — Inland Port + logistics anchor" },
+        { "name": "Myrtle Beach", "detail": "Horry County — coastal LTR + STR corridor" },
+        { "name": "Rock Hill", "detail": "York County — Charlotte-adjacent commuter market" },
+        { "name": "Hilton Head & Bluffton", "detail": "Beaufort County — premium coastal STR + LTR" }
+      ],
+      "signals": [
+        { "title": "Sustained migration inflow", "body": "South Carolina has ranked among the top US states for net migration for years. That inflow shows up as sustained rental demand across every major metro." },
+        { "title": "Greenville manufacturing anchor", "body": "BMW's largest global plant, Michelin's North American HQ, and a deep automotive supply chain anchor Upstate SC's rental demand around Greenville and Spartanburg." },
+        { "title": "Coastal STR opportunity", "body": "Myrtle Beach, Hilton Head, Folly Beach, and Charleston's beach corridors host active short-term rental markets — SLA's DSCR program supports STR income where local zoning permits." }
+      ],
+      "whyInvestor": "SC is one of the top-inflow states in the country. Greenville is a major manufacturing hub (BMW/Michelin) driving stable employment. Charleston combines port-city commercial activity with a strong coastal STR market. Landlord-friendly law rounds it out."
+    },
+    {
+      "slug": "tennessee", "name": "Tennessee", "abbr": "TN", "taxNote": "no state income tax",
+      "metros": [
+        { "name": "Nashville Metro", "detail": "Franklin, Brentwood, Murfreesboro, Hendersonville, Mount Juliet, Spring Hill" },
+        { "name": "Memphis", "detail": "Shelby County — high-yield SFR corridor; DeSoto MS adjacent" },
+        { "name": "Knoxville", "detail": "Knox County — Farragut, Maryville, Oak Ridge" },
+        { "name": "Chattanooga", "detail": "Hamilton County — plus Signal Mountain, East Ridge" },
+        { "name": "Clarksville", "detail": "Fort Campbell demand + Nashville-adjacent growth" },
+        { "name": "Franklin", "detail": "Williamson County — premium Nashville-metro rentals" },
+        { "name": "Johnson City / Tri-Cities", "detail": "Northeast TN — Kingsport, Bristol" }
+      ],
+      "signals": [
+        { "title": "No state income tax", "body": "Tennessee has no state income tax on rental income or capital gains — a meaningful yield boost that compounds over the hold period." },
+        { "title": "Nashville growth + Memphis yield", "body": "Nashville has been on a decade-long run of population, employment, and rent growth. Memphis offers some of the highest cash-on-cash SFR yields in the country. Both work — pick the strategy." },
+        { "title": "Landlord-friendly", "body": "Tennessee statutes are considered landlord-friendly with predictable eviction and non-judicial foreclosure processes. Holding costs stay projectable for cash-flow modeling." }
+      ],
+      "whyInvestor": "TN is a top-tier investor state. No state income tax. Nashville has been on a decade-long growth run; Memphis offers some of the highest cash-flow SFR yields in the country. Landlord-friendly statutes support projectable holds."
+    },
+    {
+      "slug": "texas", "name": "Texas", "abbr": "TX", "taxNote": "no state income tax",
+      "metros": [
+        { "name": "Houston", "detail": "Greater Houston metro — including Sugar Land, The Woodlands, Katy, Pearland" },
+        { "name": "Dallas–Fort Worth", "detail": "DFW metroplex — Arlington, Plano, Frisco, McKinney, Denton, Irving" },
+        { "name": "San Antonio", "detail": "San Antonio–New Braunfels — plus Schertz, Cibolo, Universal City" },
+        { "name": "Austin", "detail": "Austin–Round Rock — including Cedar Park, Georgetown, Pflugerville" },
+        { "name": "El Paso", "detail": "Border-market SFR and small-multi" },
+        { "name": "Corpus Christi", "detail": "Coastal SFR + long-term rentals" },
+        { "name": "Waco & Killeen", "detail": "Central Texas secondary markets" }
+      ],
+      "signals": [
+        { "title": "No state income tax", "body": "Rental income and capital gains from Texas properties are not subject to state-level income tax. That's a real yield boost that compounds over the life of the hold." },
+        { "title": "Landlord-friendly statutes", "body": "Texas allows non-judicial eviction under standard lease breaches and typical timelines run 30–45 days from filing to writ of possession. No rent control at the state level." },
+        { "title": "Migration & job growth", "body": "Texas continues to lead the country in domestic migration inflow. Dallas-Fort Worth, Houston, Austin, and San Antonio have all seen sustained population and employment growth that supports rental demand." }
+      ],
+      "whyInvestor": "Texas is one of the largest and most active rental investment markets in the United States. The state has no state income tax, landlord-friendly statutes (including a streamlined non-judicial eviction process), and continued population and job growth across major metros — all of which support strong rental demand."
+    },
+    {
+      "slug": "virginia", "name": "Virginia", "abbr": "VA",
+      "metros": [
+        { "name": "Northern Virginia", "detail": "Fairfax + Loudoun + Prince William — DC-metro + data-center corridor" },
+        { "name": "Richmond Metro", "detail": "Henrico + Chesterfield counties — state capital" },
+        { "name": "Hampton Roads", "detail": "Virginia Beach, Norfolk, Chesapeake, Newport News — military-anchored" },
+        { "name": "Charlottesville", "detail": "Albemarle County — University of Virginia" },
+        { "name": "Roanoke", "detail": "Roanoke County — SW Virginia SFR" },
+        { "name": "Blacksburg", "detail": "Montgomery County — Virginia Tech market" },
+        { "name": "Lynchburg & Fredericksburg", "detail": "Central + Northern Virginia secondary markets" }
+      ],
+      "signals": [
+        { "title": "NoVA federal + data centers", "body": "Northern Virginia hosts the deepest federal + defense-contractor employer base in the country outside DC itself, plus the world's largest data-center corridor (Loudoun County). Stable, high-income rental demand." },
+        { "title": "Hampton Roads military anchor", "body": "Norfolk Naval Base, Naval Station Norfolk, Langley AFB, and multiple military installations anchor deep military rental demand across Hampton Roads." },
+        { "title": "University anchors", "body": "Charlottesville (UVA), Blacksburg (Virginia Tech), and Williamsburg (William & Mary) provide stable university-anchored rental demand across the state." }
+      ],
+      "whyInvestor": "Virginia combines Northern Virginia federal + data-center employment with Hampton Roads military demand and Richmond state-capital stability. Universities round out predictable long-term rental demand across the state."
+    },
+    {
+      "slug": "washington", "name": "Washington", "abbr": "WA", "taxNote": "no state income tax on wages",
+      "metros": [
+        { "name": "Seattle Metro", "detail": "King County — plus Bellevue, Redmond, Kirkland (tech corridor)" },
+        { "name": "Tacoma", "detail": "Pierce County — Seattle-adjacent SFR + JBLM demand" },
+        { "name": "Spokane", "detail": "Spokane County — Eastern Washington + Idaho adjacencies" },
+        { "name": "Vancouver (WA)", "detail": "Clark County — Portland-metro north side" },
+        { "name": "Olympia", "detail": "Thurston County — state capital" },
+        { "name": "Bellingham", "detail": "Whatcom County — WWU + Canadian border market" },
+        { "name": "Tri-Cities", "detail": "Kennewick, Pasco, Richland — Hanford + agriculture" }
+      ],
+      "signals": [
+        { "title": "No state income tax on wages", "body": "Washington has no state income tax on wages — a meaningful yield boost for investment property owners over the hold period." },
+        { "title": "Seattle-metro tech anchors", "body": "Amazon, Microsoft, Boeing, plus a deep enterprise software ecosystem (Bellevue, Redmond, Kirkland) anchor premium rental demand across the Seattle metro." },
+        { "title": "JBLM + defense", "body": "Joint Base Lewis-McChord (JBLM) is one of the largest military bases on the West Coast. Anchor military rental demand across Tacoma and Pierce County." }
+      ],
+      "whyInvestor": "Washington pairs no-state-income-tax advantage with Seattle-metro tech premium rentals (Amazon, Microsoft, Boeing). Tacoma + JBLM add military stability. Spokane and Vancouver round out the state with secondary market opportunities."
+    },
+    {
+      "slug": "west-virginia", "name": "West Virginia", "abbr": "WV",
+      "metros": [
+        { "name": "Charleston", "detail": "Kanawha County — state capital" },
+        { "name": "Huntington", "detail": "Cabell County — Ohio River + Marshall University" },
+        { "name": "Morgantown", "detail": "Monongalia County — WVU + Pittsburgh-adjacent" },
+        { "name": "Wheeling", "detail": "Ohio County — Northern Panhandle" },
+        { "name": "Parkersburg", "detail": "Wood County — Mid-Ohio Valley" },
+        { "name": "Martinsburg", "detail": "Berkeley County — DC-metro commuter belt (Eastern Panhandle)" },
+        { "name": "Beckley", "detail": "Raleigh County — Southern WV secondary" }
+      ],
+      "signals": [
+        { "title": "DC-metro Eastern Panhandle", "body": "Martinsburg and Charles Town (Jefferson County) have become active DC-metro commuter markets. Rental demand from federal workers seeking lower cost of living stays consistent." },
+        { "title": "Morgantown + WVU + Pittsburgh", "body": "Morgantown combines WVU + healthcare + Pittsburgh-metro adjacency. Rental demand from students, healthcare workers, and Pittsburgh commuters supports the market." },
+        { "title": "Affordable + high-yield", "body": "West Virginia acquisition basis stays among the lowest in the country relative to gross rents. Real cash-on-cash returns for portfolio investors focused on income." }
+      ],
+      "whyInvestor": "West Virginia delivers surprising investor value. Eastern Panhandle (Martinsburg) is a DC-metro commuter belt. Morgantown pairs WVU with Pittsburgh-metro adjacency. Statewide, WV offers some of the highest cash-flow yields in the country."
+    },
+    {
+      "slug": "wisconsin", "name": "Wisconsin", "abbr": "WI",
+      "metros": [
+        { "name": "Milwaukee Metro", "detail": "Milwaukee + Waukesha counties" },
+        { "name": "Madison", "detail": "Dane County — state capital + UW-Madison" },
+        { "name": "Green Bay", "detail": "Brown County — Northeast WI" },
+        { "name": "Kenosha & Racine", "detail": "Southeast WI — Chicago-metro adjacencies" },
+        { "name": "Appleton", "detail": "Outagamie County — Fox Valley" },
+        { "name": "Eau Claire", "detail": "Eau Claire County — Western Wisconsin + UWEC" },
+        { "name": "La Crosse & Wausau", "detail": "Western + Central Wisconsin secondary markets" }
+      ],
+      "signals": [
+        { "title": "Madison + UW anchor", "body": "Madison combines state-capital employment with UW-Madison (one of the largest research universities in the US) and Epic Systems (healthcare software HQ). Deep, stable rental demand." },
+        { "title": "Kenosha/Racine Chicago-metro", "body": "Southeast Wisconsin's Kenosha and Racine counties feed Chicago-metro employers — rental demand from Illinois commuters seeking Wisconsin cost of living." },
+        { "title": "Manufacturing anchors", "body": "Green Bay, Appleton, and the Fox Valley host deep paper + manufacturing employer bases that support long-term rental demand." }
+      ],
+      "whyInvestor": "Wisconsin pairs Madison stability (state capital + UW + Epic) with Milwaukee metro depth and Southeast WI Chicago-metro spillover. Manufacturing anchors keep secondary-market yields real for portfolio investors."
+    },
+    {
+      "slug": "wyoming", "name": "Wyoming", "abbr": "WY", "taxNote": "no state income tax",
+      "metros": [
+        { "name": "Cheyenne", "detail": "Laramie County — state capital + F.E. Warren AFB" },
+        { "name": "Casper", "detail": "Natrona County — Central Wyoming energy" },
+        { "name": "Laramie", "detail": "Albany County — University of Wyoming" },
+        { "name": "Jackson", "detail": "Teton County — resort STR corridor" },
+        { "name": "Gillette", "detail": "Campbell County — coal + energy" },
+        { "name": "Rock Springs", "detail": "Sweetwater County — trona mining + energy" },
+        { "name": "Sheridan & Cody", "detail": "Northern Wyoming secondary markets" }
+      ],
+      "signals": [
+        { "title": "No state income tax", "body": "Wyoming has no state income tax on rental income — a real yield advantage. The state also has some of the most favorable business + trust laws in the country." },
+        { "title": "Jackson STR corridor", "body": "Jackson (Teton County) hosts one of the most active premium STR markets in the country adjacent to Grand Teton and Yellowstone. Our DSCR program supports STR income where zoning permits." },
+        { "title": "Federal + energy anchors", "body": "Cheyenne (F.E. Warren AFB, state capital) and the Powder River Basin (energy) provide stable employment across the state." }
+      ],
+      "whyInvestor": "Wyoming pairs no-state-income-tax advantage with premium Jackson STR opportunity and federal + energy employment anchors. Small but investor-friendly state with real business + trust law advantages."
+    }
+  ]
+}
