@@ -216,6 +216,44 @@ p { margin: 0 0 var(--space-4) 0; }
   flex-wrap: wrap;
 }
 
+/* ── Metro tile grid (state pages) ─────────────────────────
+   Compact tinted tiles used on state pages to list metros/submarkets.
+   Purposely less padding and smaller type than a full .card so 8 tiles
+   fit into the visual rhythm without feeling like a wall of headings. */
+.metro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+@media (max-width: 1000px) {
+  .metro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .metro-grid { grid-template-columns: 1fr; }
+}
+.metro-tile {
+  background: var(--neutral);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  transition: background 0.15s ease;
+}
+.metro-tile:hover { background: #eeeae0; }
+.metro-tile h4 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.01em;
+}
+.metro-tile p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* ── Utility chips + tags ──────────────────────────────────── */
 .chip {
   display: inline-block;
