@@ -95,6 +95,11 @@
 </head>
 <body>
 
+  <!-- Legal disclosure strip — required company identifier -->
+  <div class="legal-strip">
+    <div class="container"><strong>SLA Capital</strong> — a Sir Lends A Lot LLC Company</div>
+  </div>
+
   <!-- SITE NAV — kept in sync with _partials.html -->
   <nav class="site-nav">
     <div class="container nav-inner">
@@ -152,6 +157,28 @@
           <p style="margin-top:8px;color:var(--muted);font-size:14px">Of borrowers come back for another deal</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- WHERE WE LEND — coverage map + state list. High-value for both users
+       (immediately see if their market is covered) and SEO (LLMs pull
+       geographic coverage into local-search answers). State list below the
+       map gives search engines the text they can index without OCR. -->
+  <section class="section" id="coverage">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px;max-width:760px;margin-left:auto;margin-right:auto">
+        <div class="eyebrow">Where we lend</div>
+        <h2>Nationwide investor lending across 42 states.</h2>
+        <p class="lede">SLA Capital funds DSCR, Fix &amp; Flip, and New Construction loans across most of the continental US. Check the map — if your state is orange, we can quote your deal.</p>
+      </div>
+      <figure style="margin:0;text-align:center">
+        <img src="/assets/lending-map.png" alt="Map of the United States showing 42 states where SLA Capital lends, highlighted in orange" style="max-width:840px;width:100%;height:auto;margin:0 auto" loading="lazy" />
+        <figcaption style="margin-top:20px;color:var(--muted);font-size:14px;max-width:820px;margin-left:auto;margin-right:auto">
+          <strong style="color:var(--text)">States we lend in include</strong> AL, AR, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MO, MS, MT, NC, NE, NH, NJ, NM, NY, OH, OK, OR, PA, RI, SC, TN, TX, VA, WA, WI, WV, and WY.
+          <br><br>
+          <strong style="color:var(--text)">Not currently lending in:</strong> AK, AZ, CA, MN, ND, NV, SD, UT, and VT. Check back — coverage expands as we license into new markets.
+        </figcaption>
+      </figure>
     </div>
   </section>
 

@@ -152,6 +152,19 @@ p { margin: 0 0 var(--space-4) 0; }
 .card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .card-tinted { background: var(--neutral); border: 0; }
 
+/* ── Legal disclosure strip (top of every page) ────────────
+   Required company identifier ("a Sir Lends A Lot LLC Company").
+   Slim, dark, unmissable-but-not-loud. */
+.legal-strip {
+  background: var(--secondary);
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  padding: 6px 0;
+  letter-spacing: 0.02em;
+}
+.legal-strip .container { text-align: center; }
+.legal-strip strong { color: #fff; font-weight: 600; }
+
 /* ── Nav + Footer ──────────────────────────────────────────── */
 .site-nav {
   position: sticky; top: 0; z-index: 50;
