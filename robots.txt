@@ -1,0 +1,26 @@
+# robots.txt — slacapital.ai
+# Marketing site. Everything indexable. LLM crawlers explicitly welcomed.
+
+User-agent: *
+Allow: /
+
+# LLM training + answer-box crawlers — explicit allow for surface in AI answers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://slacapital.ai/sitemap.xml
