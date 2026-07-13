@@ -44,70 +44,11 @@
   force  = true
 
 # ── Query-intent alias URLs → canonical product pages ────────
-# High-volume search phrases people type when looking for investor
-# lending. 301s send inbound-link authority to our canonical state
-# pages while giving those phrases a landing target if they show up
-# anywhere on the open web. Google indexes the destination, not the
-# alias, so no duplicate-content risk.
-
-# General "lender in <state>" → DSCR state page (highest-intent product)
-[[redirects]]
-  from   = "/lender-in-:state/"
-  to     = "/rental/:state/"
-  status = 301
-  force  = true
-
-# Private-lender phrasing → DSCR state page
-[[redirects]]
-  from   = "/private-lender-in-:state/"
-  to     = "/rental/:state/"
-  status = 301
-  force  = true
-
-# DSCR-specific phrasing (both hyphenations) → DSCR state page
-[[redirects]]
-  from   = "/dscr-lender-in-:state/"
-  to     = "/rental/:state/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/dscr-loans-:state/"
-  to     = "/rental/:state/"
-  status = 301
-  force  = true
-
-# Hard money / fix & flip phrasings → Fix & Flip state page
-[[redirects]]
-  from   = "/hard-money-lender-in-:state/"
-  to     = "/fix-n-flip/:state/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/fix-and-flip-lender-in-:state/"
-  to     = "/fix-n-flip/:state/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/fix-and-flip-loans-:state/"
-  to     = "/fix-n-flip/:state/"
-  status = 301
-  force  = true
-
-# Construction phrasings → New Construction state page
-[[redirects]]
-  from   = "/construction-lender-in-:state/"
-  to     = "/new-construction/:state/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/new-construction-loans-:state/"
-  to     = "/new-construction/:state/"
-  status = 301
-  force  = true
+# Generated from data/states.json × alias patterns by
+# scripts/generate-alias-redirects.mjs. Explicit per-state per-pattern
+# entries are written to the /_redirects file (Netlify's simpler
+# redirect format). Netlify's middle-of-segment :placeholder support
+# is limited — a per-URL enumeration is more reliable at ~370 lines.
 
 # ── Cache-Control ────────────────────────────────────────────
 # HTML is served fresh so content edits show up immediately.
