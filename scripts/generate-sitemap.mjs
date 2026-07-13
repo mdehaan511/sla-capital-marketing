@@ -63,6 +63,7 @@ for (const post of BLOG_POSTS) {
 }
 
 // Static / legal / careers / apply
+urls.push({ loc: '/rates/',           priority: '0.8', changefreq: 'weekly',  lastmod: today });
 urls.push({ loc: '/apply/',           priority: '0.6', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/current-jobs/',    priority: '0.4', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/privacy-policy/',  priority: '0.3', changefreq: 'yearly',  lastmod: today });

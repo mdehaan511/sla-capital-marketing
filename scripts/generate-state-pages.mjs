@@ -149,6 +149,7 @@ function nav(activeProductSlug) {
         <li><a href="/rental/"${activeProductSlug === 'rental' ? ' style="color:var(--primary)"' : ''}>DSCR</a></li>
         <li><a href="/fix-n-flip/"${activeProductSlug === 'fix-n-flip' ? ' style="color:var(--primary)"' : ''}>Fix &amp; Flip</a></li>
         <li><a href="/new-construction/"${activeProductSlug === 'new-construction' ? ' style="color:var(--primary)"' : ''}>New Construction</a></li>
+        <li><a href="/rates/">Rates</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/current-jobs/">Careers</a></li>
         <li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li>

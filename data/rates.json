@@ -1,0 +1,59 @@
+{
+  "effectiveDate": "2026-07-12",
+  "note": "Single source of truth for rates published on /rates/. Edit here + regenerate the rates page. State pages still hardcode their own copies for now (SEO-safe cross-references); when they're due for a rate refresh, sync to these values.",
+  "products": [
+    {
+      "slug": "rental",
+      "name": "DSCR Rental Loans",
+      "shortName": "DSCR",
+      "term": "30-year fixed (also 5/6, 7/6, 10/6 ARM and 5-yr I/O)",
+      "rateFrom": "5.75%",
+      "rateRange": "5.75% – 8.50%",
+      "maxLTV": "80% purchase / 75% cash-out",
+      "loanSize": "$55K – $3M single-asset; portfolios of 2–10 properties on one loan",
+      "originationPoints": "1 point standard",
+      "seasoning": "3 months on cash-out refinances",
+      "minFICO": "660",
+      "dscrMin": "1.0 (Below-1.0 lane available with reserves or rate buy-up)",
+      "closeTime": "10-day average",
+      "url": "/rental/"
+    },
+    {
+      "slug": "fix-n-flip",
+      "name": "Fix & Flip Loans",
+      "shortName": "Fix & Flip",
+      "term": "6 – 18 months (bridge)",
+      "rateFrom": "9.5%",
+      "rateRange": "9.5% – 12%",
+      "maxLTV": "Up to 100% LTC for premier borrowers; 65–75% of ARV cap",
+      "loanSize": "$55K – $3M",
+      "originationPoints": "1 – 4 points",
+      "seasoning": "N/A (short-term bridge)",
+      "minFICO": "660",
+      "dscrMin": "N/A",
+      "closeTime": "As fast as 72 hours (average 7–10 days)",
+      "url": "/fix-n-flip/"
+    },
+    {
+      "slug": "new-construction",
+      "name": "New Construction Loans",
+      "shortName": "New Construction",
+      "term": "18 or 24 months",
+      "rateFrom": "10%",
+      "rateRange": "10% – 12%",
+      "maxLTV": "85% of land purchase + 85% of construction cost",
+      "loanSize": "$100K – $7.5M",
+      "originationPoints": "1 – 3 points",
+      "seasoning": "N/A (short-term construction)",
+      "minFICO": "680",
+      "dscrMin": "N/A",
+      "closeTime": "10-day average once permits + plans are in",
+      "url": "/new-construction/"
+    }
+  ],
+  "shared": {
+    "coverage": "42 states across the continental US",
+    "entities": "LLC / corporation / partnership (business-purpose loans)",
+    "pricingBasis": "Priced off the 5-year Treasury; up-front quote is the rate you close at — no bait-and-switch"
+  }
+}
