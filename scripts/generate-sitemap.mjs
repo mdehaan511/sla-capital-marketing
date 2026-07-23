@@ -35,6 +35,9 @@ const BLOG_POSTS = [
   'dscr-loans-explained',
   'arv-fix-and-flip-explained',
   'dscr-cash-out-seasoning',
+  'dscr-loan-requirements',
+  'hard-money-vs-dscr-loans',
+  'how-construction-draws-work',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
