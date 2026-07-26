@@ -73,7 +73,8 @@ export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border-radius:12px;overflow:hidden;font-family:Roboto,'Segoe UI',Arial,sans-serif">
 
   <tr><td style="background:#281D28;padding:24px 32px" align="left">
-    <img src="${SITE}/assets/logo.png" alt="SLA Capital" height="40" style="height:40px;width:auto;display:block" />
+    <!-- logo-alt = white-lettered variant; logo.png is invisible on the dark header -->
+    <img src="${SITE}/assets/logo-alt.png" alt="SLA Capital" height="40" style="height:40px;width:auto;display:block" />
   </td></tr>
 
   <tr><td style="padding:32px 32px 8px">
