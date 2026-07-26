@@ -4,6 +4,13 @@
   publish = "."
   functions = "netlify/functions"
 
+# ── Scheduled functions ─────────────────────────────────────
+# Weekly Brevo digest: prepared + queued every Monday 16:00 UTC
+# (9am PDT); the campaign itself is scheduled by the function to
+# send Tuesday 16:00 UTC. See netlify/functions/digest-prepare.mjs.
+[functions."digest-prepare"]
+  schedule = "0 16 * * 1"
+
 # ── 301 redirects for SEO continuity ────────────────────────
 # Preserve every URL that has inbound links from the current
 # WordPress build. Add new entries here as they surface.

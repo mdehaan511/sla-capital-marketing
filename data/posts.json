@@ -1,0 +1,47 @@
+{
+  "note": "Blog post manifest — feeds the weekly Brevo digest (netlify/functions/digest-prepare.mjs) and future blog tooling. Add an entry here whenever a post is published; datePublished drives the 'new this week' section of the digest.",
+  "posts": [
+    {
+      "slug": "dscr-loans-explained",
+      "title": "DSCR Loans Explained: How Qualification Actually Works",
+      "description": "The DSCR ratio, PITIA, and why the property's income — not yours — is what qualifies. How the below-1.0 lane works.",
+      "category": "DSCR",
+      "datePublished": "2026-07-11"
+    },
+    {
+      "slug": "arv-fix-and-flip-explained",
+      "title": "ARV in Fix & Flip Lending: What Lenders Actually Count",
+      "description": "How After-Repair Value gets underwritten. Comps vs appraisal, LTC vs LTV, and the ARV pitfalls that kill deals at approval.",
+      "category": "Fix & Flip",
+      "datePublished": "2026-07-11"
+    },
+    {
+      "slug": "dscr-cash-out-seasoning",
+      "title": "DSCR Cash-Out Refinance Seasoning: 3, 6, and 12 Months",
+      "description": "Why seasoning windows exist, what they cost investors, and how SLA's 3-month rule changes the BRRRR math.",
+      "category": "DSCR",
+      "datePublished": "2026-07-11"
+    },
+    {
+      "slug": "dscr-loan-requirements",
+      "title": "DSCR Loan Requirements: Credit, Down Payment, Reserves & Property Types",
+      "description": "The complete qualification checklist — credit tiers, LTV limits, reserves, eligible properties, and closing in an LLC.",
+      "category": "DSCR",
+      "datePublished": "2026-07-23"
+    },
+    {
+      "slug": "hard-money-vs-dscr-loans",
+      "title": "Hard Money vs. DSCR Loans: Which One Fits Your Deal?",
+      "description": "Two tools, two jobs. Rates, terms, and speed compared — plus the bridge-to-DSCR play that combines them.",
+      "category": "Strategy",
+      "datePublished": "2026-07-23"
+    },
+    {
+      "slug": "how-construction-draws-work",
+      "title": "How Construction Loan Draws Work: Schedules, Inspections & Getting Paid Fast",
+      "description": "The request → inspection → funding cycle, what stalls draws, and the drawn-balance interest term to check for.",
+      "category": "New Construction",
+      "datePublished": "2026-07-23"
+    }
+  ]
+}
