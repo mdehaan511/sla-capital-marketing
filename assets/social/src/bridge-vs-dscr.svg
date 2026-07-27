@@ -1,0 +1,15 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1080" height="1080" fill="#281D28"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#B8AFB8">Private lending for real estate investors</text>
+<text x="84" y="380" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#FFBC7D">Bridge vs DSCR</text>
+<text x="84" y="490" font-family="DejaVu Serif, Georgia, serif" font-size="72" font-weight="bold" fill="#FFFFFF">Hard money buys</text>
+<text x="84" y="575" font-family="DejaVu Serif, Georgia, serif" font-size="72" font-weight="bold" fill="#FFFFFF">the project.</text>
+<text x="84" y="680" font-family="DejaVu Serif, Georgia, serif" font-size="72" font-weight="bold" fill="#DA7238">DSCR holds</text>
+<text x="84" y="765" font-family="DejaVu Serif, Georgia, serif" font-size="72" font-weight="bold" fill="#DA7238">the property.</text>
+<text x="84" y="850" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#D9D2D9">Bridge &#8212; from 9.5% &#183; closes in as little as 72 hours</text>
+<text x="84" y="898" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#D9D2D9">DSCR &#8212; from 5.75% &#183; 30-year fixed</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#8F858F">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
