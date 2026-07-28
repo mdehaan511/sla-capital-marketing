@@ -121,7 +121,7 @@ function page(p) {
         </div>
         <div style="margin-bottom:16px">
           <label style="display:block;font-weight:600;margin-bottom:6px">Phone</label>
-          <input type="tel" id="rf-phone" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px" />
+          <input type="tel" id="rf-phone" placeholder="(509) 555-0123" autocomplete="tel" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px" />
         </div>
         <div style="margin-bottom:16px">
           <label style="display:block;font-weight:600;margin-bottom:6px">What are you financing?</label>
@@ -158,6 +158,19 @@ function page(p) {
 
   <script>
     var REF_SOURCE = 'referral-${p.slug}';
+    var REF_SLUG = '${p.slug}';
+    var PORTAL_TAG = '${p.portalTag || ''}';
+
+    // US phone auto-format: digits -> (XXX) XXX-XXXX as the user types.
+    document.getElementById('rf-phone').addEventListener('input', function () {
+      var d = this.value.replace(/\\D/g, '').slice(0, 10);
+      var out = d;
+      if (d.length > 6) out = '(' + d.slice(0, 3) + ') ' + d.slice(3, 6) + '-' + d.slice(6);
+      else if (d.length > 3) out = '(' + d.slice(0, 3) + ') ' + d.slice(3);
+      else if (d.length > 0) out = '(' + d;
+      this.value = out;
+    });
+
     document.getElementById('refForm').addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = document.getElementById('rf-btn');
@@ -170,7 +183,10 @@ function page(p) {
         email: document.getElementById('rf-email').value,
         phone: document.getElementById('rf-phone').value,
         message: 'Financing: ' + document.getElementById('rf-type').value + '\\n\\n' + document.getElementById('rf-msg').value,
-        source: REF_SOURCE
+        source: REF_SOURCE,
+        ref: REF_SLUG,
+        tag: PORTAL_TAG,
+        loanType: document.getElementById('rf-type').value
       };
       fetch('/api/lead-submit', {
         method: 'POST',
