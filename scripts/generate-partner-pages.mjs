@@ -1,0 +1,207 @@
+#!/usr/bin/env node
+/**
+ * generate-partner-pages.mjs — build co-branded referral landing pages
+ * from data/partners.json.
+ *
+ *   node scripts/generate-partner-pages.mjs
+ *
+ * One page per partner at /<slug>/index.html. Pages are:
+ *   - noindex (they're shared directly with the partner's audience;
+ *     we don't want them competing with product pages in search)
+ *   - NOT in the sitemap (same reason — don't add them there)
+ *   - lead-tracked: the on-page form posts to /api/lead-submit with
+ *     source "referral-<slug>", which tags the lead email's subject
+ *     line; the "full application" link carries ?ref=<slug> so the
+ *     portal can attribute it once ref-capture lands there.
+ */
+
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const REPO_ROOT = path.resolve(__dirname, '..');
+const { partners } = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'data', 'partners.json'), 'utf8'));
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function page(p) {
+  const applyUrl = `https://portal.slacapital.ai/apply.html?ref=${p.slug}&utm_source=${p.slug}&utm_medium=referral`;
+  const perkCards = p.perks.map(perk => `
+        <div class="card">
+          <h4 style="margin-top:0">${esc(perk.title)}</h4>
+          <p style="color:var(--muted);margin-bottom:0">${esc(perk.body)}</p>
+        </div>`).join('');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${esc(p.name)} + SLA Capital — Partner Lending Desk</title>
+  <meta name="description" content="Special approvals and priority lending for ${esc(p.name)} clients. DSCR, Fix &amp; Flip, and New Construction loans from SLA Capital." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://slacapital.ai/${p.slug}/" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="any" href="/assets/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SLA Capital" />
+  <meta property="og:title" content="${esc(p.name)} + SLA Capital — Partner Lending Desk" />
+  <meta property="og:description" content="Special approvals and priority lending for ${esc(p.shortName)} clients." />
+  <meta property="og:url" content="https://slacapital.ai/${p.slug}/" />
+  <meta property="og:image" content="https://slacapital.ai/assets/logo.png" />
+  <link rel="stylesheet" href="/assets/brand.css" />
+</head>
+<body>
+  <div class="legal-strip"><div class="container"><strong>SLA Capital</strong> — a Sir Lends A Lot LLC Company</div></div>
+
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a href="/" class="brand" style="display:inline-flex;align-items:center"><img src="/assets/logo.png" alt="SLA Capital" style="height:44px;width:auto" /></a>
+      <ul class="nav-links">
+        <li><a href="/rental/">DSCR</a></li>
+        <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
+        <li><a href="/new-construction/">New Construction</a></li>
+        <li><a href="/rates/">Rates</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="${applyUrl}" class="btn btn-primary">Apply Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CO-BRANDED HERO -->
+  <section class="section section-dark" style="padding-top:56px;padding-bottom:56px">
+    <div class="container" style="max-width:860px;text-align:center">
+      <div style="display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:32px">
+        <img src="/assets/logo-alt.png" alt="SLA Capital" style="height:56px;width:auto" />
+        <span style="font-size:34px;color:${p.accent};font-weight:700">&times;</span>
+        <img src="${p.logo}" alt="${esc(p.name)}" style="${p.logoStyle}" />
+      </div>
+      <div class="eyebrow" style="color:var(--highlight)">Preferred lending partner</div>
+      <h1 style="color:#fff;font-size:40px;line-height:1.2">${esc(p.heroLine)}</h1>
+      <p style="color:rgba(255,255,255,0.82);font-size:19px;max-width:680px;margin:16px auto 0">${esc(p.lede)}</p>
+      <div style="margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="#partner-form" class="btn btn-primary btn-lg">Get Your Partner Approval</a>
+        <a href="${applyUrl}" class="btn btn-ghost btn-lg" style="color:#fff;border-color:#fff">Skip to the Full Application</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERKS -->
+  <section class="section">
+    <div class="container" style="max-width:900px">
+      <div style="text-align:center;margin-bottom:40px">
+        <div class="eyebrow">The partner treatment</div>
+        <h2>What ${esc(p.shortName)} clients get at SLA Capital</h2>
+      </div>
+      <div class="grid grid-2" style="gap:24px">${perkCards}
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="section section-tinted" id="partner-form">
+    <div class="container" style="max-width:640px">
+      <div style="text-align:center;margin-bottom:32px">
+        <div class="eyebrow">Two minutes, no obligation</div>
+        <h2>Tell us about your deal.</h2>
+        <p style="color:var(--muted)">A loan officer from the ${esc(p.shortName)} partner desk will reach out the same business day. Prefer the full application? <a href="${applyUrl}">Start it here</a>.</p>
+      </div>
+      <form id="refForm" class="card" style="padding:28px">
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:6px">Name *</label>
+          <input type="text" id="rf-name" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px" />
+        </div>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:6px">Email *</label>
+          <input type="email" id="rf-email" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px" />
+        </div>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:6px">Phone</label>
+          <input type="tel" id="rf-phone" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px" />
+        </div>
+        <div style="margin-bottom:16px">
+          <label style="display:block;font-weight:600;margin-bottom:6px">What are you financing?</label>
+          <select id="rf-type" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px;background:#fff">
+            <option>DSCR rental</option>
+            <option>Fix &amp; Flip</option>
+            <option>New construction</option>
+            <option>Portfolio / multiple properties</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div style="margin-bottom:20px">
+          <label style="display:block;font-weight:600;margin-bottom:6px">Deal details <span style="font-weight:400;color:var(--muted)">(address, price, rehab budget — whatever you have)</span></label>
+          <textarea id="rf-msg" rows="4" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px;font-family:inherit"></textarea>
+        </div>
+        <button type="submit" id="rf-btn" class="btn btn-primary btn-lg" style="width:100%">Request My Partner Approval</button>
+        <p id="rf-err" style="display:none;color:var(--danger);margin:12px 0 0;text-align:center"></p>
+      </form>
+      <div id="refDone" class="card" style="display:none;padding:36px;text-align:center">
+        <h3 style="margin-top:0">Got it — you're in the partner queue. &#10003;</h3>
+        <p style="color:var(--muted)">A loan officer will reach out the same business day. Want a head start? <a href="${applyUrl}">Complete the full application now</a> and your term sheet gets moving immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <div>&copy; 2026 SLA Capital &middot; Sir Lends A Lot LLC &middot; All rights reserved.<br><span style="font-size:12px;color:rgba(255,255,255,0.55)">Sir Lends A Lot LLC &middot; 707 W Main Ave #31, Spokane, WA 99201 &middot; NMLS ID #2863552 &middot; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2863552" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7)">NMLS Consumer Access</a> &middot; Certified Member &#8212; <a href="https://aaplonline.com/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7)">American Association of Private Lenders (AAPL)</a></span><br><span style="font-size:12px;color:rgba(255,255,255,0.45)">SLA Capital is an independent lender. ${esc(p.name)} is a marketing partner and is not a lender, broker, or agent of SLA Capital.</span></div>
+        <div><a href="/privacy-policy/">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var REF_SOURCE = 'referral-${p.slug}';
+    document.getElementById('refForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = document.getElementById('rf-btn');
+      var err = document.getElementById('rf-err');
+      err.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Sending\\u2026';
+      var payload = {
+        name: document.getElementById('rf-name').value,
+        email: document.getElementById('rf-email').value,
+        phone: document.getElementById('rf-phone').value,
+        message: 'Financing: ' + document.getElementById('rf-type').value + '\\n\\n' + document.getElementById('rf-msg').value,
+        source: REF_SOURCE
+      };
+      fetch('/api/lead-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            document.getElementById('refForm').style.display = 'none';
+            document.getElementById('refDone').style.display = 'block';
+          } else {
+            throw new Error((res.j && res.j.error) || 'Something went wrong');
+          }
+        })
+        .catch(function (ex) {
+          err.textContent = (ex && ex.message ? ex.message : 'Something went wrong') + ' \\u2014 or email apply@slacapital.com directly.';
+          err.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Request My Partner Approval';
+        });
+    });
+  </script>
+</body>
+</html>
+`;
+}
+
+for (const p of partners) {
+  const dir = path.join(REPO_ROOT, p.slug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), page(p));
+  console.log(`✓ /${p.slug}/index.html written`);
+}
+console.log(`${partners.length} partner page(s) generated.`);

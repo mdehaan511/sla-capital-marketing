@@ -1,0 +1,23 @@
+{
+  "note": "Referral partner registry — one entry per co-branded landing page at slacapital.ai/<slug>/. Run scripts/generate-partner-pages.mjs after editing. Pages are noindex (shared directly with partner audiences, not for SEO). Leads submit through /api/lead-submit with source 'referral-<slug>' so the inbox subject line identifies the partner; the full-app link carries ?ref=<slug> for future portal-side tracking. Partner logos are self-hosted under /assets/partners/ (never hotlink).",
+  "partners": [
+    {
+      "slug": "easybutton",
+      "name": "Easy Button Real Estate",
+      "shortName": "Easy Button",
+      "logo": "/assets/partners/easybutton-logo.png",
+      "logoStyle": "height:64px;width:auto",
+      "site": "https://easybuttonrealestate.com",
+      "accent": "#eb4d4d",
+      "audience": "investors",
+      "heroLine": "Easy Button clients get the easy button for financing, too.",
+      "lede": "SLA Capital is the preferred lending partner of Easy Button Real Estate. If you're building your investing business with Easy Button, your deals get partner-priority treatment here — special approvals, a dedicated loan officer, and the fastest closings in private lending.",
+      "perks": [
+        { "title": "Partner-priority approvals", "body": "Easy Button files go to the front of the underwriting queue. Special approval consideration on deals that need a human look instead of a rubber stamp." },
+        { "title": "A dedicated loan officer", "body": "One point of contact who knows the Easy Button playbook — not a call center. Your LO sees your deal the way you do." },
+        { "title": "The full investor menu", "body": "DSCR rentals from 5.75% with 3-month cash-out seasoning, Fix & Flip from 9.5% at up to 92.5% LTC with 72-hour closings, and New Construction from 10% at 85% LTC." },
+        { "title": "No bait-and-switch, ever", "body": "The rate you're quoted is the rate you close at. No application fees, no appraisal fees, no junk. That's the whole brand." }
+      ]
+    }
+  ]
+}
