@@ -149,7 +149,7 @@ const html = `<!DOCTYPE html>
   <meta property="og:title" content="Current Loan Rates — DSCR, Fix &amp; Flip, New Construction | SLA Capital" />
   <meta property="og:description" content="Investor loan rates effective ${fmtEffective(eff)}. Priced off the 5-year Treasury with transparent up-front quotes." />
   <meta property="og:url" content="https://slacapital.ai/rates/" />
-  <meta property="og:image" content="https://slacapital.ai/assets/logo.png" />
+  <meta property="og:image" content="https://slacapital.ai/assets/og/rates.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/assets/brand.css" />
 
