@@ -1,11 +1,12 @@
 {
-  "note": "Approved social post queue. The Tue/Thu/Sat publisher task posts the entry matching today's date with status 'approved', then sets status to 'posted'. The Monday drafting task appends next week's entries as 'pending' for Mike's review. LinkedIn company id 34322907 (no parentheses in comment text); Facebook page id 629924873543708 (pass raw id — Zapier's page dropdown is broken); Instagram caption links are not clickable, cards live at https://slacapital.ai/assets/social/.",
+  "note": "Approved social post queue. The Tue/Thu/Sat publisher task posts the entry matching today's date with status 'approved', then sets status to 'posted'. The Monday drafting task appends next week's entries as 'pending' for Mike's review. LinkedIn company id 34322907 (no parentheses in comment text); Facebook page id 629924873543708 (pass raw id — Zapier's page dropdown is broken); Instagram caption links are not clickable, cards live at https://slacapital.ai/assets/social/. Card design variants rotate plum → orange → light (see 'variant' field); every new/changed card design gets a NEW filename — assets are cached immutable for a year and Meta caches by URL, so never reuse a filename for different artwork.",
   "queue": [
     {
       "date": "2026-07-28",
       "status": "posted",
       "theme": "3-month seasoning / BRRRR",
       "card": "seasoning-3-month.png",
+      "variant": "plum",
       "link": "https://slacapital.ai/blog/dscr-cash-out-seasoning/",
       "li_title": "DSCR Cash-Out Refinance Seasoning: 3, 6, and 12 Months",
       "li_desc": "Why seasoning windows exist, what they cost investors, and how the 3-month rule changes BRRRR math.",
@@ -17,7 +18,8 @@
       "date": "2026-07-30",
       "status": "approved",
       "theme": "Hard money vs DSCR",
-      "card": "bridge-vs-dscr.png",
+      "card": "bridge-vs-dscr-orange.png",
+      "variant": "orange",
       "link": "https://slacapital.ai/blog/hard-money-vs-dscr-loans/",
       "li_title": "Hard Money vs. DSCR Loans: Which One Fits Your Deal?",
       "li_desc": "Two tools, two jobs — and the bridge-to-DSCR play that combines them.",
@@ -29,7 +31,8 @@
       "date": "2026-08-01",
       "status": "approved",
       "theme": "Rates posted publicly",
-      "card": "rates-public.png",
+      "card": "rates-public-light.png",
+      "variant": "light",
       "link": "https://slacapital.ai/rates/",
       "li_title": "Current Rates | SLA Capital",
       "li_desc": "DSCR, Fix and Flip, and New Construction rates — published, current, and honored at closing.",
