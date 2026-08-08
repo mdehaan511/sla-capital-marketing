@@ -14,6 +14,9 @@ const PAGES = [
   { slug: 'how-construction-draws-work', eyebrow: 'Investor guide · Construction',    l1: 'How construction',         l2: 'draws work.' },
   { slug: 'rates',                       eyebrow: 'Always public',                    l1: 'Rates. Posted.',           l2: 'Publicly.' },
   { slug: 'careers',                     eyebrow: 'Now hiring · Loan Officer',        l1: 'Bring the hustle.',        l2: 'We bring the machine.' },
+  { slug: 'dscr-loans-for-airbnb',       eyebrow: 'Investor guide · DSCR',            l1: 'DSCR loans for',           l2: 'Airbnb &amp; STRs.' },
+  { slug: 'fix-and-flip-loans-for-beginners', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'Your first flip,',      l2: 'financed.' },
+  { slug: 'llc-rental-property-loans',   eyebrow: 'Investor guide · Entity lending',  l1: 'Buying rentals',           l2: 'in an LLC.' },
 ];
 
 function svg(p) {

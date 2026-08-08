@@ -42,14 +42,14 @@ const PRODUCTS = {
     label: 'DSCR',
     fullLabel: 'DSCR Rental Loans',
     parentUrl: '/rental/',
-    heroPromise: '30-Year Fixed from 5.75%',
-    heroBody: (s) => `Long-term rental financing for investment properties across ${s.name} — qualified off the property's income, not your personal DTI. <strong>30-year fixed from 5.75%</strong>, up to <strong>80% LTV</strong>, and only <strong>3 months of seasoning</strong> on cash-out refinances. SLA Capital has closed deals across every major ${s.name} metro.`,
+    heroPromise: '30-Year Fixed from 5.95%',
+    heroBody: (s) => `Long-term rental financing for investment properties across ${s.name} — qualified off the property's income, not your personal DTI. <strong>30-year fixed from 5.95%</strong>, up to <strong>80% LTV</strong>, and only <strong>3 months of seasoning</strong> on cash-out refinances. SLA Capital has closed deals across every major ${s.name} metro.`,
     definitionH2: 'What is a DSCR loan?',
     definitionBody: `A <strong>DSCR loan</strong> — short for Debt Service Coverage Ratio — is an investor mortgage that qualifies off the property's rental income rather than the borrower's personal income or debt-to-income ratio. If the property's rent covers the total housing payment (principal, interest, taxes, insurance, and HOA), the loan qualifies. Self-employed investors, LLC-title borrowers, and anyone with complex tax returns can build a rental portfolio without W-2 gymnastics.`,
     specsHeading: 'DSCR loan terms.',
     specsIntro: 'Same nationwide program, no state-specific surcharges.',
     specs: [
-      { chip: 'Pricing',       h: 'Rates from 5.75%',  p: 'Priced off the 5-year Treasury. Real quote in minutes via our loan sizer — no bait-and-switch at close.' },
+      { chip: 'Pricing',       h: 'Rates from 5.95%',  p: 'Priced off the 5-year Treasury. Real quote in minutes via our loan sizer — no bait-and-switch at close.' },
       { chip: 'Leverage',      h: 'Up to 80% LTV',      p: 'Purchase and rate-and-term refis up to 80% LTV. Cash-out refis with 3-month seasoning — no lease required.' },
       { chip: 'Structures',    h: 'Multiple options',   p: '30-year fixed, 5-year interest-only, 5/1 ARM, 7/1 ARM.' },
       { chip: 'Size',          h: '$100K to $3M',        p: (s) => `Single-asset from $100K to $3M. Portfolio structures for 2–10 ${s.name} properties on one note.` },
@@ -60,13 +60,13 @@ const PRODUCTS = {
     amountSchema: { min: 100000, max: 3000000 },
     ctaHeading: (s) => `Ready to size a ${s.name} DSCR loan?`,
     faq: (s) => [
-      { q: `Does SLA Capital lend on rental properties in ${s.name}?`, a: `Yes. SLA Capital funds DSCR rental loans throughout ${s.name} — ${s.metros.slice(0, 5).map(m => m.name).join(', ')}, and every other ${s.abbr} metro. Rates from <strong>5.75%</strong>, up to 80% LTV.` },
-      { q: `What DSCR loan rates are available in ${s.name}?`, a: `${s.name} DSCR loans start at <strong>5.75%</strong> on a 30-year fixed structure. Priced off the 5-year Treasury with transparent up-front pricing — the rate you're quoted is the rate you close at.` },
+      { q: `Does SLA Capital lend on rental properties in ${s.name}?`, a: `Yes. SLA Capital funds DSCR rental loans throughout ${s.name} — ${s.metros.slice(0, 5).map(m => m.name).join(', ')}, and every other ${s.abbr} metro. Rates from <strong>5.95%</strong>, up to 80% LTV.` },
+      { q: `What DSCR loan rates are available in ${s.name}?`, a: `${s.name} DSCR loans start at <strong>5.95%</strong> on a 30-year fixed structure. Priced off the 5-year Treasury with transparent up-front pricing — the rate you're quoted is the rate you close at.` },
       { q: `What ${s.name} metros does SLA Capital serve?`, a: `Every ${s.name} metro. High-volume markets: ${s.metros.slice(0, 5).map(m => m.name).join(', ')}. Secondary markets welcome.` },
       { q: `Is ${s.name} a good state for rental property investors?`, a: s.whyInvestor },
       { q: `How long is seasoning on a ${s.name} DSCR cash-out refinance?`, a: `<strong>3 months.</strong> Only 3 months of ownership seasoning is required for cash-out refinances on ${s.name} DSCR loans, and no active lease is required at closing.` },
     ],
-    schemaDesc: (s) => `30-year fixed DSCR rental loan for investment properties in ${s.name}. Rates from 5.75%, up to 80% LTV, 3-month cash-out seasoning. Serving every major ${s.name} metro.`,
+    schemaDesc: (s) => `30-year fixed DSCR rental loan for investment properties in ${s.name}. Rates from 5.95%, up to 80% LTV, 3-month cash-out seasoning. Serving every major ${s.name} metro.`,
   },
 
   fixNFlip: {
@@ -239,7 +239,7 @@ function otherProductsCrossLinks(currentProductKey, state) {
   const cards = others.map(([key, p]) => {
     const chip = key === 'dscr' ? '30-year fixed' : key === 'fixNFlip' ? 'Bridge' : 'Ground-up';
     const oneLiner = key === 'dscr'
-      ? `Long-term rental financing for ${state.name} investors. Rates from 5.75%, up to 80% LTV, 3-month seasoning on cash-outs.`
+      ? `Long-term rental financing for ${state.name} investors. Rates from 5.95%, up to 80% LTV, 3-month seasoning on cash-outs.`
       : key === 'fixNFlip'
         ? `Short-term purchase + rehab financing across every ${state.name} metro. Rates 9.5–12%. Up to 100% LTC for premier borrowers.`
         : `Ground-up construction loans for ${state.name} builders. 85% land + 85% build. $100K–$7.5M.`;

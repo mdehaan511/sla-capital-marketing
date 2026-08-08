@@ -38,6 +38,9 @@ const BLOG_POSTS = [
   'dscr-loan-requirements',
   'hard-money-vs-dscr-loans',
   'how-construction-draws-work',
+  'dscr-loans-for-airbnb',
+  'fix-and-flip-loans-for-beginners',
+  'llc-rental-property-loans',
 ];
 
 const today = new Date().toISOString().slice(0, 10);

@@ -42,6 +42,27 @@
       "description": "The request → inspection → funding cycle, what stalls draws, and the drawn-balance interest term to check for.",
       "category": "New Construction",
       "datePublished": "2026-07-23"
+    },
+    {
+      "slug": "dscr-loans-for-airbnb",
+      "title": "DSCR Loans for Airbnb & Short-Term Rentals: How Financing Actually Works",
+      "description": "How lenders qualify STR income, why market rent is the conservative anchor, and the STR-specific traps to avoid.",
+      "category": "DSCR",
+      "datePublished": "2026-08-08"
+    },
+    {
+      "slug": "fix-and-flip-loans-for-beginners",
+      "title": "Fix & Flip Loans for Beginners: Financing Your First Deal",
+      "description": "What lenders expect from a first-timer, realistic leverage, the draw process, and the four mistakes that sink first flips.",
+      "category": "Fix & Flip",
+      "datePublished": "2026-08-08"
+    },
+    {
+      "slug": "llc-rental-property-loans",
+      "title": "Buying Rental Property in an LLC: How Investor Loans Actually Close",
+      "description": "Why investors close in an entity, the personal guaranty, the five documents that make an LLC close fast, and the conventional-loan trap.",
+      "category": "Entity Lending",
+      "datePublished": "2026-08-08"
     }
   ]
 }

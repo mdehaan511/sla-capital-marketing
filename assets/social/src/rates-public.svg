@@ -8,9 +8,10 @@
 <text x="84" y="360" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#DA7238">Current rates &#8212; always public</text>
 <text x="84" y="470" font-family="DejaVu Serif, Georgia, serif" font-size="96" font-weight="bold" fill="#281D28">Rates. Posted.</text>
 <text x="84" y="580" font-family="DejaVu Serif, Georgia, serif" font-size="96" font-weight="bold" fill="#281D28">Publicly.</text>
-<text x="84" y="690" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">DSCR rentals &#8212; <tspan fill="#DA7238" font-weight="bold">from 5.75%</tspan></text>
+<text x="84" y="690" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">DSCR rentals &#8212; <tspan fill="#DA7238" font-weight="bold">from 5.95%</tspan></text>
 <text x="84" y="748" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">Fix &amp; Flip &#8212; <tspan fill="#DA7238" font-weight="bold">from 9.5%</tspan></text>
 <text x="84" y="806" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">New construction &#8212; <tspan fill="#DA7238" font-weight="bold">from 10%</tspan></text>
-<text x="84" y="890" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#6b6470">The rate you&#8217;re quoted is the rate you close at.</text>
+<text x="84" y="880" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#6b6470">The rate you&#8217;re quoted is the rate you close at.</text>
+<text x="84" y="922" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#9A929A">DSCR from-rate: highest credit tier, LTV below 60%.</text>
 <text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#9A929A">slacapital.ai/rates &#183; NMLS #2863552</text>
 </svg>

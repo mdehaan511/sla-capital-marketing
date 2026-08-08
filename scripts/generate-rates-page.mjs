@@ -46,7 +46,7 @@ const tableRows = products.map(p => `
           <td style="padding:14px 16px;border-top:1px solid var(--border);font-weight:600;color:var(--secondary)">
             <a href="${esc(p.url)}" style="color:var(--secondary);text-decoration:none;border-bottom:1px dotted var(--muted)">${esc(p.name)}</a>
           </td>
-          <td style="padding:14px 16px;border-top:1px solid var(--border);font-family:var(--font-display);font-size:20px;color:var(--primary);font-weight:600">from ${esc(p.rateFrom)}</td>
+          <td style="padding:14px 16px;border-top:1px solid var(--border);font-family:var(--font-display);font-size:20px;color:var(--primary);font-weight:600">from ${esc(p.rateFrom)}${p.rateNote ? `<div style="font-family:var(--font-body);font-size:11px;font-weight:400;color:var(--muted);line-height:1.4">${esc(p.rateNote)}</div>` : ''}</td>
           <td style="padding:14px 16px;border-top:1px solid var(--border);color:var(--muted)">${esc(p.rateRange)}</td>
           <td style="padding:14px 16px;border-top:1px solid var(--border);color:var(--muted)">${esc(p.term)}</td>
           <td style="padding:14px 16px;border-top:1px solid var(--border);color:var(--muted)">${esc(p.maxLTV)}</td>
@@ -56,7 +56,8 @@ const detailCards = products.map(p => `
       <div class="card">
         <div class="chip" style="margin-bottom:14px">${esc(p.shortName)}</div>
         <h3><a href="${esc(p.url)}" style="color:var(--secondary);text-decoration:none">${esc(p.name)}</a></h3>
-        <div style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--primary);line-height:1;margin:14px 0 4px">from ${esc(p.rateFrom)}</div>
+        <div style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--primary);line-height:1;margin:14px 0 4px">from ${esc(p.rateFrom)}</div>${p.rateNote ? `
+        <div style="font-size:11px;color:var(--muted);margin-bottom:2px">${esc(p.rateNote)}</div>` : ''}
         <div style="color:var(--muted);font-size:13px;margin-bottom:20px">Range: ${esc(p.rateRange)}</div>
         <table style="width:100%;font-size:13px;border-collapse:collapse">
           <tbody>
@@ -103,7 +104,7 @@ const jsonLdFaq = {
       name: 'What are SLA Capital\'s current investor loan rates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `DSCR rental loans from ${products.find(p => p.slug === 'rental')?.rateFrom || '5.75%'} (30-year fixed). Fix & Flip bridge from ${products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%'} (6–18 months). New Construction from ${products.find(p => p.slug === 'new-construction')?.rateFrom || '10%'} (18 or 24 months). Rates effective ${fmtEffective(eff)} and priced off the 5-year Treasury.`,
+        text: `DSCR rental loans from ${products.find(p => p.slug === 'rental')?.rateFrom || '5.95%'} (30-year fixed). Fix & Flip bridge from ${products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%'} (6–18 months). New Construction from ${products.find(p => p.slug === 'new-construction')?.rateFrom || '10%'} (18 or 24 months). Rates effective ${fmtEffective(eff)} and priced off the 5-year Treasury.`,
       },
     },
     {
@@ -139,7 +140,7 @@ const html = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Current Loan Rates — DSCR, Fix &amp; Flip, New Construction | SLA Capital</title>
-  <meta name="description" content="SLA Capital current investor loan rates effective ${fmtEffective(eff)}. DSCR from ${esc(products.find(p => p.slug === 'rental')?.rateFrom || '5.75%')}. Fix &amp; Flip from ${esc(products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%')}. New Construction from ${esc(products.find(p => p.slug === 'new-construction')?.rateFrom || '10%')}. The rate you're quoted is the rate you close at." />
+  <meta name="description" content="SLA Capital current investor loan rates effective ${fmtEffective(eff)}. DSCR from ${esc(products.find(p => p.slug === 'rental')?.rateFrom || '5.95%')}. Fix &amp; Flip from ${esc(products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%')}. New Construction from ${esc(products.find(p => p.slug === 'new-construction')?.rateFrom || '10%')}. The rate you're quoted is the rate you close at." />
   <link rel="canonical" href="https://slacapital.ai/rates/" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="any" href="/assets/favicon.png" />
