@@ -1,0 +1,18 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant A: plum background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: DSCR for Airbnb / short-term rentals (blog/dscr-loans-for-airbnb). -->
+<rect width="1080" height="1080" fill="#281D28"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#B8AFB8">Private lending for real estate investors</text>
+<text x="84" y="350" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#FFBC7D">DSCR for short-term rentals</text>
+<text x="84" y="455" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">We underwrite</text>
+<text x="84" y="555" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">market rent.</text>
+<text x="84" y="655" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">You keep the rest.</text>
+<text x="84" y="745" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#D9D2D9">Your Airbnb qualifies on the appraiser&#8217;s</text>
+<text x="84" y="795" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#D9D2D9">long-term market rent. No host history.</text>
+<rect x="84" y="850" width="330" height="86" rx="14" fill="#DA7238"/>
+<text x="249" y="906" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF">Read the guide</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#8F858F">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
