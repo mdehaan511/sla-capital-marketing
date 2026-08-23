@@ -42,6 +42,8 @@ const BLOG_POSTS = [
   'fix-and-flip-loans-for-beginners',
   'llc-rental-property-loans',
   'brrrr-method-financing',
+  'dscr-vs-conventional-mortgage',
+  'spec-home-construction-loans',
 ];
 
 const today = new Date().toISOString().slice(0, 10);

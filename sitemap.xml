@@ -829,6 +829,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://slacapital.ai/blog/dscr-vs-conventional-mortgage/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://slacapital.ai/blog/spec-home-construction-loans/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://slacapital.ai/rates/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
