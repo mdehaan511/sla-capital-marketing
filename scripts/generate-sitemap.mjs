@@ -41,6 +41,7 @@ const BLOG_POSTS = [
   'dscr-loans-for-airbnb',
   'fix-and-flip-loans-for-beginners',
   'llc-rental-property-loans',
+  'brrrr-method-financing',
 ];
 
 const today = new Date().toISOString().slice(0, 10);

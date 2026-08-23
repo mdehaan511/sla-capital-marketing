@@ -17,6 +17,9 @@ const PAGES = [
   { slug: 'dscr-loans-for-airbnb',       eyebrow: 'Investor guide · DSCR',            l1: 'DSCR loans for',           l2: 'Airbnb &amp; STRs.' },
   { slug: 'fix-and-flip-loans-for-beginners', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'Your first flip,',      l2: 'financed.' },
   { slug: 'llc-rental-property-loans',   eyebrow: 'Investor guide · Entity lending',  l1: 'Buying rentals',           l2: 'in an LLC.' },
+  { slug: 'brrrr-method-financing', eyebrow: 'Investor guide · Strategy', l1: 'BRRRR financing:', l2: 'the two-loan playbook.' },
+  { slug: 'dscr-vs-conventional-mortgage', eyebrow: 'Investor guide · DSCR', l1: 'DSCR vs. conventional:', l2: 'which fits investors?' },
+  { slug: 'spec-home-construction-loans', eyebrow: 'Investor guide · Construction', l1: 'Spec home loans,', l2: 'ground-up.' },
 ];
 
 function svg(p) {
