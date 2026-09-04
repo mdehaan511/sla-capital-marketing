@@ -13,7 +13,7 @@
       "maxLTV": "80% purchase / 75% cash-out",
       "loanSize": "$100K – $3M single-asset; portfolios of 2–10 properties on one loan",
       "originationPoints": "1 point standard",
-      "seasoning": "3 months on cash-out refinances",
+      "seasoning": "6 months on cash-out refinances",
       "minFICO": "660",
       "dscrMin": "1.0 (Below-1.0 lane available with reserves or rate buy-up)",
       "closeTime": "10-day average",

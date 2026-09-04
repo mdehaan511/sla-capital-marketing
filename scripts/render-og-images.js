@@ -8,7 +8,7 @@ fs.mkdirSync(OUT, { recursive: true });
 const PAGES = [
   { slug: 'dscr-loans-explained',        eyebrow: 'Investor guide · DSCR',            l1: 'DSCR loans,',              l2: 'explained.' },
   { slug: 'arv-fix-and-flip-explained',  eyebrow: 'Investor guide · Fix &amp; Flip',  l1: 'ARV: what lenders',        l2: 'actually count.' },
-  { slug: 'dscr-cash-out-seasoning',     eyebrow: 'Investor guide · DSCR',            l1: '3-month cash-out',         l2: 'seasoning.' },
+  { slug: 'dscr-cash-out-seasoning-v2',  eyebrow: 'Investor guide · DSCR',            l1: 'Cash-out seasoning:',      l2: '3, 6, and 12 months.' },
   { slug: 'dscr-loan-requirements',      eyebrow: 'Investor guide · DSCR',            l1: 'DSCR loan requirements:',  l2: 'the full checklist.' },
   { slug: 'hard-money-vs-dscr-loans',    eyebrow: 'Investor guide · Strategy',        l1: 'Hard money vs. DSCR:',     l2: 'which fits your deal?' },
   { slug: 'how-construction-draws-work', eyebrow: 'Investor guide · Construction',    l1: 'How construction',         l2: 'draws work.' },
