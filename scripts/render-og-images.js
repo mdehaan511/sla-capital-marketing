@@ -20,6 +20,10 @@ const PAGES = [
   { slug: 'brrrr-method-financing', eyebrow: 'Investor guide · Strategy', l1: 'BRRRR financing:', l2: 'the two-loan playbook.' },
   { slug: 'dscr-vs-conventional-mortgage', eyebrow: 'Investor guide · DSCR', l1: 'DSCR vs. conventional:', l2: 'which fits investors?' },
   { slug: 'spec-home-construction-loans', eyebrow: 'Investor guide · Construction', l1: 'Spec home loans,', l2: 'ground-up.' },
+  { slug: 'how-to-choose-a-dscr-lender', eyebrow: 'Investor guide · DSCR', l1: 'Choosing a DSCR lender:', l2: '12 questions to ask.' },
+  { slug: 'dscr-calculator', eyebrow: 'Investor tool · DSCR', l1: 'Calculate your DSCR', l2: 'in seconds.' },
+  { slug: 'faq', eyebrow: 'Straight answers', l1: 'Investor lending,', l2: 'answered.' },
+  { slug: 'glossary', eyebrow: 'Plain English', l1: 'The investor lending', l2: 'vocabulary.' },
 ];
 
 function svg(p) {

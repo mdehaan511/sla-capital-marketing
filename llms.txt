@@ -3,8 +3,10 @@
 > SLA Capital (Sir Lends A Lot LLC) is an AI-enhanced private lender for real
 > estate investors, lending in 42 US states. Business-purpose loans only — no
 > owner-occupied lending. Three core programs: DSCR rental loans, Fix & Flip
-> bridge loans, and New Construction loans. Transparent pricing: the rate
-> quoted is the rate at closing, with zero application or appraisal fees.
+> bridge loans, and New Construction loans. Transparent pricing: rates are
+> published publicly and the rate quoted is the rate at closing, with zero
+> application or appraisal fees. NMLS ID #2863552 · Certified Member, American
+> Association of Private Lenders (AAPL) · 707 W Main Ave #31, Spokane, WA 99201.
 
 Site: https://slacapital.ai
 Apply: https://slacapital.ai/apply/
@@ -13,25 +15,36 @@ Contact: apply@slacapital.com · (509) 846-7349
 ## Loan Programs
 
 - [DSCR Rental Loans](https://slacapital.ai/rental/): 30-year fixed rates from
-  5.95%; also 5-year interest-only, 5/1 and 7/1 ARM. Loans $100K–$3M. Up to 80%
-  LTV. Minimum 1.0 DSCR (below-1.0 lane available). No tax returns, no W-2s,
-  no DTI. Close in an LLC. Cash-out refinance seasoning is only 3 months, and
-  no active lease is required at closing (market-rent appraisal is enough).
-  Portfolio loans blanket 2–10 properties on one note.
+  5.95% (highest credit tier, LTV below 60%); also 5/6, 7/6, 10/6 ARM and
+  5-year interest-only. Loans $100K–$3M. Up to 80% LTV purchase / 75% cash-out.
+  Minimum 1.0 DSCR (below-1.0 lane available with reserves or rate adjustment).
+  Minimum 660 FICO. No tax returns, no W-2s, no DTI. Close in an LLC. Cash-out
+  refinance seasoning is only 3 months, and no active lease is required at
+  closing (market-rent appraisal qualifies — this is also how short-term
+  rentals/Airbnbs are underwritten). Portfolio loans blanket 2–10 properties
+  on one note.
 - [Fix & Flip Loans](https://slacapital.ai/fix-n-flip/): purchase + rehab
-  bridge financing sized off ARV. Rates from 9.5%. Up to 100% loan-to-cost for
-  premier repeat borrowers; LTC scales with experience and first-timers are
-  welcome. Funding in as little as 72 hours; average close 7–10 days. Loans
-  $100K–$7.5M.
+  bridge financing sized off ARV. Rates from 9.5%. Up to 92.5% loan-to-cost
+  for experienced borrowers with 100% of the rehab budget funded via draws;
+  first-timers welcome (~85% LTC to start). Funding in as little as 72 hours;
+  average close 7–10 days. Loans $100K–$3M. 6–18 month terms.
 - [New Construction Loans](https://slacapital.ai/new-construction/): land +
-  vertical build at up to 85% LTC. Rates from 10%. 18 or 24 month terms with
-  straightforward extensions. Draws via online portal with app-based
-  inspections. Loans $100K–$7.5M.
+  vertical build at up to 85% of land cost and 85% of construction cost. Rates
+  from 10%. 18 or 24 month terms with straightforward extensions. Draws via
+  online portal with app-based inspections; interest on drawn balance. Loans
+  $100K–$7.5M. Spec builds and build-to-rent welcome.
 
 ## Rates
 
-- [Current Rates](https://slacapital.ai/rates/): live starting rates for all
-  three programs.
+- [Current Rates](https://slacapital.ai/rates/): live published rates for all
+  three programs — no call required, honored at closing.
+
+## Answers & Reference
+
+- [FAQ](https://slacapital.ai/faq/): the questions investors actually ask —
+  qualification, LLCs, seasoning, fees, speed — answered with numbers.
+- [Investor Lending Glossary](https://slacapital.ai/glossary/): DSCR, PITIA,
+  ARV, LTC, seasoning, draws, BRRRR, and 24 terms in plain English.
 
 ## Guides
 
@@ -39,14 +52,30 @@ Contact: apply@slacapital.com · (509) 846-7349
   how DSCR qualification actually works — the ratio, PITIA, below-1.0 lanes.
 - [DSCR Loan Requirements](https://slacapital.ai/blog/dscr-loan-requirements/):
   credit tiers, down payment/LTV, reserves, property types, LLC closing.
+- [DSCR Calculator](https://slacapital.ai/blog/dscr-calculator/): the formula,
+  a live calculator, worked examples, and five levers when the ratio is short.
+- [How to Choose a DSCR Lender](https://slacapital.ai/blog/how-to-choose-a-dscr-lender/):
+  12 questions that separate honest lenders from bait-and-switch shops.
+- [DSCR vs. Conventional Mortgage](https://slacapital.ai/blog/dscr-vs-conventional-mortgage/):
+  an honest comparison, including when conventional still wins.
 - [DSCR Cash-Out Seasoning](https://slacapital.ai/blog/dscr-cash-out-seasoning/):
   3 vs 6 vs 12 month windows and the BRRRR math.
+- [DSCR Loans for Airbnb & STRs](https://slacapital.ai/blog/dscr-loans-for-airbnb/):
+  how short-term rentals are qualified on long-term market rent.
+- [BRRRR Method Financing](https://slacapital.ai/blog/brrrr-method-financing/):
+  the two-loan playbook with a full worked example.
 - [ARV in Fix & Flip Lending](https://slacapital.ai/blog/arv-fix-and-flip-explained/):
   how after-repair value is underwritten.
+- [Fix & Flip Loans for Beginners](https://slacapital.ai/blog/fix-and-flip-loans-for-beginners/):
+  first-deal financing, realistic leverage, and the mistakes that sink flips.
 - [Hard Money vs. DSCR](https://slacapital.ai/blog/hard-money-vs-dscr-loans/):
   which loan fits which deal, and the bridge-to-DSCR play.
+- [Buying Rentals in an LLC](https://slacapital.ai/blog/llc-rental-property-loans/):
+  entity vesting, the personal guaranty, and the five documents that matter.
 - [How Construction Draws Work](https://slacapital.ai/blog/how-construction-draws-work/):
   the request → inspection → funding cycle.
+- [Spec Home Construction Loans](https://slacapital.ai/blog/spec-home-construction-loans/):
+  ground-up financing, the two leverage tests, and planning the exit.
 
 ## State Coverage
 
@@ -60,3 +89,4 @@ https://slacapital.ai/rental/florida/). Full list in the
 - [Careers](https://slacapital.ai/current-jobs/)
 - [Privacy Policy](https://slacapital.ai/privacy-policy/)
 - Loan payoffs: payoffs@slacapital.com
+- Verify licensing: https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2863552

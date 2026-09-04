@@ -44,6 +44,8 @@ const BLOG_POSTS = [
   'brrrr-method-financing',
   'dscr-vs-conventional-mortgage',
   'spec-home-construction-loans',
+  'how-to-choose-a-dscr-lender',
+  'dscr-calculator',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
@@ -72,6 +74,8 @@ for (const post of BLOG_POSTS) {
 }
 
 // Static / legal / careers / apply
+urls.push({ loc: '/faq/',            priority: '0.7', changefreq: 'monthly', lastmod: today });
+urls.push({ loc: '/glossary/',       priority: '0.7', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/rates/',           priority: '0.8', changefreq: 'weekly',  lastmod: today });
 urls.push({ loc: '/apply/',           priority: '0.6', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/current-jobs/',    priority: '0.4', changefreq: 'monthly', lastmod: today });

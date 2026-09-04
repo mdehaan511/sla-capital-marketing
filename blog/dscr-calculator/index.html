@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSCR Calculator: The Formula, a Live Calculator, and What Lenders Count | SLA Capital</title>
+  <meta name="description" content="Calculate your DSCR in seconds with a live calculator, learn the exact formula (rent ÷ PITIA), see worked examples at 0.95, 1.0, and 1.25, and what to do when the ratio comes up short." />
+  <link rel="canonical" href="https://slacapital.ai/blog/dscr-calculator/" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="any" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="SLA Capital" />
+  <meta property="og:title" content="DSCR Calculator: The Formula, a Live Calculator, and What Lenders Count" />
+  <meta property="og:description" content="Rent ÷ PITIA, a live calculator, worked examples, and what to do when the ratio comes up short." />
+  <meta property="og:url" content="https://slacapital.ai/blog/dscr-calculator/" />
+  <meta property="og:image" content="https://slacapital.ai/assets/og/dscr-calculator.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/assets/brand.css" />
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"DSCR Calculator: The Formula, a Live Calculator, and What Lenders Count","description":"Calculate DSCR in seconds: the formula, a live calculator, worked examples, and what to do when the ratio comes up short.","image":"https://slacapital.ai/assets/og/dscr-calculator.png","author":{"@type":"Organization","name":"SLA Capital"},"publisher":{"@type":"FinancialService","name":"SLA Capital","alternateName":"Sir Lends A Lot LLC","logo":{"@type":"ImageObject","url":"https://slacapital.ai/assets/logo.png"}},"mainEntityOfPage":"https://slacapital.ai/blog/dscr-calculator/","datePublished":"2026-09-04"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate DSCR?","acceptedAnswer":{"@type":"Answer","text":"DSCR = monthly rental income ÷ monthly PITIA (principal, interest, taxes, insurance, and association dues). A property renting for $2,400 with a $2,000 total payment has a DSCR of 1.20."}},{"@type":"Question","name":"What is a good DSCR?","acceptedAnswer":{"@type":"Answer","text":"1.0 means rent exactly covers the payment — the minimum at most lenders. 1.20+ earns better pricing, and 1.15+ gives real cushion for vacancy and repairs. Below-1.0 lanes exist at some lenders (including SLA Capital) with reserves or a rate adjustment."}},{"@type":"Question","name":"What rent number do lenders use in the DSCR calculation?","acceptedAnswer":{"@type":"Answer","text":"The lower of the lease in place or the appraiser's market-rent report (Form 1007) at most lenders; a vacant property uses the 1007 alone. Gross rent is used — vacancy and maintenance are not subtracted in the lender's ratio."}}]}</script>
+</head>
+<body>
+  <div class="legal-strip"><div class="container"><strong>SLA Capital</strong> — a Sir Lends A Lot LLC Company</div></div>
+
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a href="/" class="brand" style="display:inline-flex;align-items:center"><img src="/assets/logo.png" alt="SLA Capital" style="height:44px;width:auto" /></a>
+      <ul class="nav-links">
+        <li><a href="/rental/">DSCR</a></li>
+        <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
+        <li><a href="/new-construction/">New Construction</a></li>
+        <li><a href="/rates/">Rates</a></li>
+        <li><a href="/blog/" style="color:var(--primary)">Blog</a></li>
+        <li><a href="/current-jobs/">Careers</a></li>
+        <li><a href="mailto:payoffs@slacapital.com">Request Payoff</a></li>
+        <li><a href="/apply/" class="btn btn-primary">Apply Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top:16px;font-size:14px;color:var(--muted)">
+    <a href="/" style="color:var(--muted)">Home</a> · <a href="/blog/" style="color:var(--muted)">Blog</a> · <span>DSCR Calculator</span>
+  </div>
+
+  <article class="section" style="padding-top:32px">
+    <div class="container" style="max-width:760px">
+      <div class="eyebrow">DSCR · 6 min read + calculator</div>
+      <h1 style="font-size:40px;line-height:1.2;margin-bottom:16px">DSCR Calculator: The Formula, a Live Calculator, and What Lenders Count</h1>
+      <p style="color:var(--muted);margin-bottom:36px">Published September 2026 · By the SLA Capital team</p>
+
+      <p class="lede">The entire DSCR loan category runs on one piece of arithmetic: <strong>monthly rent ÷ monthly payment</strong>. Run your deal through the calculator below, then read what actually goes into each number — because that's where deals are won and lost.</p>
+
+      <div class="card" style="padding:28px;margin-bottom:36px">
+        <h3 style="margin-top:0">Quick DSCR calculator</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div><label style="display:block;font-weight:600;margin-bottom:4px;font-size:14px">Monthly rent</label><input type="text" id="c-rent" inputmode="decimal" placeholder="2400" oninput="calcDscr()" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:16px" /></div>
+          <div><label style="display:block;font-weight:600;margin-bottom:4px;font-size:14px">Principal &amp; interest</label><input type="text" id="c-pi" inputmode="decimal" placeholder="1500" oninput="calcDscr()" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:16px" /></div>
+          <div><label style="display:block;font-weight:600;margin-bottom:4px;font-size:14px">Monthly taxes</label><input type="text" id="c-tax" inputmode="decimal" placeholder="250" oninput="calcDscr()" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:16px" /></div>
+          <div><label style="display:block;font-weight:600;margin-bottom:4px;font-size:14px">Insurance + HOA</label><input type="text" id="c-ins" inputmode="decimal" placeholder="150" oninput="calcDscr()" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:16px" /></div>
+        </div>
+        <div id="c-result" style="margin-top:20px;padding:16px;border-radius:10px;background:var(--neutral);text-align:center;font-size:18px;color:var(--muted)">Enter your numbers — the ratio updates live.</div>
+        <p style="font-size:12px;color:var(--muted);margin:12px 0 0">Educational estimate, not a loan quote. Lenders use the lower of lease or the appraiser's market-rent report, and exact taxes/insurance at underwriting.</p>
+      </div>
+
+      <h2>The formula</h2>
+      <p><strong>DSCR = Monthly Rent ÷ PITIA</strong>, where PITIA is <strong>P</strong>rincipal + <strong>I</strong>nterest + <strong>T</strong>axes + <strong>I</strong>nsurance + <strong>A</strong>ssociation dues. That's it. No vacancy factor, no maintenance reserve, no property management fee — lenders use <em>gross</em> rent against the <em>full</em> payment. (Your own investment analysis should absolutely subtract those; the lender's ratio doesn't.)</p>
+
+      <h2>Three worked examples</h2>
+      <p><strong>The comfortable deal — DSCR 1.25.</strong> Rent $2,500; P&amp;I $1,600, taxes $250, insurance $150 → PITIA $2,000. 2,500 ÷ 2,000 = <strong>1.25</strong>. Best pricing tier at most lenders, cushion for a rough month.</p>
+      <p><strong>The break-even deal — DSCR 1.00.</strong> Rent $2,000 against PITIA $2,000. Qualifies at the minimum, but every vacancy week comes out of your pocket. Fine for a high-appreciation market; know what you're buying.</p>
+      <p><strong>The short deal — DSCR 0.95.</strong> Rent $1,900 against PITIA $2,000. Below 1.0 — declined at many lenders, but not everywhere: SLA has a below-1.0 lane with additional reserves or a rate adjustment, because a 0.95 in a strong market with a strong borrower is a judgment call, not an automatic no.</p>
+
+      <h2>What actually goes in the rent number</h2>
+      <p>The lender uses the <strong>lower of the lease in place or the appraiser's market-rent report</strong> (Form 1007). Vacant property? The 1007 alone — no lease needed at SLA. Short-term rental? We use long-term market rent as the anchor, and your <a href="/blog/dscr-loans-for-airbnb/">Airbnb upside stays yours</a>. Over-market lease from your cousin? Expect the 1007 to govern.</p>
+
+      <h2>Five levers when the ratio comes up short</h2>
+      <ul>
+        <li><strong>More down.</strong> A smaller loan cuts P&amp;I directly — the bluntest, most reliable lever.</li>
+        <li><strong>Interest-only.</strong> A 5-year I/O structure drops the payment to interest alone, often moving a 0.98 to a 1.10+.</li>
+        <li><strong>A rate buy-down.</strong> Points up front for a lower rate — worth modeling on long holds.</li>
+        <li><strong>Challenge the 1007.</strong> If the appraiser's comps missed recent rentals, documented comparable leases can support a rebuttal.</li>
+        <li><strong>Shop the taxes and insurance.</strong> Investors routinely over-accept the first insurance quote; $50/month of premium is 2-3 points of DSCR on a typical deal.</li>
+      </ul>
+
+      <h2>The number after the ratio</h2>
+      <p>DSCR gets you qualified; the rest of the box decides your terms — credit tier, LTV, loan size, seasoning. The full checklist is in <a href="/blog/dscr-loan-requirements/">DSCR Loan Requirements</a>, current pricing starts at 5.95% (highest credit tier, LTV below 60%) on the <a href="/rates/">public rate sheet</a>, and if a term below trips you up, the <a href="/glossary/">glossary</a> has it.</p>
+
+      <div style="margin-top:48px;padding:24px;background:var(--surface);border-radius:12px">
+        <h3 style="margin-top:0">Ratio looks good? Get the real number.</h3>
+        <p style="margin-bottom:16px">The two-minute application returns an actual term sheet — your rate, your payment, your DSCR as underwriting will see it.</p>
+        <a href="/apply/" class="btn btn-primary">Get Qualified in Minutes</a>
+        <a href="mailto:apply@slacapital.com" class="btn btn-ghost" style="margin-left:8px">Email Your Deal</a>
+      </div>
+    </div>
+  </article>
+
+  <section class="section section-tinted">
+    <div class="container" style="max-width:900px">
+      <h3 style="text-align:center;margin-bottom:32px">More reading</h3>
+      <div class="grid grid-2" style="gap:24px">
+        <a class="card" href="/blog/dscr-loans-explained/" style="text-decoration:none;color:inherit"><div class="chip">DSCR</div><h4>DSCR Loans Explained: How Qualification Actually Works</h4><p style="color:var(--muted)">The ratio, PITIA, and how below-1.0 scenarios still close.</p></a>
+        <a class="card" href="/blog/how-to-choose-a-dscr-lender/" style="text-decoration:none;color:inherit"><div class="chip">DSCR</div><h4>How to Choose a DSCR Lender: 12 Questions</h4><p style="color:var(--muted)">Seasoning, rate honesty, prepay structure — and the answers a good lender gives.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <div>© 2026 SLA Capital · Sir Lends A Lot LLC · All rights reserved.<br><span style="font-size:12px;color:rgba(255,255,255,0.55)">Sir Lends A Lot LLC · 707 W Main Ave #31, Spokane, WA 99201 · NMLS ID #2863552 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2863552" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7)">NMLS Consumer Access</a> · Certified Member — <a href="https://aaplonline.com/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7)">American Association of Private Lenders (AAPL)</a></span></div>
+        <div><a href="/privacy-policy/">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function calcDscr() {
+      var n = function (id) { return parseFloat(String(document.getElementById(id).value).replace(/[^0-9.]/g, '')) || 0; };
+      var rent = n('c-rent');
+      var pitia = n('c-pi') + n('c-tax') + n('c-ins');
+      var el = document.getElementById('c-result');
+      if (!rent || !pitia) {
+        el.style.background = 'var(--neutral)';
+        el.style.color = 'var(--muted)';
+        el.textContent = 'Enter your numbers — the ratio updates live.';
+        return;
+      }
+      var r = rent / pitia;
+      var txt = 'DSCR = ' + r.toFixed(2);
+      var note, bg, fg;
+      if (r >= 1.2) { note = ' — strong. Best pricing territory.'; bg = '#EAF6EE'; fg = '#166534'; }
+      else if (r >= 1.0) { note = ' — qualifies. More cushion = better pricing.'; bg = '#FDF3E7'; fg = '#8a5a1c'; }
+      else { note = ' — below 1.0. Ask about our below-1.0 lane, or see the five levers below.'; bg = '#FBEAEA'; fg = '#7c1f1f'; }
+      el.style.background = bg;
+      el.style.color = fg;
+      el.innerHTML = '<strong>' + txt + '</strong>' + note;
+    }
+  </script>
+</body>
+</html>
