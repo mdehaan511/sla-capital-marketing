@@ -154,7 +154,7 @@
           </div>
           <div style="font-family:var(--font-display);font-size:52px;font-weight:700;color:#fff;line-height:1.1">from <span id="liveDscrRate">6.70%</span><span style="color:var(--primary)">*</span></div>
           <div id="liveDscrNote" style="font-size:13px;color:rgba(255,255,255,0.65);margin-top:4px">*Before Buy Down · Highest Credit Tier, LTV below 60%</div>
-          <div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:10px"><strong style="color:#fff">1 point origination</strong> · $0 application fee · $0 appraisal fee</div>
+          <div id="liveDscrAsOf" style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:10px">As of September 12, 2026</div>
         </div>
         <div style="flex:1.2;min-width:260px">
           <p style="margin:0;font-size:17px;line-height:1.6;color:var(--highlight);font-style:italic">&ldquo;This base rate updates in real time from our live rate sheet. Any other lender promising you a lower DSCR rate without fees is lying to you &#128578;&rdquo;</p>
@@ -547,6 +547,8 @@
 
 <script>
   (function () {
+    var asOf = document.getElementById('liveDscrAsOf');
+    if (asOf) asOf.textContent = 'As of ' + new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     fetch('/data/rates.json').then(function (r) { return r.json(); }).then(function (d) {
       var p = (d.products || []).filter(function (x) { return x.slug === 'rental'; })[0];
       if (!p || !p.rateFrom) return;
