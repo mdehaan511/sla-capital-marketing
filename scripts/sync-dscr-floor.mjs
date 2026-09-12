@@ -48,12 +48,15 @@ if (!D || !D.baseRate || !D.baseRate['30Y Fixed']) {
   process.exit(2);
 }
 
-const upb600 = D.upb.find(u => u.min === 600000);
+// Best UPB adjustment = the most favorable (most negative) band at the
+// lowest-LTV column, floored at 0 — sheets may or may not carry a
+// large-balance discount band (the 9/12/26 sheet dropped the $600K one).
+const bestUpb = Math.min(0, ...D.upb.map(u => u.adj[0]));
 const floorRaw = D.baseRate['30Y Fixed']
   + D.fico['780+'][0]
   + D.dscr['1.20+'][0]
   + Math.min(...Object.values(D.ppp))
-  + (upb600 ? upb600.adj[0] : 0)
+  + bestUpb
   + D.HIDDEN_TPO_ADJ;
 const floor = Math.round(floorRaw * 100) / 100;
 if (!(floor > 3 && floor < 13)) {
