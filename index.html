@@ -138,6 +138,35 @@
   </section>
 
   <!-- PROOF BAR — stat strip. Skimmable, SEO-neutral, high-conversion. -->
+  <!-- LIVE DSCR RATE CALLOUT — the number is fetched from /data/rates.json
+       at page load (rates.json is auto-synced daily from the portal's live
+       DSCR rate sheet by scripts/sync-dscr-floor.mjs + the sla-dscr-rate-sync
+       task), so this banner always shows the current sheet floor. The static
+       markup carries the last-synced value for SEO / no-JS. -->
+  <style>@keyframes slaPulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,0.6)}70%{box-shadow:0 0 0 10px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}</style>
+  <section style="background:var(--secondary);padding:34px 0">
+    <div class="container" style="max-width:920px">
+      <div style="background:rgba(255,255,255,0.04);border:2px solid var(--primary);border-radius:16px;padding:28px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:28px">
+        <div style="flex:1;min-width:250px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+            <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#3ddc84;animation:slaPulse 1.6s infinite"></span>
+            <span style="font-size:13px;font-weight:700;letter-spacing:2px;color:var(--highlight)">LIVE DSCR RATE</span>
+          </div>
+          <div style="font-family:var(--font-display);font-size:52px;font-weight:700;color:#fff;line-height:1.1">from <span id="liveDscrRate">6.70%</span><span style="color:var(--primary)">*</span></div>
+          <div id="liveDscrNote" style="font-size:13px;color:rgba(255,255,255,0.65);margin-top:4px">*Before Buy Down · Highest Credit Tier, LTV below 60%</div>
+          <div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:10px"><strong style="color:#fff">1 point origination</strong> · $0 application fee · $0 appraisal fee</div>
+        </div>
+        <div style="flex:1.2;min-width:260px">
+          <p style="margin:0;font-size:17px;line-height:1.6;color:var(--highlight);font-style:italic">&ldquo;This base rate updates in real time from our live rate sheet. Any other lender promising you a lower DSCR rate without fees is lying to you &#128578;&rdquo;</p>
+          <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+            <a href="/rates/" class="btn btn-primary">See Every Rate</a>
+            <a href="/apply/" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.5)">Get Qualified in Minutes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-tight section-tinted">
     <div class="container">
       <div class="grid grid-4" style="text-align:center;gap:32px">
@@ -516,5 +545,16 @@
     </div>
   </footer>
 
+<script>
+  (function () {
+    fetch('/data/rates.json').then(function (r) { return r.json(); }).then(function (d) {
+      var p = (d.products || []).filter(function (x) { return x.slug === 'rental'; })[0];
+      if (!p || !p.rateFrom) return;
+      var el = document.getElementById('liveDscrRate');
+      if (el) el.textContent = p.rateFrom.replace('*', '');
+      if (p.rateNote) { var n = document.getElementById('liveDscrNote'); if (n) n.textContent = p.rateNote; }
+    }).catch(function () {});
+  })();
+</script>
 </body>
 </html>
