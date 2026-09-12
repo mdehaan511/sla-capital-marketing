@@ -12,14 +12,15 @@
  * "published rates are set manually" rule — for the DSCR from-rate only.
  * Fix & Flip and New Construction floors remain manually set.
  *
- * Floor definition (mirrors the sizer's best-case 30Y fixed stack):
+ * Floor definition (simplified per Mike 2026-09-12 — matches the note
+ * exactly: before buy-down, highest credit tier, DSCR 1.20+):
  *   baseRate["30Y Fixed"]
- *   + fico["780+"][lowest-LTV column]
- *   + dscr["1.20+"][lowest-LTV column]
- *   + best (most negative) prepay adjustment
- *   + best UPB band adjustment at the lowest-LTV column
+ *   + best fico["780+"] adjustment (most favorable column)
+ *   + best dscr["1.20+"] adjustment
  *   + HIDDEN_TPO_ADJ (always applied by the sizer)
- *   ... and NO rateBuydown (that's the "*Before Buy Down" qualifier).
+ *   ... NO rateBuydown (the "*Before Buy Down" qualifier), and NO
+ *   prepay/UPB assumptions — those aren't in the note, so they're not
+ *   in the published number.
  *
  * On change: sweeps the old from-rate string across the site's html/json/
  * txt/mjs files, refreshes rates.json (rate, range floor, effectiveDate,
@@ -36,7 +37,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const R = path.resolve(__dirname, '..');
 const CHECK = process.argv.includes('--check');
-const NOTE = '*Before Buy Down · Highest Credit Tier, LTV below 60%';
+const NOTE = '*Before Buy Down · Highest Credit Tier · DSCR 1.20+';
 const SRC_URL = 'https://portal.slacapital.ai/dscr-pricing.js';
 
 const src = await (await fetch(SRC_URL)).text();
@@ -48,15 +49,10 @@ if (!D || !D.baseRate || !D.baseRate['30Y Fixed']) {
   process.exit(2);
 }
 
-// Best UPB adjustment = the most favorable (most negative) band at the
-// lowest-LTV column, floored at 0 — sheets may or may not carry a
-// large-balance discount band (the 9/12/26 sheet dropped the $600K one).
-const bestUpb = Math.min(0, ...D.upb.map(u => u.adj[0]));
+const num = a => a.filter(v => typeof v === 'number');
 const floorRaw = D.baseRate['30Y Fixed']
-  + D.fico['780+'][0]
-  + D.dscr['1.20+'][0]
-  + Math.min(...Object.values(D.ppp))
-  + bestUpb
+  + Math.min(...num(D.fico['780+']))
+  + Math.min(...num(D.dscr['1.20+']))
   + D.HIDDEN_TPO_ADJ;
 const floor = Math.round(floorRaw * 100) / 100;
 if (!(floor > 3 && floor < 13)) {
