@@ -104,7 +104,7 @@ const jsonLdFaq = {
       name: 'What are SLA Capital\'s current investor loan rates?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `DSCR rental loans from ${products.find(p => p.slug === 'rental')?.rateFrom || '6.70%'} (30-year fixed). Fix & Flip bridge from ${products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%'} (6–18 months). New Construction from ${products.find(p => p.slug === 'new-construction')?.rateFrom || '10%'} (18 or 24 months). Rates effective ${fmtEffective(eff)} and priced off the 5-year Treasury.`,
+        text: `DSCR rental loans from ${products.find(p => p.slug === 'rental')?.rateFrom || '6.77%'} (30-year fixed). Fix & Flip bridge from ${products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%'} (6–18 months). New Construction from ${products.find(p => p.slug === 'new-construction')?.rateFrom || '10%'} (18 or 24 months). Rates effective ${fmtEffective(eff)} and priced off the 5-year Treasury.`,
       },
     },
     {
@@ -140,7 +140,7 @@ const html = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Current Loan Rates — DSCR, Fix &amp; Flip, New Construction | SLA Capital</title>
-  <meta name="description" content="SLA Capital current investor loan rates effective ${fmtEffective(eff)}. DSCR from ${esc(products.find(p => p.slug === 'rental')?.rateFrom || '6.70%')}. Fix &amp; Flip from ${esc(products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%')}. New Construction from ${esc(products.find(p => p.slug === 'new-construction')?.rateFrom || '10%')}. The rate you're quoted is the rate you close at." />
+  <meta name="description" content="SLA Capital current investor loan rates effective ${fmtEffective(eff)}. DSCR from ${esc(products.find(p => p.slug === 'rental')?.rateFrom || '6.77%')}. Fix &amp; Flip from ${esc(products.find(p => p.slug === 'fix-n-flip')?.rateFrom || '9.5%')}. New Construction from ${esc(products.find(p => p.slug === 'new-construction')?.rateFrom || '10%')}. The rate you're quoted is the rate you close at." />
   <link rel="canonical" href="https://slacapital.ai/rates/" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="any" href="/assets/favicon.png" />
