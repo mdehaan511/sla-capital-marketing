@@ -17,10 +17,10 @@
  *   baseRate["30Y Fixed"]
  *   + best fico["780+"] adjustment (most favorable column)
  *   + best dscr["1.20+"] adjustment
- *   + HIDDEN_TPO_ADJ (always applied by the sizer)
- *   ... NO rateBuydown (the "*Before Buy Down" qualifier), and NO
- *   prepay/UPB assumptions — those aren't in the note, so they're not
- *   in the published number.
+ *   ... assuming 0% TPO (Mike 9/12 — the TPO premium changes regularly,
+ *   so it stays OUT of the published number), NO rateBuydown (the
+ *   "*Before Buy Down" qualifier), and NO prepay/UPB assumptions —
+ *   nothing is in the number that isn't in the note.
  *
  * On change: sweeps the old from-rate string across the site's html/json/
  * txt/mjs files, refreshes rates.json (rate, range floor, effectiveDate,
@@ -52,8 +52,7 @@ if (!D || !D.baseRate || !D.baseRate['30Y Fixed']) {
 const num = a => a.filter(v => typeof v === 'number');
 const floorRaw = D.baseRate['30Y Fixed']
   + Math.min(...num(D.fico['780+']))
-  + Math.min(...num(D.dscr['1.20+']))
-  + D.HIDDEN_TPO_ADJ;
+  + Math.min(...num(D.dscr['1.20+']));
 const floor = Math.round(floorRaw * 100) / 100;
 if (!(floor > 3 && floor < 13)) {
   console.error(`SYNC ABORT: computed floor ${floor} outside sanity bounds (3-13) — sheet format may have changed.`);
