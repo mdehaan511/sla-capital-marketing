@@ -46,6 +46,9 @@ const BLOG_POSTS = [
   'spec-home-construction-loans',
   'how-to-choose-a-dscr-lender',
   'dscr-calculator',
+  'rental-property-cash-out-refinance',
+  'portfolio-loans-for-rental-properties',
+  'how-fast-can-a-hard-money-loan-close',
 ];
 
 const today = new Date().toISOString().slice(0, 10);

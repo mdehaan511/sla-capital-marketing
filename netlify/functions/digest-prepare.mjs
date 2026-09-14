@@ -44,6 +44,7 @@ function esc(s) {
 // Email-safe (table + inline styles) digest HTML in site brand colors.
 export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
   const dateStr = tuesday.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const rentalNote = (rates.products.filter(function (p) { return p.slug === 'rental'; })[0] || {}).rateNote || '';
 
   const postBlock = (p, label) => `
     <tr><td style="padding:0 32px 8px">
@@ -95,7 +96,7 @@ export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
     </table>
   </td></tr>
   <tr><td style="padding:0 32px 28px;font-size:12px;color:#6b6470">
-    Effective ${esc(rates.effectiveDate)} · ${esc(rates.shared.pricingBasis)} · <a href="${SITE}/rates/?utm_source=brevo&amp;utm_medium=email&amp;utm_campaign=weekly-digest" style="color:#DA7238">Full rate sheet →</a>
+    ${rentalNote ? esc(rentalNote) + ' · ' : ''}Effective ${esc(rates.effectiveDate)} · ${esc(rates.shared.pricingBasis)} · <a href="${SITE}/rates/?utm_source=brevo&amp;utm_medium=email&amp;utm_campaign=weekly-digest" style="color:#DA7238">Full rate sheet →</a>
   </td></tr>
 
   <tr><td align="center" style="padding:0 32px 36px">

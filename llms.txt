@@ -77,6 +77,13 @@ Contact: apply@slacapital.com · (509) 846-7349
 - [Spec Home Construction Loans](https://slacapital.ai/blog/spec-home-construction-loans/):
   ground-up financing, the two leverage tests, and planning the exit.
 
+- [Cash-Out Refinance on a Rental Property](https://slacapital.ai/blog/rental-property-cash-out-refinance/):
+  the 75% LTV cap, seasoning, a worked equity-out example, and cash-out vs. HELOC.
+- [Portfolio Loans for Rental Properties](https://slacapital.ai/blog/portfolio-loans-for-rental-properties/):
+  2–10 rentals on one note — combined DSCR, release clauses, when to blanket.
+- [How Fast Can a Hard Money Loan Close? The 72-Hour Anatomy](https://slacapital.ai/blog/how-fast-can-a-hard-money-loan-close/):
+  the 72-hour close anatomy, day by day, and the borrower speed checklist.
+
 ## State Coverage
 
 State-specific program pages exist at /rental/<state>/, /fix-n-flip/<state>/,

@@ -24,6 +24,9 @@ const PAGES = [
   { slug: 'dscr-calculator', eyebrow: 'Investor tool · DSCR', l1: 'Calculate your DSCR', l2: 'in seconds.' },
   { slug: 'faq', eyebrow: 'Straight answers', l1: 'Investor lending,', l2: 'answered.' },
   { slug: 'glossary', eyebrow: 'Plain English', l1: 'The investor lending', l2: 'vocabulary.' },
+  { slug: 'rental-property-cash-out-refinance', eyebrow: 'Investor guide · DSCR', l1: 'Pulling equity out', l2: 'of a rental.' },
+  { slug: 'portfolio-loans-for-rental-properties', eyebrow: 'Investor guide · DSCR', l1: 'One loan for your', l2: 'whole portfolio.' },
+  { slug: 'how-fast-can-a-hard-money-loan-close', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'The 72-hour close,', l2: 'explained.' },
 ];
 
 function svg(p) {
