@@ -90,3 +90,14 @@
   to     = "/.netlify/functions/lead-submit"
   status = 200
   force  = true
+
+# ── Rep short links (LAST on purpose) ───────────────────────
+# slacapital.ai/a/<name> -> the application, routed to that rep. Short enough
+# to text and low-density as a QR (the broker one-pager prints it).
+# Deliberately below /apply* and /api/* so it can never shadow them.
+# See netlify/functions/lo-shortlink.mjs.
+[[redirects]]
+  from   = "/a/*"
+  to     = "/.netlify/functions/lo-shortlink"
+  status = 200
+  force  = true
