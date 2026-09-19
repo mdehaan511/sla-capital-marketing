@@ -43,14 +43,14 @@ const PRODUCTS = {
     fullLabel: 'DSCR Rental Loans',
     parentUrl: '/rental/',
     heroPromise: '30-Year Fixed from 6.75%',
-    heroBody: (s) => `Long-term rental financing for investment properties across ${s.name} — qualified off the property's income, not your personal DTI. <strong>30-year fixed from 6.75%</strong>, up to <strong>80% LTV</strong>, and <strong>6 months of seasoning</strong> on cash-out refinances. SLA Capital has closed deals across every major ${s.name} metro.`,
+    heroBody: (s) => `Long-term rental financing for investment properties across ${s.name} — qualified off the property's income, not your personal DTI. <strong>30-year fixed from 6.75%</strong>, up to <strong>80% LTV</strong>, and <strong>no seasoning</strong> on cash-out refinances. SLA Capital has closed deals across every major ${s.name} metro.`,
     definitionH2: 'What is a DSCR loan?',
     definitionBody: `A <strong>DSCR loan</strong> — short for Debt Service Coverage Ratio — is an investor mortgage that qualifies off the property's rental income rather than the borrower's personal income or debt-to-income ratio. If the property's rent covers the total housing payment (principal, interest, taxes, insurance, and HOA), the loan qualifies. Self-employed investors, LLC-title borrowers, and anyone with complex tax returns can build a rental portfolio without W-2 gymnastics.`,
     specsHeading: 'DSCR loan terms.',
     specsIntro: 'Same nationwide program, no state-specific surcharges.',
     specs: [
       { chip: 'Pricing',       h: 'Rates from 6.75%',  p: 'Priced off the 5-year Treasury. Real quote in minutes via our loan sizer — no bait-and-switch at close.' },
-      { chip: 'Leverage',      h: 'Up to 80% LTV',      p: 'Purchase and rate-and-term refis up to 80% LTV. Cash-out refis with 6-month seasoning — no lease required.' },
+      { chip: 'Leverage',      h: 'Up to 80% LTV',      p: 'Purchase and rate-and-term refis up to 80% LTV. Cash-out refis with no seasoning — no lease required.' },
       { chip: 'Structures',    h: 'Multiple options',   p: '30-year fixed, 5-year interest-only, 5/1 ARM, 7/1 ARM.' },
       { chip: 'Size',          h: '$100K to $3M',        p: (s) => `Single-asset from $100K to $3M. Portfolio structures for 2–10 ${s.name} properties on one note.` },
       { chip: 'Fees',          h: '1 point origination',p: 'Up-front pricing. One origination point, standard closing costs, no junk fees.' },
@@ -64,9 +64,9 @@ const PRODUCTS = {
       { q: `What DSCR loan rates are available in ${s.name}?`, a: `${s.name} DSCR loans start at <strong>6.75%</strong> on a 30-year fixed structure. Priced off the 5-year Treasury with transparent up-front pricing — the rate you're quoted is the rate you close at.` },
       { q: `What ${s.name} metros does SLA Capital serve?`, a: `Every ${s.name} metro. High-volume markets: ${s.metros.slice(0, 5).map(m => m.name).join(', ')}. Secondary markets welcome.` },
       { q: `Is ${s.name} a good state for rental property investors?`, a: s.whyInvestor },
-      { q: `How long is seasoning on a ${s.name} DSCR cash-out refinance?`, a: `<strong>6 months.</strong> 6 months of ownership seasoning — the industry standard — is required for cash-out refinances on ${s.name} DSCR loans, and no active lease is required at closing.` },
+      { q: `How long is seasoning on a ${s.name} DSCR cash-out refinance?`, a: `<strong>None.</strong> No ownership seasoning is required for cash-out refinances on ${s.name} DSCR loans, and no active lease is required at closing.` },
     ],
-    schemaDesc: (s) => `30-year fixed DSCR rental loan for investment properties in ${s.name}. Rates from 6.75%, up to 80% LTV, 6-month cash-out seasoning. Serving every major ${s.name} metro.`,
+    schemaDesc: (s) => `30-year fixed DSCR rental loan for investment properties in ${s.name}. Rates from 6.75%, up to 80% LTV, no cash-out seasoning. Serving every major ${s.name} metro.`,
   },
 
   fixNFlip: {
@@ -74,8 +74,8 @@ const PRODUCTS = {
     label: 'Fix &amp; Flip',
     fullLabel: 'Fix &amp; Flip Loans',
     parentUrl: '/fix-n-flip/',
-    heroPromise: 'Up to 100% Financing, 72-Hour Funding',
-    heroBody: (s) => `Short-term purchase + rehab bridge loans for investors flipping properties in ${s.name}. Rates <strong>9.5–12%</strong>, up to <strong>100% loan-to-cost</strong> for premier borrowers, and <strong>100% of your rehab budget</strong> financed via draws. Close in as little as <strong>72 hours</strong> with clear title. SLA Capital has closed deals across every ${s.name} metro.`,
+    heroPromise: 'Up to 92.5% Financing, 72-Hour Funding',
+    heroBody: (s) => `Short-term purchase + rehab bridge loans for investors flipping properties in ${s.name}. Rates <strong>9.5–12%</strong>, up to <strong>92.5% loan-to-cost</strong> for premier borrowers, and <strong>100% of your rehab budget</strong> financed via draws. Close in as little as <strong>72 hours</strong> with clear title. SLA Capital has closed deals across every ${s.name} metro.`,
     definitionH2: 'What is a Fix &amp; Flip loan?',
     definitionBody: `A <strong>Fix and Flip loan</strong> is short-term bridge financing used to purchase and rehabilitate a distressed property before selling or refinancing it. Loan size is anchored to the property's after-repair value (ARV) — not its current condition — so investors can finance both the acquisition and the renovation on a single loan. Rehab dollars are disbursed via draws as work is completed and inspected.`,
     specsHeading: 'Fix &amp; Flip terms.',
@@ -83,7 +83,7 @@ const PRODUCTS = {
     specs: [
       { chip: 'Speed',    h: '72-hour close',      p: 'Close in as little as 72 hours with clear title. The fastest funding in the field when your deal needs to move.' },
       { chip: 'Pricing',  h: 'Rates 9.5–12%',       p: 'Points range 1–4. Transparent up-front pricing — no bait-and-switch, no surprise fees at the closing table.' },
-      { chip: 'Leverage', h: 'Up to 100% LTC',      p: 'Premier repeat borrowers qualify for up to 100% loan-to-cost. First-timers welcome — LTC scales with experience.' },
+      { chip: 'Leverage', h: 'Up to 92.5% LTC',      p: 'Premier repeat borrowers qualify for up to 92.5% loan-to-cost. First-timers welcome — LTC scales with experience.' },
       { chip: 'Rehab',    h: '100% rehab funded',   p: 'Full rehab budget financed and disbursed via draws after inspection. Photos + invoices approve same-day through our platform.' },
       { chip: 'Term',     h: '6–18 months',         p: 'Choose the term that fits your project. Extensions available on active deals.' },
       { chip: 'Size',     h: '$100K to $3M',         p: (s) => `Loans from $100,000 up to $3,000,000. From cosmetic flips to full gut jobs across ${s.name}.` },
@@ -92,13 +92,13 @@ const PRODUCTS = {
     amountSchema: { min: 100000, max: 3000000 },
     ctaHeading: (s) => `Have a ${s.name} flip ready to close?`,
     faq: (s) => [
-      { q: `Does SLA Capital lend on Fix &amp; Flip deals in ${s.name}?`, a: `Yes. SLA Capital funds Fix &amp; Flip bridge loans throughout ${s.name} — ${s.metros.slice(0, 5).map(m => m.name).join(', ')}, and every other ${s.abbr} metro. Rates 9.5–12%, up to 100% LTC for premier borrowers.` },
+      { q: `Does SLA Capital lend on Fix &amp; Flip deals in ${s.name}?`, a: `Yes. SLA Capital funds Fix &amp; Flip bridge loans throughout ${s.name} — ${s.metros.slice(0, 5).map(m => m.name).join(', ')}, and every other ${s.abbr} metro. Rates 9.5–12%, up to 92.5% LTC for premier borrowers.` },
       { q: `How fast can SLA close a ${s.name} Fix &amp; Flip loan?`, a: `<strong>As little as 72 hours</strong> from application to funding when the title is clear and the file is complete. Average close across all ${s.name} Fix &amp; Flip loans is 7–10 days.` },
       { q: `How much of the rehab budget does SLA finance?`, a: `SLA Capital finances <strong>100% of rehab costs</strong> on ${s.name} Fix &amp; Flip loans. Funds are disbursed via draws after inspection of completed work. Photo-and-invoice draw requests run through our platform for same-day approvals.` },
       { q: `What ${s.name} metros does SLA Capital serve?`, a: `Every ${s.name} metro. High-volume markets: ${s.metros.slice(0, 5).map(m => m.name).join(', ')}. Secondary markets welcome — send us any ${s.name} property.` },
       { q: `Is ${s.name} a good state for Fix &amp; Flip investors?`, a: s.whyInvestor },
     ],
-    schemaDesc: (s) => `Purchase-plus-rehab bridge loan for investors flipping properties in ${s.name}. Rates 9.5–12%, 1–4 points. Up to 100% LTC for premier borrowers. Close in as little as 72 hours.`,
+    schemaDesc: (s) => `Purchase-plus-rehab bridge loan for investors flipping properties in ${s.name}. Rates 9.5–12%, 1–4 points. Up to 92.5% LTC for premier borrowers. Close in as little as 72 hours.`,
   },
 
   newConstruction: {
@@ -239,9 +239,9 @@ function otherProductsCrossLinks(currentProductKey, state) {
   const cards = others.map(([key, p]) => {
     const chip = key === 'dscr' ? '30-year fixed' : key === 'fixNFlip' ? 'Bridge' : 'Ground-up';
     const oneLiner = key === 'dscr'
-      ? `Long-term rental financing for ${state.name} investors. Rates from 6.75%, up to 80% LTV, 6-month seasoning on cash-outs.`
+      ? `Long-term rental financing for ${state.name} investors. Rates from 6.75%, up to 80% LTV, no seasoning on cash-outs.`
       : key === 'fixNFlip'
-        ? `Short-term purchase + rehab financing across every ${state.name} metro. Rates 9.5–12%. Up to 100% LTC for premier borrowers.`
+        ? `Short-term purchase + rehab financing across every ${state.name} metro. Rates 9.5–12%. Up to 92.5% LTC for premier borrowers.`
         : `Ground-up construction loans for ${state.name} builders. 85% land + 85% build. $100K–$7.5M.`;
     return `        <a class="card" href="${p.parentUrl}${state.slug}/" style="text-decoration:none;color:inherit"><div class="chip" style="margin-bottom:16px">${chip}</div><h3>${p.label} Loans in ${state.name}</h3><p>${oneLiner}</p><div style="color:var(--primary);font-weight:600">Explore ${p.label} ${state.name} →</div></a>`;
   });
