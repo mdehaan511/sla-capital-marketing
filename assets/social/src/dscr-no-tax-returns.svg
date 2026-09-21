@@ -1,0 +1,18 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant C: light background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: DSCR loan requirements (blog/dscr-loan-requirements). No rates baked in; loan-size floor is the published $100K. -->
+<rect width="1080" height="1080" fill="#F5F2EF"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#281D28">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#6b6470">Private lending for real estate investors</text>
+<text x="84" y="340" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#DA7238">DSCR requirements</text>
+<text x="84" y="445" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">No tax returns.</text>
+<text x="84" y="535" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">Not the same as</text>
+<text x="84" y="625" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">no requirements.</text>
+<text x="84" y="715" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">Credit: <tspan fill="#DA7238" font-weight="bold">660 mid FICO floor</tspan></text>
+<text x="84" y="773" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">Reserves: <tspan fill="#DA7238" font-weight="bold">3&#8211;6 months of PITIA</tspan></text>
+<text x="84" y="831" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#443A44">Leverage: <tspan fill="#DA7238" font-weight="bold">up to 80% LTV</tspan></text>
+<text x="84" y="902" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#9A929A">Loans $100K&#8211;$3M &#183; 42 states &#183; LLC closings. Terms depend on the file.</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#9A929A">slacapital.ai &#183; NMLS #2863552</text>
+</svg>

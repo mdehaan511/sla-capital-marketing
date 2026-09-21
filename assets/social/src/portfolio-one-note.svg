@@ -1,0 +1,18 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant A: plum background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: portfolio / blanket loans, 2-10 rentals on one note (blog/portfolio-loans-for-rental-properties). No rates baked in, so this card stays valid across rate sheets. -->
+<rect width="1080" height="1080" fill="#281D28"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#B8AFB8">Private lending for real estate investors</text>
+<text x="84" y="350" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#FFBC7D">Portfolio loans</text>
+<text x="84" y="455" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Five rentals.</text>
+<text x="84" y="555" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Five payments.</text>
+<text x="84" y="655" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">One note.</text>
+<text x="84" y="745" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#D9D2D9">2&#8211;10 properties on one 30-year DSCR loan.</text>
+<text x="84" y="795" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#D9D2D9">Qualified on combined rent. Closed in your LLC.</text>
+<rect x="84" y="850" width="640" height="86" rx="14" fill="#DA7238"/>
+<text x="404" y="906" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" fill="#FFFFFF">Read the portfolio playbook</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#8F858F">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
