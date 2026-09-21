@@ -42,7 +42,7 @@
     },
     {
       "date": "2026-09-22",
-      "status": "pending",
+      "status": "approved",
       "theme": "Portfolio / blanket loans for 2-10 rentals",
       "card": "portfolio-one-note-plum.png",
       "variant": "plum",
@@ -55,7 +55,7 @@
     },
     {
       "date": "2026-09-24",
-      "status": "pending",
+      "status": "approved",
       "theme": "Transparent pricing / the quote is the rate you close at",
       "card": "rates-quote-close-orange.png",
       "variant": "orange",
@@ -68,7 +68,7 @@
     },
     {
       "date": "2026-09-26",
-      "status": "pending",
+      "status": "approved",
       "theme": "DSCR requirements / no tax returns is not no requirements",
       "card": "dscr-no-tax-returns-light.png",
       "variant": "light",
