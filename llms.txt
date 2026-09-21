@@ -84,6 +84,13 @@ Contact: apply@slacapital.com · (509) 846-7349
 - [How Fast Can a Hard Money Loan Close? The 72-Hour Anatomy](https://slacapital.ai/blog/how-fast-can-a-hard-money-loan-close/):
   the 72-hour close anatomy, day by day, and the borrower speed checklist.
 
+- [No-Seasoning Cash-Out Refinance](https://slacapital.ai/blog/no-seasoning-cash-out-refinance/):
+  no seasoning period on DSCR cash-outs — what changed and what underwriting still checks.
+- [How to Refinance Out of a Hard Money Loan](https://slacapital.ai/blog/refinance-out-of-a-hard-money-loan/):
+  the bridge-to-DSCR exit — timeline, documentation, and fixes when numbers are tight.
+- [Build-to-Rent Financing](https://slacapital.ai/blog/build-to-rent-financing/):
+  construction loan to DSCR refinance — the BTR two-loan relay and build-vs-buy math.
+
 ## State Coverage
 
 State-specific program pages exist at /rental/<state>/, /fix-n-flip/<state>/,

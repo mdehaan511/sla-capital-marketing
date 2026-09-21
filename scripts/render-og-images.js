@@ -27,6 +27,9 @@ const PAGES = [
   { slug: 'rental-property-cash-out-refinance', eyebrow: 'Investor guide · DSCR', l1: 'Pulling equity out', l2: 'of a rental.' },
   { slug: 'portfolio-loans-for-rental-properties', eyebrow: 'Investor guide · DSCR', l1: 'One loan for your', l2: 'whole portfolio.' },
   { slug: 'how-fast-can-a-hard-money-loan-close', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'The 72-hour close,', l2: 'explained.' },
+  { slug: 'no-seasoning-cash-out-refinance', eyebrow: 'Program update · DSCR', l1: 'Cash-out with', l2: 'no seasoning.' },
+  { slug: 'refinance-out-of-a-hard-money-loan', eyebrow: 'Investor guide · Strategy', l1: 'Exiting hard money,', l2: 'on your schedule.' },
+  { slug: 'build-to-rent-financing', eyebrow: 'Investor guide · Construction', l1: 'Build-to-rent,', l2: 'financed.' },
 ];
 
 function svg(p) {

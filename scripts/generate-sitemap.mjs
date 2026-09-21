@@ -49,6 +49,9 @@ const BLOG_POSTS = [
   'rental-property-cash-out-refinance',
   'portfolio-loans-for-rental-properties',
   'how-fast-can-a-hard-money-loan-close',
+  'no-seasoning-cash-out-refinance',
+  'refinance-out-of-a-hard-money-loan',
+  'build-to-rent-financing',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
