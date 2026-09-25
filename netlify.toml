@@ -68,6 +68,57 @@
   status = 301
   force  = true
 
+# ── SLA Capital Shop (Fourthwall) ────────────────────────────
+# The footer's "SLA Shop" link and the short links people will type. 302 so it's
+# cheap to retarget (e.g. to shop.slacapital.ai once that domain is connected).
+[[redirects]]
+  from   = "/shop"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/shop/"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/store"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/store/"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/swag"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/swag/"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/merch"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
+[[redirects]]
+  from   = "/merch/"
+  to     = "@@SHOP_URL@@"
+  status = 302
+  force  = true
+
 # ── Query-intent alias URLs → canonical product pages ────────
 # Generated from data/states.json × alias patterns by
 # scripts/generate-alias-redirects.mjs. Explicit per-state per-pattern
