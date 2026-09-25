@@ -73,49 +73,49 @@
 # cheap to retarget (e.g. to shop.slacapital.ai once that domain is connected).
 [[redirects]]
   from   = "/shop"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/shop/"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/store"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/store/"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/swag"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/swag/"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/merch"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
 [[redirects]]
   from   = "/merch/"
-  to     = "@@SHOP_URL@@"
+  to     = "https://shop.slacapital.ai"
   status = 302
   force  = true
 
