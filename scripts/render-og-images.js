@@ -30,6 +30,9 @@ const PAGES = [
   { slug: 'no-seasoning-cash-out-refinance', eyebrow: 'Program update · DSCR', l1: 'Cash-out with', l2: 'no seasoning.' },
   { slug: 'refinance-out-of-a-hard-money-loan', eyebrow: 'Investor guide · Strategy', l1: 'Exiting hard money,', l2: 'on your schedule.' },
   { slug: 'build-to-rent-financing', eyebrow: 'Investor guide · Construction', l1: 'Build-to-rent,', l2: 'financed.' },
+  { slug: 'how-many-dscr-loans-can-you-have', eyebrow: 'Investor guide · DSCR', l1: 'No cap on', l2: 'DSCR loans.' },
+  { slug: 'dscr-prepayment-penalties', eyebrow: 'Investor guide · DSCR', l1: 'Prepay penalties,', l2: 'decoded.' },
+  { slug: 'how-much-money-do-you-need-to-flip-a-house', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'The real cost', l2: 'of a flip.' },
 ];
 
 function svg(p) {

@@ -52,6 +52,9 @@ const BLOG_POSTS = [
   'no-seasoning-cash-out-refinance',
   'refinance-out-of-a-hard-money-loan',
   'build-to-rent-financing',
+  'how-many-dscr-loans-can-you-have',
+  'dscr-prepayment-penalties',
+  'how-much-money-do-you-need-to-flip-a-house',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
