@@ -11,6 +11,24 @@
 [functions."digest-prepare"]
   schedule = "0 16 * * 1"
 
+# ── SLA Shop on the .com (Mike, 2026-10-01) ─────────────────
+# "Can you make it so shop.slacapital.com also works and forwards to
+# shop.slacapital.ai." shop.slacapital.com is a domain alias of this site
+# (it already carries slacapital.com / www); every path on it forwards to
+# the Fourthwall shop's custom domain. Host rules go first: the first match
+# wins, and the path rules below would otherwise catch /shop etc.
+[[redirects]]
+  from   = "https://shop.slacapital.com/*"
+  to     = "https://shop.slacapital.ai/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "http://shop.slacapital.com/*"
+  to     = "https://shop.slacapital.ai/:splat"
+  status = 301
+  force  = true
+
 # ── 301 redirects for SEO continuity ────────────────────────
 # Preserve every URL that has inbound links from the current
 # WordPress build. Add new entries here as they surface.
