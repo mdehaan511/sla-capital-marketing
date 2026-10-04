@@ -107,7 +107,8 @@
     },
     {
       "date": "2026-10-03",
-      "status": "approved",
+      "status": "posted",
+      "post_note": "LinkedIn only: urn:li:share:7512331258497249281. Facebook failed: session invalidated, reconnect needed. Instagram not posted: no Zapier connection.",
       "theme": "Refinancing out of a hard money / bridge loan before maturity",
       "card": "refi-hard-money-exit-light.png",
       "variant": "light",
