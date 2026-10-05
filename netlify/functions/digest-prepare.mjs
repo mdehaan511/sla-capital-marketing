@@ -108,6 +108,7 @@ export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
     SLA Capital — a Sir Lends A Lot LLC Company · 707 W Main Ave #31, Spokane, WA 99201<br>
     Sir Lends A Lot LLC · NMLS ID #2863552 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2863552" style="color:rgba(255,255,255,0.85)">NMLS Consumer Access</a> · Idaho Mortgage Broker/Lender License #MBL-2082863552 · Oregon Mortgage Lending License #2863552<br>
     Certified Member — American Association of Private Lenders (AAPL)<br>
+    Follow SLA Capital: <a href="https://www.linkedin.com/company/slacapital/" style="color:rgba(255,255,255,0.85)">LinkedIn</a> · <a href="https://www.facebook.com/slacapital" style="color:rgba(255,255,255,0.85)">Facebook</a> · <a href="https://www.instagram.com/slacapital/" style="color:rgba(255,255,255,0.85)">Instagram</a><br>
     Business-purpose loans only. Rates shown are floors for qualified borrowers; your quote may differ.<br><br>
     You're receiving this because you've worked with or inquired with SLA Capital.
     <a href="{{ unsubscribe }}" style="color:rgba(255,255,255,0.85)">Unsubscribe</a>
