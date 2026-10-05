@@ -1,0 +1,19 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant B: orange background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: DSCR prepayment penalties / step-down structures (blog/dscr-prepayment-penalties). -->
+<!-- No rates and no seasoning claim baked in. Dollar figures are the guide's $300,000 worked example (5% / 3% year-1 penalties). -->
+<rect width="1080" height="1080" fill="#DA7238"/>
+<rect x="84" y="84" width="10" height="120" fill="#281D28"/>
+<rect x="104" y="84" width="10" height="120" fill="#281D28"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#281D28">SLA <tspan fill="#FFFFFF">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#4A2A15">Private lending for real estate investors</text>
+<text x="84" y="340" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#281D28">Prepayment penalties</text>
+<text x="84" y="445" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Match the prepay</text>
+<text x="84" y="540" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#281D28">to the hold,</text>
+<text x="84" y="635" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">not the rate.</text>
+<text x="84" y="730" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" fill="#281D28">5-4-3-2-1 &#183; the 7+ year hold</text>
+<text x="84" y="774" font-family="DejaVu Sans, sans-serif" font-size="32" fill="#3D2113">Best pricing. Year-1 payoff on $300K: $15,000</text>
+<text x="84" y="838" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" fill="#281D28">3-2-1 &#183; the 3 to 5 year hold</text>
+<text x="84" y="882" font-family="DejaVu Sans, sans-serif" font-size="32" fill="#3D2113">Clear by year 4. Year-1 payoff on $300K: $9,000</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#5C3A22">slacapital.ai &#183; NMLS #2863552</text>
+</svg>

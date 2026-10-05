@@ -1,0 +1,21 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant C: light background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: how much cash a flip takes (blog/how-much-money-do-you-need-to-flip-a-house). -->
+<!-- No rates and no seasoning claim baked in. Leverage per data/rates.json: up to 92.5% LTC (never 100%); "100% of rehab" is the separate, allowed draw claim.
+     Line items are the guide's $200K purchase + $50K rehab worked example at 85% LTC. -->
+<rect width="1080" height="1080" fill="#F5F2EF"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#281D28">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#6b6470">Private lending for real estate investors</text>
+<text x="84" y="340" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#DA7238">Fix &amp; Flip</text>
+<text x="84" y="445" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">A $250K flip.</text>
+<text x="84" y="535" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">Plan on roughly</text>
+<text x="84" y="625" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#281D28">$60K of cash.</text>
+<text x="84" y="705" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#443A44">Down payment at 85% LTC: <tspan fill="#DA7238" font-weight="bold">$37,500</tspan></text>
+<text x="84" y="757" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#443A44">Closing costs: <tspan fill="#DA7238" font-weight="bold">$7,000&#8211;$9,000</tspan></text>
+<text x="84" y="809" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#443A44">Six months of carry: <tspan fill="#DA7238" font-weight="bold">$9,000&#8211;$11,000</tspan></text>
+<text x="84" y="861" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#443A44">Rehab contingency: <tspan fill="#DA7238" font-weight="bold">$5,000</tspan></text>
+<text x="84" y="920" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#9A929A">Up to 92.5% LTC with experience &#183; 100% of rehab funded through draws</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#9A929A">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
