@@ -121,7 +121,8 @@
     },
     {
       "date": "2026-10-06",
-      "status": "approved",
+      "status": "posted",
+      "post_note": "LinkedIn: urn:li:share:7513267568770547715. Instagram: 18197064745391330. Facebook failed: session invalidated on both connections, reconnect needed.",
       "theme": "How many DSCR loans can you have / no 10-property ceiling",
       "card": "dscr-loan-count-plum.png",
       "variant": "plum",
