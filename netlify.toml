@@ -160,6 +160,12 @@
   status = 200
   force  = true
 
+[[redirects]]
+  from   = "/api/giveaway-subscribe"
+  to     = "/.netlify/functions/giveaway-subscribe"
+  status = 200
+  force  = true
+
 # ── Rep short links (LAST on purpose) ───────────────────────
 # slacapital.ai/a/<name> -> the application, routed to that rep. Short enough
 # to text and low-density as a QR (the broker one-pager prints it).
