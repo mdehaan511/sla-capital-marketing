@@ -33,7 +33,6 @@ const PAGES = [
   { slug: 'how-many-dscr-loans-can-you-have', eyebrow: 'Investor guide · DSCR', l1: 'No cap on', l2: 'DSCR loans.' },
   { slug: 'dscr-prepayment-penalties', eyebrow: 'Investor guide · DSCR', l1: 'Prepay penalties,', l2: 'decoded.' },
   { slug: 'how-much-money-do-you-need-to-flip-a-house', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'The real cost', l2: 'of a flip.' },
-  { slug: 'giveaway', eyebrow: 'Monthly drawing', l1: 'Subscribe. Win a', l2: '$100 gift card.' },
 ];
 
 function svg(p) {
