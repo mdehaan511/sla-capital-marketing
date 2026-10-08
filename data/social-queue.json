@@ -135,7 +135,8 @@
     },
     {
       "date": "2026-10-08",
-      "status": "approved",
+      "status": "posted",
+      "post_note": "LinkedIn: urn:li:share:7513992405172289536. Instagram: 17870753148637284. Facebook failed: session invalidated on both connections, reconnect needed.",
       "theme": "DSCR prepayment penalties / match the step-down to the hold",
       "card": "prepay-step-down-orange.png",
       "variant": "orange",
