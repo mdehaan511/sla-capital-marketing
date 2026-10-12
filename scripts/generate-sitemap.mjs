@@ -55,6 +55,9 @@ const BLOG_POSTS = [
   'how-many-dscr-loans-can-you-have',
   'dscr-prepayment-penalties',
   'how-much-money-do-you-need-to-flip-a-house',
+  'what-credit-score-do-you-need-for-a-dscr-loan',
+  'dscr-loan-down-payment',
+  'what-is-a-hard-money-loan',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
