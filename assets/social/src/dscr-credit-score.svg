@@ -1,0 +1,19 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant A: plum background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: what credit score you need for a DSCR loan (blog/what-credit-score-do-you-need-for-a-dscr-loan). -->
+<!-- RATE-BEARING: "from 7.00%" = rates.json rental.rateFrom as of 2026-10-19. Re-check rates.json before reusing. -->
+<rect width="1080" height="1080" fill="#281D28"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#B8AFB8">Private lending for real estate investors</text>
+<text x="84" y="340" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#FFBC7D">DSCR credit score</text>
+<text x="84" y="445" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Approval is the</text>
+<text x="84" y="545" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">property&#8217;s job.</text>
+<text x="84" y="645" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Pricing is yours.</text>
+<text x="84" y="735" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#D9D2D9">660 is the floor. Your middle score</text>
+<text x="84" y="785" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#D9D2D9">sets your rate for 30 years.</text>
+<text x="84" y="868" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#D9D2D9">30-year fixed <tspan fill="#FFBC7D" font-weight="bold">from 7.00%*</tspan></text>
+<text x="84" y="918" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#8F858F">*Before buy down &#183; Highest credit tier &#183; DSCR 1.20+</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#8F858F">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
