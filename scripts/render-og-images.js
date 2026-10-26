@@ -36,6 +36,9 @@ const PAGES = [
   { slug: 'what-credit-score-do-you-need-for-a-dscr-loan', eyebrow: 'Investor guide · DSCR', l1: 'Your score sets', l2: 'your rate.' },
   { slug: 'dscr-loan-down-payment', eyebrow: 'Investor guide · DSCR', l1: 'The real down', l2: 'payment math.' },
   { slug: 'what-is-a-hard-money-loan', eyebrow: 'Investor guide · Fix &amp; Flip', l1: 'Hard money,', l2: 'explained.' },
+  { slug: 'dscr-loans-for-2-4-unit-properties', eyebrow: 'Investor guide · DSCR', l1: 'Four rents,', l2: 'one payment.' },
+  { slug: 'ltv-ltc-arv-explained', eyebrow: 'Investor guide · Strategy', l1: 'LTV, LTC, ARV:', l2: 'the lowest wins.' },
+  { slug: 'investment-property-insurance-requirements', eyebrow: 'Investor guide · Strategy', l1: 'Insurance that', l2: 'closes on time.' },
 ];
 
 function svg(p) {

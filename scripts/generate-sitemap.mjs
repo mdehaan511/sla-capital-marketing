@@ -58,6 +58,9 @@ const BLOG_POSTS = [
   'what-credit-score-do-you-need-for-a-dscr-loan',
   'dscr-loan-down-payment',
   'what-is-a-hard-money-loan',
+  'dscr-loans-for-2-4-unit-properties',
+  'ltv-ltc-arv-explained',
+  'investment-property-insurance-requirements',
 ];
 
 const today = new Date().toISOString().slice(0, 10);
