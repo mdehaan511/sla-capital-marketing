@@ -1,0 +1,18 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant B: orange background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: DSCR loans for duplexes, triplexes and fourplexes (blog/dscr-loans-for-2-4-unit-properties). Drafted 2026-11-02 for 2026-11-05. No rates baked in; no-seasoning fact only. -->
+<rect width="1080" height="1080" fill="#DA7238"/>
+<rect x="84" y="84" width="10" height="120" fill="#281D28"/>
+<rect x="104" y="84" width="10" height="120" fill="#281D28"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#281D28">SLA <tspan fill="#FFFFFF">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#4A2A15">Private lending for real estate investors</text>
+<text x="84" y="350" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#281D28">DSCR &#183; 2&#8211;4 units</text>
+<text x="84" y="455" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">Four rents.</text>
+<text x="84" y="555" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#FFFFFF">One payment.</text>
+<text x="84" y="655" font-family="DejaVu Serif, Georgia, serif" font-size="80" font-weight="bold" fill="#281D28">One ratio.</text>
+<text x="84" y="745" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#3D2113">Vacant units count at market rent.</text>
+<text x="84" y="795" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#3D2113">80% LTV &#183; in your LLC &#183; no seasoning</text>
+<rect x="84" y="850" width="560" height="86" rx="14" fill="#281D28"/>
+<text x="364" y="906" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF">Read the 2&#8211;4 unit guide</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#5C3A22">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
