@@ -164,6 +164,14 @@
 # slacapital.ai/a/<name> -> the application, routed to that rep. Short enough
 # to text and low-density as a QR (the broker one-pager prints it).
 # Deliberately below /apply* and /api/* so it can never shadow them.
+# Knights of the Realm (2026-11-02): slacapital.ai/k/<slug> -> the Knight's page on the portal (the query rides along).
+# See netlify/functions/knight-shortlink.mjs.
+[[redirects]]
+  from   = "/k/*"
+  to     = "/.netlify/functions/knight-shortlink"
+  status = 200
+  force  = true
+
 # See netlify/functions/lo-shortlink.mjs.
 [[redirects]]
   from   = "/a/*"
