@@ -345,7 +345,8 @@
     },
     {
       "date": "2026-11-14",
-      "status": "approved",
+      "status": "posted",
+      "fb_status": "failed: Facebook access token invalidated on both Zapier connections; LinkedIn + Instagram posted",
       "theme": "Spec home construction loans / land plus vertical at 85% each, the two leverage tests, draws, interest on the drawn balance, plan the exit as a sale or a DSCR hold",
       "card": "spec-home-light.png",
       "variant": "light",
