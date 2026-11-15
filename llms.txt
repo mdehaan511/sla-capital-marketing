@@ -116,6 +116,23 @@ and /new-construction/<state>/ for 41 states (e.g.
 https://slacapital.ai/rental/florida/). Full list in the
 [sitemap](https://slacapital.ai/sitemap.xml).
 
+## Partner Programs
+
+- [Preferred Partners — for mortgage brokers](https://slacapital.ai/brokers/):
+  invitation-only broker portal. Brokers price business-purpose loans (DSCR 1–4 unit and
+  multifamily 5+, fix & flip / bridge, ground-up construction) against SLA's live rate
+  sheets, download or e-send a branded term sheet, submit in one step, and track every
+  deal to funding. Broker points and processing fee are paid at closing (some programs via
+  Bill.com after closing); a borrower stays tied to the broker for 365 days from their
+  last loan together. No cost to join. Request access at slacapital.ai/brokers.
+- [Knights of the Realm — referral program](https://slacapital.ai/knights/):
+  for wholesalers, agents, property managers, educators, contractors, CPAs and creators
+  who refer real estate investors. SLA Capital is the lender and handles everything after
+  the investor applies; Knights never quote rates or take applications. Knights earn a
+  revenue share (a referral fee) on the first funded loan from each referred investor,
+  rising by rank from 0.10% to 0.25% of the loan — up to $500 on a $200,000 loan. Free to
+  join; apply at portal.slacapital.ai/knights-join.
+
 ## Company
 
 - [Careers](https://slacapital.ai/current-jobs/)

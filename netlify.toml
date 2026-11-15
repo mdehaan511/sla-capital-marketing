@@ -160,6 +160,25 @@
   status = 200
   force  = true
 
+# ── Partner landing-page aliases (ads / outreach may use either form) ──
+[[redirects]]
+  from   = "/partners/knights"
+  to     = "/knights/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/partners/brokers"
+  to     = "/brokers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/partners"
+  to     = "/brokers/"
+  status = 301
+  force  = true
+
 # ── Rep short links (LAST on purpose) ───────────────────────
 # slacapital.ai/a/<name> -> the application, routed to that rep. Short enough
 # to text and low-density as a QR (the broker one-pager prints it).

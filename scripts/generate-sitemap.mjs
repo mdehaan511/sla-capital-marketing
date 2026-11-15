@@ -93,6 +93,8 @@ urls.push({ loc: '/faq/',            priority: '0.7', changefreq: 'monthly', las
 urls.push({ loc: '/glossary/',       priority: '0.7', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/rates/',           priority: '0.8', changefreq: 'weekly',  lastmod: today });
 urls.push({ loc: '/apply/',           priority: '0.6', changefreq: 'monthly', lastmod: today });
+urls.push({ loc: '/brokers/',         priority: '0.8', changefreq: 'monthly', lastmod: today });
+urls.push({ loc: '/knights/',         priority: '0.8', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/current-jobs/',    priority: '0.4', changefreq: 'monthly', lastmod: today });
 urls.push({ loc: '/privacy-policy/',  priority: '0.3', changefreq: 'yearly',  lastmod: today });
 
