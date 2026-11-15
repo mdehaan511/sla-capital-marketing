@@ -39,7 +39,7 @@ const PAGES = [
   { slug: 'dscr-loans-for-2-4-unit-properties', eyebrow: 'Investor guide · DSCR', l1: 'Four rents,', l2: 'one payment.' },
   { slug: 'ltv-ltc-arv-explained', eyebrow: 'Investor guide · Strategy', l1: 'LTV, LTC, ARV:', l2: 'the lowest wins.' },
   { slug: 'investment-property-insurance-requirements', eyebrow: 'Investor guide · Strategy', l1: 'Insurance that', l2: 'closes on time.' },
-  { slug: 'knights', eyebrow: '&#9876; Knights of the Realm · Referral program', l1: 'Earn up to $500', l2: 'on a $200,000 loan.' },
+  { slug: 'knights-referral', eyebrow: '&#9876; Knights of the Realm · Referral program', l1: 'Refer investors.', l2: 'Get paid when they close.' },
   { slug: 'brokers', eyebrow: 'Preferred Partners · For mortgage brokers', l1: 'Price it yourself.', l2: 'Close it with us.' },
 ];
 

@@ -38,30 +38,32 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const R = path.resolve(__dirname, '..');
 const CHECK = process.argv.includes('--check');
 const NOTE = '*Before Buy Down · Highest Credit Tier · DSCR 1.20+';
-const SRC_URL = 'https://portal.slacapital.ai/dscr-pricing.js';
+// 2026-11-15: the portal applies DIYA sheets as live DATA (portal Deploy 237.871),
+// so the constants baked into the served dscr-pricing.js froze on the 10/29 sheet
+// and this script, which parsed that file, kept publishing a stale floor. It now
+// reads the portal's public endpoint (portal Deploy 237.1103), which loads the
+// live sheet and applies the same formula as above. A 'baked' answer means the
+// live sheet didn't load; publishing it could roll the site back, so we abort.
+const SRC_URL = 'https://portal.slacapital.ai/api/public-dscr-floor';
 
-const src = await (await fetch(SRC_URL)).text();
-const m = { exports: {} };
-new Function('module', 'window', src)(m, undefined);
-const D = m.exports && m.exports.DIYA;
-if (!D || !D.baseRate || !D.baseRate['30Y Fixed']) {
-  console.error('SYNC ABORT: could not parse DIYA from ' + SRC_URL);
+let F;
+try { F = await (await fetch(SRC_URL, { cache: 'no-store' })).json(); }
+catch (e) { console.error('SYNC ABORT: could not read ' + SRC_URL + ': ' + (e && e.message)); process.exit(2); }
+if (!F || F.source !== 'live') {
+  console.error(`SYNC ABORT: portal answered source=${F && F.source} (live sheet not loaded) — not publishing a fallback rate.`);
   process.exit(2);
 }
-
-const num = a => a.filter(v => typeof v === 'number');
-const floorRaw = D.baseRate['30Y Fixed']
-  + Math.min(...num(D.fico['780+']))
-  + Math.min(...num(D.dscr['1.20+']));
+const floorRaw = Number(F.floor);
 const floor = Math.round(floorRaw * 100) / 100;
 if (!(floor > 3 && floor < 13)) {
-  console.error(`SYNC ABORT: computed floor ${floor} outside sanity bounds (3-13) — sheet format may have changed.`);
+  console.error(`SYNC ABORT: floor ${floor} outside sanity bounds (3-13).`);
   process.exit(2);
 }
 const newRate = floor.toFixed(2) + '%';
+const D = { effectiveDate: F.sheet || F.effective || '' };
 
-// Sheet effective date -> ISO for rates.json
-const ed = new Date(D.effectiveDate + ' UTC');
+// Sheet effective date -> ISO for rates.json (the portal's Pacific go-live day when given)
+const ed = F.effective ? new Date(F.effective + 'T00:00:00Z') : new Date(D.effectiveDate + ' UTC');
 const edIso = isNaN(ed) ? null : ed.toISOString().slice(0, 10);
 
 const ratesPath = path.join(R, 'data', 'rates.json');
@@ -99,6 +101,18 @@ for (const f of files) {
   if (!s.includes(oldRate)) continue;
   fs.writeFileSync(f, s.split(oldRate).join(newRate));
   changed++;
+}
+
+// 2b. Server-rendered "Rates current as of <date>" stamps (e.g. /brokers/), so
+//     crawlers and no-JS readers see the same date the page's script shows.
+if (edIso) {
+  const asOf = new Date(edIso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  for (const f of files) {
+    if (!f.endsWith('.html')) continue;
+    const s = fs.readFileSync(f, 'utf8');
+    const out = s.replace(/(<span id="ratesAsOf">)[^<]*(<\/span>)/g, `$1${asOf}$2`);
+    if (out !== s) fs.writeFileSync(f, out);
+  }
 }
 
 // 3. Regenerate the rates page from the updated rates.json.

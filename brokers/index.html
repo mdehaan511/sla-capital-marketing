@@ -17,6 +17,67 @@
   <meta property="og:image" content="https://slacapital.ai/assets/og/brokers.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/assets/brand.css" />
+  <style>
+    .lp-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .lp-hero h1 { font-size: 48px; line-height: 1.12; margin: 0 0 18px; }
+    .lp-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .app { background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 24px 60px rgba(40,29,40,.16); overflow: hidden; font-size: 14px; }
+    .app-bar { background: var(--secondary); color: #fff; padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .app-bar b { font-weight: 600; letter-spacing: .01em; }
+    .app-bar span { font-size: 12px; color: #FFBC7D; }
+    .app-body { padding: 18px; }
+    .app-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+    .fld { background: #F5F2EF; border-radius: 8px; padding: 8px 10px; }
+    .fld small { display: block; font-size: 11px; color: var(--muted); }
+    .fld strong { color: var(--secondary); font-size: 13px; }
+    .ts { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .ts-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .ts-head b { color: var(--secondary); }
+    .ok-pill { background: #E8F5EC; color: #1f7a3d; font-size: 12px; font-weight: 600; border-radius: 999px; padding: 3px 10px; }
+    .ts-line { display: flex; justify-content: space-between; padding: 7px 0; border-top: 1px dashed #ece6e2; color: var(--muted); }
+    .ts-line b { color: var(--secondary); font-weight: 600; }
+    .ts-line .live { background: #FDF1E9; color: var(--primary); font-size: 12px; font-weight: 600; border-radius: 999px; padding: 2px 9px; }
+    .ts-actions { display: flex; gap: 8px; margin-top: 12px; }
+    .ts-actions span { flex: 1; text-align: center; border-radius: 8px; padding: 8px; font-weight: 600; font-size: 13px; }
+    .track { display: flex; align-items: center; margin-top: 18px; }
+    .track .dot { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; flex: none; }
+    .track .done { background: var(--primary); color: #fff; }
+    .track .todo { background: #EFEAE6; color: var(--muted); }
+    .track .bar { flex: 1; height: 3px; background: #EFEAE6; }
+    .track .bar.done { background: var(--primary); }
+    .track-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 6px; }
+    .strip { display: flex; background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .strip > div { flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 20px 16px; font-weight: 600; color: var(--secondary); white-space: nowrap; }
+    .strip > div + div { border-left: 1px solid var(--border); }
+    .strip svg { width: 22px; height: 22px; color: var(--primary); flex: none; }
+    .ico { width: 48px; height: 48px; border-radius: 12px; background: #FDF1E9; color: var(--primary); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; flex: none; }
+    .ico svg { width: 24px; height: 24px; }
+    .tile { display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
+    .tile h4 { margin: 0 0 8px; font-size: 19px; line-height: 1.3; }
+    .tile p { margin: 0; color: var(--muted); }
+    .step-n { width: 40px; height: 40px; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .paid { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; background: var(--secondary); color: rgba(255,255,255,.85); border-radius: 16px; padding: 32px; }
+    .paid h2 { color: #fff; margin: 0 0 10px; }
+    .paid .ico { background: rgba(255,188,125,.15); color: #FFBC7D; width: 56px; height: 56px; margin: 0; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-grid label, .lbl { font-size: 14px; font-weight: 600; display: block; margin-bottom: 6px; color: var(--secondary); }
+    .inp { width: 100%; box-sizing: border-box; padding: 11px 13px; border: 1px solid rgba(40,29,40,0.25); border-radius: 8px; font-size: 16px; font-family: inherit; }
+    .prog td:nth-child(2), .prog td:nth-child(4), .prog td:nth-child(5) { white-space: nowrap; }
+    @media (max-width: 900px) {
+      .lp-hero { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+      .lp-hero h1 { font-size: 36px; }
+      .lp-actions { justify-content: center; }
+      .app { text-align: left; }
+      .app-row { grid-template-columns: repeat(2, 1fr); }
+      .strip { flex-wrap: wrap; }
+      .strip > div { flex: 1 1 50%; white-space: normal; box-sizing: border-box; }
+      .strip > div + div { border-left: 0; }
+      .strip > div:nth-child(even) { border-left: 1px solid var(--border); }
+      .strip > div:nth-child(n+3) { border-top: 1px solid var(--border); }
+      .paid { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SLA Capital Preferred Partners — Live Pricing for Mortgage Brokers","description":"The Preferred Partner Portal from SLA Capital (Sir Lends A Lot LLC, NMLS #2863552) gives mortgage brokers live pricing on business-purpose real estate loans — DSCR rental, multifamily DSCR, fix-and-flip/bridge and ground-up construction — branded term sheets, one-step submission, and deal tracking to funding. Invitation-only.","url":"https://slacapital.ai/brokers/","publisher":{"@type":"FinancialService","name":"SLA Capital","alternateName":"Sir Lends A Lot LLC","logo":{"@type":"ImageObject","url":"https://slacapital.ai/assets/logo.png"}}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who can join SLA Capital's Preferred Partner program?","acceptedAnswer":{"@type":"Answer","text":"Mortgage brokers and brokerages who place business-purpose real estate loans, by invitation from SLA Capital. Request access at slacapital.ai/brokers and an SLA loan officer sends your personal sign-up link."}},{"@type":"Question","name":"Do brokers need a license to work with SLA Capital?","acceptedAnswer":{"@type":"Answer","text":"To be paid a broker fee on a property in Arizona, California, Idaho, Minnesota, Nebraska, Nevada, New York, North Dakota, Oregon or South Dakota, you need a current license for that state. The portal asks for it when you submit there. Elsewhere your NMLS number is optional."}},{"@type":"Question","name":"How are brokers paid by SLA Capital?","acceptedAnswer":{"@type":"Answer","text":"You set your broker points and an optional processing fee on each deal. Your fee shows on the term sheet and is paid at closing on the settlement statement, or through Bill.com after closing on some programs, all tracked on the portal's Compensation page."}},{"@type":"Question","name":"Will SLA Capital contact my borrower around me?","acceptedAnswer":{"@type":"Answer","text":"No. Your borrower stays tied to you for 365 days from your last loan with them, even if they later come to SLA directly."}},{"@type":"Question","name":"What does the Preferred Partner program cost?","acceptedAnswer":{"@type":"Answer","text":"Nothing. There is no fee to join the Preferred Partner program or to use the portal."}},{"@type":"Question","name":"Where does SLA Capital lend?","acceptedAnswer":{"@type":"Answer","text":"Nationwide except AZ, CA, MN, ND, NV, SD, UT, VT and US territories. Fix & Flip and New Construction also exclude IL, the city of Newark NJ, and rural properties. Multifamily 5+ also excludes ID."}}]}</script>
@@ -38,106 +99,145 @@
     </div>
   </nav>
 
-  <section class="section" style="padding-top:64px;padding-bottom:32px">
-    <div class="container" style="max-width:780px;text-align:center">
-      <div class="eyebrow">Preferred Partners · For Mortgage Brokers</div>
-      <h1 style="font-size:46px;line-height:1.15;margin-bottom:16px">Price it yourself. Close it with us.</h1>
-      <p class="lede" style="margin-bottom:28px">SLA Capital's Preferred Partner Portal gives mortgage brokers live pricing on business-purpose real estate loans, a real term sheet in minutes, and a clear view of every deal from submission to funding.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a href="#request-access" class="btn btn-primary btn-lg">Request partner access</a>
-        <a href="https://portal.slacapital.ai/partner-login" class="btn btn-ghost btn-lg">Partner sign in</a>
+  <!-- Hero -->
+  <section class="section" style="padding-top:64px;padding-bottom:40px">
+    <div class="container" style="max-width:1140px">
+      <div class="lp-hero">
+        <div>
+          <div class="eyebrow">Preferred Partners · For mortgage brokers</div>
+          <h1>Price it yourself. Close it with us.</h1>
+          <p class="lede" style="margin:0">SLA Capital's Preferred Partner Portal gives mortgage brokers live pricing on business-purpose real estate loans, a real term sheet in minutes, and a clear view of every deal from submission to funding.</p>
+          <div class="lp-actions">
+            <a href="#request-access" class="btn btn-primary btn-lg">Request partner access</a>
+            <a href="https://portal.slacapital.ai/partner-login" class="btn btn-ghost btn-lg">Partner sign in</a>
+          </div>
+        </div>
+        <div class="app" role="img" aria-label="Illustration of the Preferred Partner Portal: a priced deal, its term sheet and the deal tracker">
+          <div class="app-bar"><b>Preferred Partner Portal</b><span>● Pricing on today's sheets</span></div>
+          <div class="app-body">
+            <div class="app-row">
+              <div class="fld"><small>Program</small><strong>DSCR 1–4 unit</strong></div>
+              <div class="fld"><small>Purchase price</small><strong>$550,000</strong></div>
+              <div class="fld"><small>LTV</small><strong>75%</strong></div>
+              <div class="fld"><small>Credit</small><strong>740–759</strong></div>
+            </div>
+            <div class="ts">
+              <div class="ts-head"><b>Term sheet</b><span class="ok-pill">✓ Eligible</span></div>
+              <div class="ts-line"><span>Loan amount</span><b>$412,500</b></div>
+              <div class="ts-line"><span>Rate</span><span class="live">Live from today's sheet</span></div>
+              <div class="ts-line"><span>SLA origination</span><b>1.00 point</b></div>
+              <div class="ts-line"><span>Your broker fee</span><b style="color:#1f7a3d">You set it · paid at closing</b></div>
+              <div class="ts-actions"><span style="background:#F5F2EF;color:var(--secondary)">Download PDF</span><span style="background:var(--primary);color:#fff">Send to e-sign</span></div>
+            </div>
+            <div class="track" aria-hidden="true">
+              <span class="dot done">✓</span><span class="bar done"></span><span class="dot done">✓</span><span class="bar done"></span><span class="dot done">✓</span><span class="bar"></span><span class="dot todo">4</span><span class="bar"></span><span class="dot todo">5</span>
+            </div>
+            <div class="track-labels"><span>Received</span><span>Approved</span><span>Processing</span><span>Clear to close</span><span>Funded</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="padding-top:0;padding-bottom:40px">
-    <div class="container" style="max-width:1000px">
-      <div class="grid grid-4" style="gap:16px;text-align:center">
-        <div class="card" style="padding:18px"><strong>Term sheet in minutes</strong></div>
-        <div class="card" style="padding:18px"><strong>Your borrower stays yours</strong></div>
-        <div class="card" style="padding:18px"><strong>Paid at closing</strong></div>
-        <div class="card" style="padding:18px"><strong>Draws that keep pace</strong></div>
+  <!-- Benefit strip -->
+  <section class="section" style="padding-top:0;padding-bottom:48px">
+    <div class="container" style="max-width:1040px">
+      <div class="strip">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Term sheet in minutes</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Your borrower stays yours</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Paid at closing</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg>Draws that keep pace</div>
       </div>
     </div>
   </section>
 
+  <!-- What partners get -->
   <section class="section section-tinted">
-    <div class="container" style="max-width:1000px">
+    <div class="container" style="max-width:1080px">
       <h2 style="text-align:center;margin-bottom:36px">What Preferred Partners get</h2>
-      <div class="grid grid-2" style="gap:20px">
-        <div class="card"><h4 style="margin-top:0">Live pricing, on your own</h4><p style="color:var(--muted);margin:0">Price deals 24/7 against SLA's current rate sheets: rate, points, loan amount, total fees and required liquidity, plus what you earn — before your borrower is under contract.</p></div>
-        <div class="card"><h4 style="margin-top:0">Every program, one lender</h4><p style="color:var(--muted);margin:0">DSCR rentals (1–4 units and 5+), bridge and fix-and-flip, and ground-up construction.</p></div>
-        <div class="card"><h4 style="margin-top:0">A branded term sheet in one click</h4><p style="color:var(--muted);margin:0">Download it, or send it to your borrower to e-sign from the portal.</p></div>
-        <div class="card"><h4 style="margin-top:0">Submit in one step</h4><p style="color:var(--muted);margin:0">Send a priced deal straight to your SLA loan officer for approval. Ask for an exception on a submitted deal when it needs one.</p></div>
-        <div class="card"><h4 style="margin-top:0">Your Deals, live</h4><p style="color:var(--muted);margin:0">Every loan's stage: received, approved, in processing, clear to close, funded. Upload documents for your borrower and work the file with SLA.</p></div>
-        <div class="card"><h4 style="margin-top:0">Your borrower is protected</h4><p style="color:var(--muted);margin:0">A borrower you bring stays tied to you for 365 days from your last loan with them, even if they later come to SLA directly.</p></div>
-        <div class="card"><h4 style="margin-top:0">Send the application your way</h4><p style="color:var(--muted);margin:0">Send the loan application with SLA branding, or without it on a neutral domain that shows your company name.</p></div>
-        <div class="card"><h4 style="margin-top:0">Your team, organized</h4><p style="color:var(--muted);margin:0">Add loan officers (they price and submit) and processors (they see every deal and upload documents). Only the owner sees compensation.</p></div>
-        <div class="card" style="grid-column:1/-1"><h4 style="margin-top:0">Know when pricing moves</h4><p style="color:var(--muted);margin:0">Emails when SLA's rate sheets change, a daily note on saved quotes whose rate moved, and rate-lock reminders before a lock expires. Turn each one on or off.</p></div>
+      <div class="grid grid-3" style="gap:20px">
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M14 10h2M8 14h2M14 14h2M8 18h2M14 18h2"/></svg></div><h4>Live pricing, 24/7</h4><p>Price deals 24/7 against SLA's current rate sheets: rate, points, loan amount, total fees and required liquidity, plus what you earn.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div><h4>Every program, one lender</h4><p>DSCR rentals (1–4 units and 5+), bridge and fix-and-flip, and ground-up construction.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><h4>One-click term sheets</h4><p>A branded term sheet you can download, or send to your borrower to e-sign from the portal.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></div><h4>Submit in one step</h4><p>Send a priced deal straight to your SLA loan officer for approval, and ask for an exception when a deal needs one.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></svg></div><h4>Your Deals, live</h4><p>Every loan's stage from received to funded. Upload documents for your borrower and work the file with SLA.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Borrower protection</h4><p>A borrower you bring stays tied to you for 365 days from your last loan with them, even if they later come to SLA directly.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div><h4>The application, your way</h4><p>Send the loan application with SLA branding, or without it on a neutral domain that shows your company name.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h4>Your team, organized</h4><p>Add loan officers (they price and submit) and processors (they see every deal and upload documents). Only the owner sees compensation.</p></div>
+        <div class="card tile"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h4>Know when pricing moves</h4><p>Alerts when SLA's rate sheets change, a daily note on saved quotes whose rate moved, and rate-lock reminders. Each one optional.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- How you get paid -->
   <section class="section">
-    <div class="container" style="max-width:760px">
-      <h2 style="text-align:center;margin-bottom:16px">How you get paid</h2>
-      <p style="color:var(--muted);text-align:center">You set your broker points (and an optional processing fee) on each deal. Your fee shows on the term sheet and is paid <strong>at closing</strong> on the settlement statement. Some programs pay through Bill.com after closing instead. Either way, the portal's Compensation page shows every closed deal, what was paid, and your year-to-date and all-time totals, with a downloadable statement.</p>
+    <div class="container" style="max-width:900px">
+      <div class="paid">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div>
+          <h2>How you get paid</h2>
+          <p style="margin:0">You set your broker points (and an optional processing fee) on each deal. Your fee shows on the term sheet and is paid <strong style="color:#fff">at closing</strong> on the settlement statement. Some programs pay through Bill.com after closing instead. Either way, the portal's Compensation page shows every closed deal, what was paid, and your year-to-date and all-time totals, with a downloadable statement.</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- How it works -->
   <section class="section section-tinted">
-    <div class="container" style="max-width:1000px">
+    <div class="container" style="max-width:1040px">
       <h2 style="text-align:center;margin-bottom:36px">How it works</h2>
       <div class="grid grid-3" style="gap:24px">
-        <div class="card"><div class="chip" style="margin-bottom:12px">1 · Get your invitation</div><p style="color:var(--muted);margin:0">Request access, and an SLA loan officer sends your personal sign-up link.</p></div>
-        <div class="card"><div class="chip" style="margin-bottom:12px">2 · Set up in minutes</div><p style="color:var(--muted);margin:0">Create your login, then complete your W-9 and SLA's Business Purpose Loan Broker Agreement, both signed online in the portal.</p></div>
-        <div class="card"><div class="chip" style="margin-bottom:12px">3 · Start pricing</div><p style="color:var(--muted);margin:0">Your access opens automatically as soon as both are done, and we email you when it does.</p></div>
+        <div class="card tile"><div class="step-n">1</div><h4>Get your invitation</h4><p>Request access, and an SLA loan officer sends your personal sign-up link.</p></div>
+        <div class="card tile"><div class="step-n">2</div><h4>Set up in minutes</h4><p>Create your login, then complete your W-9 and SLA's Business Purpose Loan Broker Agreement, both signed online in the portal.</p></div>
+        <div class="card tile"><div class="step-n">3</div><h4>Start pricing</h4><p>Your access opens automatically as soon as both are done, and we email you when it does.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- Programs -->
   <section class="section">
-    <div class="container" style="max-width:1000px">
+    <div class="container" style="max-width:1040px">
       <h2 style="text-align:center;margin-bottom:28px">The loan programs</h2>
-      <div style="overflow-x:auto">
-      <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:640px">
-        <thead><tr style="border-bottom:2px solid var(--primary);text-align:left"><th style="padding:12px 10px">Program</th><th style="padding:12px 10px">Rates</th><th style="padding:12px 10px">Leverage</th><th style="padding:12px 10px">Credit</th><th style="padding:12px 10px">Loan size</th></tr></thead>
+      <div style="overflow-x:auto;border:1px solid var(--border);border-radius:14px">
+      <table class="prog" style="width:100%;border-collapse:collapse;font-size:15px;min-width:680px">
+        <thead><tr style="background:#F5F2EF;text-align:left"><th style="padding:14px 16px">Program</th><th style="padding:14px 16px">Rates</th><th style="padding:14px 16px">Leverage</th><th style="padding:14px 16px">Credit</th><th style="padding:14px 16px">Loan size</th></tr></thead>
         <tbody>
-          <tr style="border-bottom:1px solid rgba(40,29,40,0.12)"><td style="padding:12px 10px"><strong>Fix &amp; Flip / Bridge</strong></td><td style="padding:12px 10px">9.5%–12%, 1–4 points</td><td style="padding:12px 10px">up to 92.5% LTC, 75% of ARV; 100% of rehab</td><td style="padding:12px 10px">680+</td><td style="padding:12px 10px">$100K–$3M</td></tr>
-          <tr style="border-bottom:1px solid rgba(40,29,40,0.12)"><td style="padding:12px 10px"><strong>New Construction</strong></td><td style="padding:12px 10px">from 10%</td><td style="padding:12px 10px">85% of land + 85% of construction</td><td style="padding:12px 10px">680+</td><td style="padding:12px 10px">$100K–$7.5M</td></tr>
-          <tr style="border-bottom:1px solid rgba(40,29,40,0.12)"><td style="padding:12px 10px"><strong>DSCR Rental (1–4 units)</strong></td><td style="padding:12px 10px">from <span id="dscrRate">6.95%</span></td><td style="padding:12px 10px">up to 80% LTV purchase and rate/term; 75% cash-out</td><td style="padding:12px 10px">660+</td><td style="padding:12px 10px">$100K–$3M</td></tr>
-          <tr><td style="padding:12px 10px"><strong>Multifamily DSCR (5–10 units)</strong></td><td style="padding:12px 10px">ask your rep</td><td style="padding:12px 10px">up to 74.99% LTV</td><td style="padding:12px 10px">700+</td><td style="padding:12px 10px">$350K–$5M</td></tr>
+          <tr style="border-top:1px solid var(--border)"><td style="padding:14px 16px"><strong>Fix &amp; Flip / Bridge</strong></td><td style="padding:14px 16px">9.5%–12%, 1–4 points</td><td style="padding:14px 16px">up to 92.5% LTC, 75% of ARV; 100% of rehab</td><td style="padding:14px 16px">660+</td><td style="padding:14px 16px">$100K–$3M</td></tr>
+          <tr style="border-top:1px solid var(--border)"><td style="padding:14px 16px"><strong>New Construction</strong></td><td style="padding:14px 16px">from 10%</td><td style="padding:14px 16px">85% of land + 85% of construction</td><td style="padding:14px 16px">680+</td><td style="padding:14px 16px">$100K–$7.5M</td></tr>
+          <tr style="border-top:1px solid var(--border)"><td style="padding:14px 16px"><strong>DSCR Rental (1–4 units)</strong></td><td style="padding:14px 16px">from <span id="dscrRate">7.28%</span></td><td style="padding:14px 16px">up to 80% LTV purchase and rate/term; 75% cash-out</td><td style="padding:14px 16px">660+</td><td style="padding:14px 16px">$100K–$3M</td></tr>
+          <tr style="border-top:1px solid var(--border)"><td style="padding:14px 16px"><strong>Multifamily DSCR (5–10 units)</strong></td><td style="padding:14px 16px">ask your rep</td><td style="padding:14px 16px">up to 74.99% LTV</td><td style="padding:14px 16px">700+</td><td style="padding:14px 16px">$350K–$5M</td></tr>
         </tbody>
       </table>
       </div>
-      <p style="font-size:13px;color:var(--muted);margin-top:14px">Rates and terms are indicative, change with the market, and are subject to underwriting, valuation and final approval. This is not a commitment to lend. Rates current as of <span id="ratesAsOf">October 29, 2026</span>.</p>
-      <ul style="color:var(--muted);margin-top:20px;line-height:1.8">
-        <li>Fix &amp; flip closes in as little as 72 hours.</li>
-        <li>DSCR: no lease required, cash-out with no seasoning, up to 10 properties on one loan, 1.00 DSCR minimum.</li>
-        <li>New construction: interest only on drawn funds, 18- or 24-month terms, unpermitted land eligible.</li>
-      </ul>
+      <p style="font-size:13px;color:var(--muted);margin-top:14px">Rates and terms are indicative, change with the market, and are subject to underwriting, valuation and final approval. This is not a commitment to lend. Rates current as of <span id="ratesAsOf">November 13, 2026</span>.</p>
+      <div class="grid grid-3" style="gap:16px;margin-top:24px">
+        <div class="card tile" style="padding:18px"><h4 style="font-size:16px">Fix &amp; Flip</h4><p style="font-size:14px">Closes in as little as 72 hours.</p></div>
+        <div class="card tile" style="padding:18px"><h4 style="font-size:16px">DSCR</h4><p style="font-size:14px">No lease required, cash-out with no seasoning, up to 10 properties on one loan, 1.00 DSCR minimum.</p></div>
+        <div class="card tile" style="padding:18px"><h4 style="font-size:16px">New Construction</h4><p style="font-size:14px">Interest only on drawn funds, 18- or 24-month terms, unpermitted land eligible.</p></div>
+      </div>
     </div>
   </section>
 
+  <!-- Request access -->
   <section class="section section-tinted" id="request-access">
-    <div class="container" style="max-width:560px">
+    <div class="container" style="max-width:620px">
       <h2 style="text-align:center;margin-bottom:8px">Request partner access</h2>
       <p style="text-align:center;color:var(--muted);margin-bottom:24px">The program is invitation-only. Tell us who you are and an SLA loan officer will reply with your personal sign-up link.</p>
       <div id="ppForm" class="card" style="padding:28px">
-        <div class="grid grid-2" style="gap:14px">
-          <div><label for="ppName" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">Name</label><input id="ppName" type="text" autocomplete="name" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
-          <div><label for="ppCompany" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">Company</label><input id="ppCompany" type="text" autocomplete="organization" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
-          <div><label for="ppEmail" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">Email</label><input id="ppEmail" type="email" autocomplete="email" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
-          <div><label for="ppPhone" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">Phone</label><input id="ppPhone" type="tel" autocomplete="tel" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
-          <div><label for="ppStates" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">State(s) you place loans in</label><input id="ppStates" type="text" placeholder="e.g. WA, TX, FL" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
-          <div><label for="ppNmls" style="font-size:14px;font-weight:600;display:block;margin-bottom:6px">NMLS # <span style="color:var(--muted);font-weight:400">(optional)</span></label><input id="ppNmls" type="text" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px" /></div>
+        <div class="form-grid">
+          <div><label for="ppName">Name</label><input id="ppName" class="inp" type="text" autocomplete="name" /></div>
+          <div><label for="ppCompany">Company</label><input id="ppCompany" class="inp" type="text" autocomplete="organization" /></div>
+          <div><label for="ppEmail">Email</label><input id="ppEmail" class="inp" type="email" autocomplete="email" /></div>
+          <div><label for="ppPhone">Phone</label><input id="ppPhone" class="inp" type="tel" autocomplete="tel" /></div>
+          <div><label for="ppStates">State(s) you place loans in</label><input id="ppStates" class="inp" type="text" placeholder="e.g. WA, TX, FL" /></div>
+          <div><label for="ppNmls">NMLS # <span style="color:var(--muted);font-weight:400">(optional)</span></label><input id="ppNmls" class="inp" type="text" /></div>
         </div>
-        <label for="ppWho" style="font-size:14px;font-weight:600;display:block;margin:14px 0 6px">Who at SLA do you work with? <span style="color:var(--muted);font-weight:400">(optional)</span></label>
-        <input id="ppWho" type="text" style="width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid rgba(40,29,40,0.25);border-radius:8px;font-size:16px;margin-bottom:20px" />
+        <label class="lbl" for="ppWho" style="margin-top:14px">Who at SLA do you work with? <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+        <input id="ppWho" class="inp" type="text" style="margin-bottom:20px" />
         <input id="ppHp" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
         <button id="ppBtn" class="btn btn-primary" style="width:100%;font-size:17px;padding:14px" onclick="ppSubmit()">Request partner access</button>
         <div id="ppErr" style="display:none;color:#7c1f1f;font-size:14px;margin-top:12px"></div>
-        <p style="font-size:13px;color:var(--muted);margin:14px 0 0;text-align:center">Prefer email? <a href="mailto:apply@slacapital.com?subject=Preferred%20Partner%20access" style="color:var(--primary)">apply@slacapital.com</a> with the subject "Preferred Partner access".</p>
+        <p style="font-size:13px;color:var(--muted);margin:14px 0 0;text-align:center">Prefer email? <a href="mailto:apply@slacapital.com?subject=Preferred%20Partner%20access">apply@slacapital.com</a> with the subject "Preferred Partner access".</p>
       </div>
       <div id="ppDone" class="card" style="display:none;padding:32px;text-align:center">
         <h3 style="margin:0 0 8px">Request received.</h3>
@@ -146,6 +246,7 @@
     </div>
   </section>
 
+  <!-- FAQ -->
   <section class="section">
     <div class="container" style="max-width:820px">
       <h2 style="text-align:center;margin-bottom:32px">Questions</h2>
@@ -158,11 +259,12 @@
     </div>
   </section>
 
+  <!-- Closing CTA -->
   <section class="section section-tinted" style="text-align:center">
     <div class="container" style="max-width:640px">
       <h2 style="margin-bottom:24px">Bring us the deal. Keep the borrower.</h2>
       <a href="#request-access" class="btn btn-primary btn-lg">Request partner access</a>
-      <p style="font-size:14px;color:var(--muted);margin-top:28px">Not a licensed broker? Refer investors through <a href="/knights/" style="color:var(--primary)"><strong>Knights of the Realm</strong></a>, SLA's referral program.</p>
+      <p style="font-size:14px;color:var(--muted);margin-top:28px">Not a licensed broker? Refer investors through <a href="/knights/"><strong>Knights of the Realm</strong></a>, SLA's referral program.</p>
     </div>
   </section>
 
