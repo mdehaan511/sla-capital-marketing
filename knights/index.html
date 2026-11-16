@@ -61,10 +61,21 @@
       .stage .sh-c { width: 160px; top: 40px; }
       .stage .sh-l, .stage .sh-r { width: 108px; top: 84px; }
     }
+    /* the waitlist modal (Mike 11/16) */
+    .wl-back { position: fixed; inset: 0; background: rgba(28,20,30,.55); display: none; align-items: center; justify-content: center; padding: 16px; z-index: 1000; }
+    .wl-back.show { display: flex; }
+    .wl-box { background: #fff; border-radius: 16px; width: 100%; max-width: 520px; max-height: calc(100vh - 32px); overflow-y: auto; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.3); position: relative; }
+    .wl-box h3 { margin: 0 0 6px; font-size: 26px; color: var(--secondary); }
+    .wl-x { position: absolute; top: 12px; right: 14px; background: none; border: 0; font-size: 28px; line-height: 1; color: var(--muted); cursor: pointer; padding: 4px 8px; }
+    .wl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+    .wl-grid .full { grid-column: 1 / -1; }
+    .wl-grid label { font-size: 14px; font-weight: 600; display: block; margin-bottom: 6px; color: var(--secondary); }
+    .wl-inp { width: 100%; box-sizing: border-box; padding: 11px 13px; border: 1px solid rgba(40,29,40,0.25); border-radius: 8px; font-size: 16px; font-family: inherit; background: #fff; }
+    @media (max-width: 560px) { .wl-grid { grid-template-columns: 1fr; } .wl-box { padding: 22px 18px; } }
   </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Knights of the Realm — SLA Capital's Real Estate Investor Referral Program","description":"The referral program of SLA Capital (Sir Lends A Lot LLC, NMLS #2863552). Partners refer real estate investors; SLA Capital is the lender and handles underwriting, closing, funding and servicing; partners earn a revenue share on loans their referrals close.","url":"https://slacapital.ai/knights/","publisher":{"@type":"FinancialService","name":"SLA Capital","alternateName":"Sir Lends A Lot LLC","logo":{"@type":"ImageObject","url":"https://slacapital.ai/assets/logo.png"}}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who is the lender in the Knights of the Realm referral program?","acceptedAnswer":{"@type":"Answer","text":"SLA Capital (Sir Lends A Lot LLC, NMLS ID #2863552). Underwriting, closing, funding, servicing and the lending compliance sit with SLA."}},{"@type":"Question","name":"What does a Knight actually do?","acceptedAnswer":{"@type":"Answer","text":"Introduce investors and share your link and materials. You never quote, negotiate or discuss rates or terms, and you never take an application or a borrower's documents."}},{"@type":"Question","name":"How do Knights earn?","acceptedAnswer":{"@type":"Answer","text":"A revenue share (a referral fee) on the first loan each investor you refer closes with SLA. Paid monthly through Bill.com once your W-9 and agreement are on file. Nothing is owed on a loan that does not fund."}},{"@type":"Question","name":"Do I need a lending license to be a Knight?","acceptedAnswer":{"@type":"Answer","text":"Most partners do not, because a partner never quotes, negotiates or arranges a loan; SLA is the licensed lender. Some states set their own rules for paying referral partners, and the partner agreement explains how SLA handles that."}},{"@type":"Question","name":"What do Knights have to tell people?","acceptedAnswer":{"@type":"Answer","text":"That you are paid for referrals. Every post in your kit already starts with \"#ad · paid SLA Capital referral partner\"."}},{"@type":"Question","name":"What kinds of loans does SLA Capital make?","acceptedAnswer":{"@type":"Answer","text":"Business-purpose loans for real estate investors: fix-and-flip and bridge, new construction, and rental (DSCR) loans, including small multifamily. No owner-occupied home loans."}},{"@type":"Question","name":"What does it cost to join?","acceptedAnswer":{"@type":"Answer","text":"Nothing. No fee to join and nothing to buy."}},{"@type":"Question","name":"Where does SLA Capital lend?","acceptedAnswer":{"@type":"Answer","text":"Nationwide except AZ, CA, MN, ND, NV, SD, UT, VT and US territories. Fix & Flip and New Construction also exclude IL, the city of Newark NJ, and rural properties. Multifamily 5+ also excludes ID."}},{"@type":"Question","name":"How do I become a Knight?","acceptedAnswer":{"@type":"Answer","text":"Apply in about five minutes at portal.slacapital.ai/knights-join and sign the Knight Partner Agreement online. An SLA admin reviews every application, and once you're approved your link and portal arrive by email."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who is the lender in the Knights of the Realm referral program?","acceptedAnswer":{"@type":"Answer","text":"SLA Capital (Sir Lends A Lot LLC, NMLS ID #2863552). Underwriting, closing, funding, servicing and the lending compliance sit with SLA."}},{"@type":"Question","name":"What does a Knight actually do?","acceptedAnswer":{"@type":"Answer","text":"Introduce investors and share your link and materials. You never quote, negotiate or discuss rates or terms, and you never take an application or a borrower's documents."}},{"@type":"Question","name":"How do Knights earn?","acceptedAnswer":{"@type":"Answer","text":"A revenue share (a referral fee) on the first loan each investor you refer closes with SLA. Paid monthly through Bill.com once your W-9 and agreement are on file. Nothing is owed on a loan that does not fund."}},{"@type":"Question","name":"Do I need a lending license to be a Knight?","acceptedAnswer":{"@type":"Answer","text":"Most partners do not, because a partner never quotes, negotiates or arranges a loan; SLA is the licensed lender. Some states set their own rules for paying referral partners, and the partner agreement explains how SLA handles that."}},{"@type":"Question","name":"What do Knights have to tell people?","acceptedAnswer":{"@type":"Answer","text":"That you are paid for referrals. Every post in your kit already starts with \"#ad · paid SLA Capital referral partner\"."}},{"@type":"Question","name":"What kinds of loans does SLA Capital make?","acceptedAnswer":{"@type":"Answer","text":"Business-purpose loans for real estate investors: fix-and-flip and bridge, new construction, and rental (DSCR) loans, including small multifamily. No owner-occupied home loans."}},{"@type":"Question","name":"What does it cost to join?","acceptedAnswer":{"@type":"Answer","text":"Nothing. No fee to join and nothing to buy."}},{"@type":"Question","name":"Where does SLA Capital lend?","acceptedAnswer":{"@type":"Answer","text":"Nationwide except AZ, CA, MN, ND, NV, SD, UT, VT and US territories. Fix & Flip and New Construction also exclude IL, the city of Newark NJ, and rural properties. Multifamily 5+ also excludes ID."}},{"@type":"Question","name":"How do I become a Knight?","acceptedAnswer":{"@type":"Answer","text":"Join the waitlist on slacapital.ai/knights. When the program opens, SLA Capital emails you an invitation to apply and sign the Knight Partner Agreement online. An SLA admin reviews every application, and once you're approved your link and portal arrive by email."}}]}</script>
 </head>
 <body>
   <div class="legal-strip"><div class="container"><strong>SLA Capital</strong> — a Sir Lends A Lot LLC Company</div></div>
@@ -78,7 +89,7 @@
         <li><a href="/new-construction/">New Construction</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="https://portal.slacapital.ai/knights-login">Knight Sign In</a></li>
-        <li><a href="https://portal.slacapital.ai/knights-join" class="btn btn-primary">Become a Knight</a></li>
+        <li><a href="#waitlist" class="btn btn-primary" onclick="openWaitlist();return false">Join the waitlist</a></li>
       </ul>
     </div>
   </nav>
@@ -92,10 +103,10 @@
           <h1>Refer investors to SLA Capital. Get paid when their loan closes.</h1>
           <p class="lede" style="margin:0">You make the introduction. SLA Capital is the lender and does everything after your investor applies. You earn a revenue share (a referral fee) on every loan your referrals close.</p>
           <div class="lp-actions">
-            <a href="https://portal.slacapital.ai/knights-join" class="btn btn-primary btn-lg">Become a Knight</a>
+            <a href="#waitlist" class="btn btn-primary btn-lg" onclick="openWaitlist();return false">Join the waitlist</a>
             <a href="#how-it-works" class="btn btn-ghost btn-lg">How it works ↓</a>
           </div>
-          <p class="lp-fine">Free to join · You never quote a rate · You never touch a loan file</p>
+          <p class="lp-fine">Launching soon · Free to join · You never quote a rate · You never touch a loan file</p>
           <p class="lp-fine" style="margin-top:6px"><a href="https://portal.slacapital.ai/knights-login">Already a Knight? Sign in</a></p>
         </div>
         <div class="stage" role="img" aria-label="A shield carrying your logo in front of the SLA Capital logo: your logo in the front, our lending team in the back">
@@ -205,7 +216,7 @@
       <img src="/assets/knights/shield-lion-plum.svg" alt="" width="84" height="84" style="display:block;margin:0 auto 18px" loading="lazy" />
       <h2 style="margin-bottom:8px">Your investors are going to borrow anyway.</h2>
       <p class="lede" style="margin-bottom:24px">Make it with a lender you can stand behind, and get paid when it closes.</p>
-      <a href="https://portal.slacapital.ai/knights-join" class="btn btn-primary btn-lg">Become a Knight</a>
+      <a href="#waitlist" class="btn btn-primary btn-lg" onclick="openWaitlist();return false">Join the waitlist</a>
       <p style="font-size:14px;color:var(--muted);margin-top:28px">Licensed mortgage broker? See the <a href="/brokers/"><strong>Preferred Partner</strong> program</a>.</p>
     </div>
   </section>
@@ -218,5 +229,66 @@
       </div>
     </div>
   </footer>
+  <!-- Join the waitlist (Mike 11/16): name, email, phone, company, what they do -> the Knights desk (a Wanderer at "Interested") -->
+  <div class="wl-back" id="wlBack" onclick="if (event.target === this) closeWaitlist()" role="dialog" aria-modal="true" aria-labelledby="wlTitle">
+    <div class="wl-box">
+      <button type="button" class="wl-x" onclick="closeWaitlist()" aria-label="Close">&times;</button>
+      <div id="wlForm">
+        <div class="eyebrow">Knights of the Realm</div>
+        <h3 id="wlTitle">Join the waitlist</h3>
+        <p style="color:var(--muted);margin:0">The program opens soon. Leave your details and we will reach out with your invitation before anyone else.</p>
+        <div class="wl-grid">
+          <div class="full"><label for="wlName">Name</label><input id="wlName" class="wl-inp" type="text" autocomplete="name" maxlength="120" /></div>
+          <div><label for="wlEmail">Email</label><input id="wlEmail" class="wl-inp" type="email" autocomplete="email" maxlength="160" /></div>
+          <div><label for="wlPhone">Phone</label><input id="wlPhone" class="wl-inp" type="tel" autocomplete="tel" maxlength="30" /></div>
+          <div class="full"><label for="wlCompany">Company <span style="color:var(--muted);font-weight:400">(optional)</span></label><input id="wlCompany" class="wl-inp" type="text" autocomplete="organization" maxlength="120" /></div>
+          <div class="full"><label for="wlRole">What do you do?</label>
+            <select id="wlRole" class="wl-inp" onchange="document.getElementById('wlOtherBox').style.display = this.value === 'other' ? '' : 'none'">
+              <option value="">Choose one</option>
+              <option value="influencer">Real estate influencer or content creator</option>
+              <option value="meetup">Real estate meetup or group organizer</option>
+              <option value="agent">Real estate agent or broker</option>
+              <option value="other">Something else</option>
+            </select></div>
+          <div class="full" id="wlOtherBox" style="display:none"><label for="wlOther">Tell us a little</label><input id="wlOther" class="wl-inp" type="text" maxlength="120" placeholder="e.g. property manager, coach, podcast host" /></div>
+        </div>
+        <input id="wlHp" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+        <button type="button" id="wlBtn" class="btn btn-primary" style="width:100%;font-size:17px;padding:14px;margin-top:20px" onclick="sendWaitlist()">Join the waitlist</button>
+        <div id="wlErr" style="display:none;color:#7c1f1f;font-size:14px;margin-top:12px"></div>
+        <p style="font-size:12px;color:var(--muted);margin:14px 0 0;text-align:center">We use these details only to contact you about the program.</p>
+      </div>
+      <div id="wlDone" style="display:none;text-align:center;padding:12px 0">
+        <img src="/assets/knights/shield-lion-plum.svg" alt="" width="72" height="72" style="display:block;margin:0 auto 14px" />
+        <h3 style="margin:0 0 8px">You're on the list.</h3>
+        <p style="color:var(--muted);margin:0 0 18px">Thank you. We will reach out before the program opens.</p>
+        <button type="button" class="btn btn-ghost" onclick="closeWaitlist()">Close</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openWaitlist() { document.getElementById('wlBack').classList.add('show'); document.body.style.overflow = 'hidden'; setTimeout(function () { var n = document.getElementById('wlName'); if (n && document.getElementById('wlForm').style.display !== 'none') n.focus(); }, 30); }
+    function closeWaitlist() { document.getElementById('wlBack').classList.remove('show'); document.body.style.overflow = ''; }
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeWaitlist(); });
+    if (location.hash === '#waitlist') openWaitlist();   // a link straight to the form (slacapital.ai/knights#waitlist)
+    function wlVal(id) { return (document.getElementById(id).value || '').trim(); }
+    function sendWaitlist() {
+      var err = document.getElementById('wlErr'), btn = document.getElementById('wlBtn');
+      var say = function (t) { err.textContent = t; err.style.display = t ? 'block' : 'none'; };
+      say('');
+      var body = { name: wlVal('wlName'), email: wlVal('wlEmail'), phone: wlVal('wlPhone'), company: wlVal('wlCompany'), role: wlVal('wlRole'), roleText: wlVal('wlOther'), website: wlVal('wlHp') };
+      if (body.name.length < 2) return say('Please enter your name.');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(body.email)) return say('Please enter a valid email address.');
+      if (body.phone.replace(/\D/g, '').length < 10) return say('Please enter a phone number with its area code.');
+      if (!body.role || (body.role === 'other' && body.roleText.length < 2)) return say('Please tell us what you do.');
+      btn.disabled = true; btn.textContent = 'Sending…';
+      fetch('https://portal.slacapital.ai/api/knights-waitlist', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (!res.ok) { btn.disabled = false; btn.textContent = 'Join the waitlist'; return say((res.j && res.j.error) || 'Something went wrong. Please try again.'); }
+          document.getElementById('wlForm').style.display = 'none'; document.getElementById('wlDone').style.display = 'block';
+        })
+        .catch(function () { btn.disabled = false; btn.textContent = 'Join the waitlist'; say('Could not send. Check your connection and try again, or email apply@slacapital.com.'); });
+    }
+  </script>
 </body>
 </html>
