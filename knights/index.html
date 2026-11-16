@@ -22,12 +22,15 @@
     .lp-hero h1 { font-size: 46px; line-height: 1.15; margin: 0 0 18px; }
     .lp-actions { display: flex; gap: 14px; flex-wrap: wrap; margin: 28px 0 14px; }
     .lp-fine { font-size: 14px; color: var(--muted); margin: 0; }
-    .stage { position: relative; background: radial-gradient(ellipse at 50% 35%, #4a3560 0%, #281D28 70%); border-radius: 20px; height: 380px; overflow: hidden; }
+    .stage { position: relative; background: radial-gradient(ellipse at 50% 35%, #4a3560 0%, #281D28 70%); border-radius: 20px; height: 420px; overflow: hidden; }
     .stage .sh { position: absolute; filter: drop-shadow(0 14px 22px rgba(0,0,0,.45)); }
-    .stage .sh-c { width: 190px; left: 50%; top: 58px; transform: translateX(-50%); z-index: 2; }
+    .stage .back-logo { position: absolute; width: 80%; height: auto; left: 50%; top: 26px; transform: translateX(-50%); opacity: .14; z-index: 0; }
+    .stage .sh-c { width: 200px; left: 50%; top: 52px; transform: translateX(-50%); z-index: 2; }
     .stage .sh-l { width: 140px; left: 9%; top: 108px; transform: rotate(-9deg); opacity: .92; }
     .stage .sh-r { width: 140px; right: 9%; top: 108px; transform: rotate(9deg); opacity: .92; }
-    .stage .cap { position: absolute; left: 0; right: 0; bottom: 22px; text-align: center; color: #FFBC7D; font-size: 14px; letter-spacing: .04em; padding: 0 20px; }
+    .stage .cap { position: absolute; left: 0; right: 0; bottom: 26px; text-align: center; padding: 0 20px; z-index: 3; }
+    .stage .cap strong { display: block; color: #fff; font-family: var(--font-display); font-size: 24px; line-height: 1.25; }
+    .stage .cap span { display: block; color: #FFBC7D; font-family: var(--font-display); font-size: 24px; line-height: 1.25; }
     .stage .spark { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #FFBC7D; opacity: .55; }
     .ico { width: 48px; height: 48px; border-radius: 12px; background: #FDF1E9; color: var(--primary); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; flex: none; }
     .ico svg { width: 24px; height: 24px; }
@@ -53,8 +56,9 @@
       .lp-hero { text-align: center; }
       .lp-hero h1 { font-size: 34px; }
       .lp-actions { justify-content: center; }
-      .stage { height: 300px; }
-      .stage .sh-c { width: 150px; top: 44px; }
+      .stage { height: 360px; }
+      .stage .cap strong, .stage .cap span { font-size: 20px; }
+      .stage .sh-c { width: 160px; top: 40px; }
       .stage .sh-l, .stage .sh-r { width: 108px; top: 84px; }
     }
   </style>
@@ -94,12 +98,11 @@
           <p class="lp-fine">Free to join · You never quote a rate · You never touch a loan file</p>
           <p class="lp-fine" style="margin-top:6px"><a href="https://portal.slacapital.ai/knights-login">Already a Knight? Sign in</a></p>
         </div>
-        <div class="stage" role="img" aria-label="Three Knights of the Realm shields: a lion, a tower and a stag">
+        <div class="stage" role="img" aria-label="A shield carrying your logo in front of the SLA Capital logo: your logo in the front, our lending team in the back">
           <i class="spark" style="left:12%;top:16%"></i><i class="spark" style="left:84%;top:22%"></i><i class="spark" style="left:72%;top:8%"></i><i class="spark" style="left:22%;top:78%"></i><i class="spark" style="left:90%;top:66%"></i><i class="spark" style="left:6%;top:48%"></i>
-          <img class="sh sh-l" src="/assets/knights/shield-tower-navy.svg" alt="" width="140" height="140" />
-          <img class="sh sh-r" src="/assets/knights/shield-stag-forest.svg" alt="" width="140" height="140" />
-          <img class="sh sh-c" src="/assets/knights/shield-lion-plum.svg" alt="" width="190" height="190" />
-          <div class="cap">Every Knight gets a shield: your logo, or one of six crests</div>
+          <img class="back-logo" src="/assets/knights/sla-logo-white.webp" alt="" width="640" height="515" />
+          <img class="sh sh-c" src="/assets/knights/shield-your-logo.svg" alt="" width="200" height="200" />
+          <div class="cap"><strong>Your logo in the front.</strong><span>Our lending team in the back.</span></div>
         </div>
       </div>
     </div>
