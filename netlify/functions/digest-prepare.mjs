@@ -41,8 +41,36 @@ function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// The data/announcements.json entry whose from..until window covers the send date (YYYY-MM-DD).
+export function activeAnnouncement(list, sendIso) {
+  return (list || []).find(a => a && a.headline && a.from <= sendIso && sendIso <= (a.until || a.from)) || null;
+}
+
+// Email-safe lead block for an announcement. Every string is escaped; only the layout is HTML.
+function announcementBlock(a) {
+  const points = (a.points || []).map(p => `
+          <tr><td valign="top" style="padding:0 10px 10px 0;color:#DA7238;font-weight:700;font-size:15px">&#10003;</td>
+              <td style="padding:0 0 10px;font-size:15px;line-height:1.55;color:#281D28">${p.strong ? `<strong>${esc(p.strong)}</strong> ` : ''}${esc(p.text || '')}</td></tr>`).join('');
+  return `
+  <tr><td style="padding:0 32px 28px">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#FDF1E9;border-radius:10px;border-left:4px solid #DA7238">
+      <tr><td style="padding:24px 24px 8px">
+        <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#DA7238">${esc(a.eyebrow || 'New at SLA Capital')}</div>
+        <div style="font-size:24px;line-height:1.25;font-weight:700;color:#281D28;margin:6px 0 10px">${esc(a.headline)}</div>
+        ${a.intro ? `<div style="font-size:15px;line-height:1.6;color:#281D28;margin:0 0 14px">${esc(a.intro)}</div>` : ''}
+        <table role="presentation" cellpadding="0" cellspacing="0">${points}</table>
+        ${a.how ? `<div style="font-size:15px;line-height:1.6;color:#281D28;margin:4px 0 18px">${esc(a.how)}</div>` : ''}
+      </td></tr>
+      ${a.button && a.button.url ? `<tr><td style="padding:0 24px 18px">
+        <a href="${esc(a.button.url)}" style="display:inline-block;background:#DA7238;color:#FFFFFF;font-size:16px;font-weight:700;text-decoration:none;padding:13px 26px;border-radius:8px">${esc(a.button.label || 'Learn more')}</a>
+      </td></tr>` : ''}
+      ${a.partners ? `<tr><td style="padding:0 24px 22px;font-size:13px;line-height:1.6;color:#6b6470">${esc(a.partners)}</td></tr>` : ''}
+    </table>
+  </td></tr>`;
+}
+
 // Email-safe (table + inline styles) digest HTML in site brand colors.
-export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
+export function buildDigestHtml({ newPosts, featured, rates, tuesday, announcement = null }) {
   const dateStr = tuesday.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   const rentalNote = (rates.products.filter(function (p) { return p.slug === 'rental'; })[0] || {}).rateNote || '';
 
@@ -69,7 +97,7 @@ export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
     </tr>`).join('');
 
   return `<!DOCTYPE html>
-<html><body style="margin:0;padding:0;background:#F2F2F2">
+<html><head><meta charset="UTF-8"></head><body style="margin:0;padding:0;background:#F2F2F2">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F2F2"><tr><td align="center" style="padding:24px 12px">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border-radius:12px;overflow:hidden;font-family:Roboto,'Segoe UI',Arial,sans-serif">
 
@@ -84,6 +112,8 @@ export function buildDigestHtml({ newPosts, featured, rates, tuesday }) {
   <tr><td style="padding:0 32px 24px;font-size:15px;line-height:1.6;color:#281D28">
     Straight answers for real estate investors — no fluff, no bait-and-switch. Here's this week's read and where our rates stand.
   </td></tr>
+
+  ${announcement ? announcementBlock(announcement) : ''}
 
   ${newSection}
 
@@ -126,6 +156,12 @@ export async function prepareDigest({ apiKey, listId, notifyEmail, dryRun = fals
   ]);
   const { posts } = await postsRes.json();
   const rates = await ratesRes.json();
+  // Optional: a missing or broken announcements file just means no lead announcement this week.
+  let announcements = [];
+  try {
+    const r = await fetch(`${SITE}/data/announcements.json`);
+    if (r.ok) announcements = (await r.json()).announcements || [];
+  } catch (e) { console.log('[digest] announcements.json unreadable (non-fatal):', e.message); }
 
   const weekAgo = new Date(now.getTime() - 7 * 864e5);
   const newPosts = posts.filter(p => new Date(p.datePublished + 'T00:00:00Z') > weekAgo);
@@ -147,12 +183,15 @@ export async function prepareDigest({ apiKey, listId, notifyEmail, dryRun = fals
     }
   }
 
+  const announcement = activeAnnouncement(announcements, tuesdayIso);
   const lead = newPosts[0] || featured;
-  const subject = newPosts.length
-    ? `New investor guide: ${lead.title}`
-    : `${lead.title} — plus current rates`;
+  const subject = announcement
+    ? (announcement.subject || announcement.headline)
+    : newPosts.length
+      ? `New investor guide: ${lead.title}`
+      : `${lead.title} — plus current rates`;
 
-  const htmlContent = buildDigestHtml({ newPosts, featured, rates, tuesday });
+  const htmlContent = buildDigestHtml({ newPosts, featured, rates, tuesday, announcement });
 
   const campaign = await brevo(apiKey, 'POST', '/emailCampaigns', {
     name,
@@ -186,7 +225,7 @@ export async function prepareDigest({ apiKey, listId, notifyEmail, dryRun = fals
       <p><strong>${dryRun ? 'TEST draft created — it will NOT send.' : `The weekly digest is queued to send Tuesday ${tuesdayIso} at 16:00 UTC (9am PT).`}</strong></p>
       <p>Subject: <em>${esc(subject)}</em><br>
       Audience: list #${listId} (SLA Borrowers)<br>
-      Content: ${newPosts.length ? `${newPosts.length} new post(s)` : `featured guide "${esc(featured.title)}"`} + current rates.</p>
+      Content: ${announcement ? `lead announcement "${esc(announcement.headline)}" + ` : ''}${newPosts.length ? `${newPosts.length} new post(s)` : `featured guide "${esc(featured.title)}"`} + current rates.</p>
       <p>${previewSent ? 'A preview of the exact email was sent to you separately.' : 'Preview send failed — open the campaign in Brevo to review it.'}</p>
       <p>To change or cancel: <a href="https://my.brevo.com/camp/lists/list">open Brevo → Campaigns</a>, find "${esc(name)}", and edit or unschedule it. Do nothing and it ${dryRun ? 'stays a draft' : 'sends as scheduled'}.</p>
     </div>`,

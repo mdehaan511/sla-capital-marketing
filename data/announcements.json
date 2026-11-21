@@ -1,0 +1,23 @@
+{
+  "note": "Lead announcements for the Tuesday Brevo digest (netlify/functions/digest-prepare.mjs). An entry runs as the email's lead section, and its subject becomes the email subject, when the send date (the Tuesday, YYYY-MM-DD, UTC) falls between from and until, inclusive. Plain text only: everything is HTML-escaped. Never quote a rate or leverage here unless it matches data/rates.json, and never name an investor or capital partner.",
+  "announcements": [
+    {
+      "id": "commercial-launch-2026-11",
+      "from": "2026-11-24",
+      "until": "2026-11-24",
+      "eyebrow": "New at SLA Capital",
+      "headline": "Now offering: commercial real estate loans",
+      "subject": "Now offering: commercial real estate loans",
+      "intro": "The lender you already use for rentals, flips and ground-up builds now finances commercial property too. Two new products:",
+      "points": [
+        { "strong": "Commercial Bridge Loans up to $20,000,000.", "text": "Short-term financing to buy, reposition or refinance a commercial property, reviewed case by case." },
+        { "strong": "Commercial DSCR Loans up to $3,000,000.", "text": "Long-term financing qualified on the property's income, with 5-year hybrid and 15, 25 and 30-year fixed options." },
+        { "strong": "Purchase, refinance and cash-out.", "text": "For investors and owner-occupied commercial property." },
+        { "strong": "Property types:", "text": "multi-family, mixed-use, retail, office, industrial and warehouse, self-storage, mobile home parks and more." }
+      ],
+      "how": "How it works: send us the scenario. It takes about two minutes and there's no credit pull. Our commercial team replies by email, usually within one business day.",
+      "button": { "label": "Send a commercial scenario", "url": "https://portal.slacapital.ai/commercial" },
+      "partners": "Brokers and referral partners: you can send commercial scenarios too. Brokers, from the Broker Portal. Referral partners, from your own page."
+    }
+  ]
+}
