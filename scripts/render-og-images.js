@@ -44,6 +44,12 @@ const PAGES = [
   { slug: 'brokers', eyebrow: 'Preferred Partners · For mortgage brokers', l1: 'Price it yourself.', l2: 'Close it with us.' },
 ];
 
+// Commercial property-type pages (/commercial/<slug>/) -- one card each, from data/commercial-types.json.
+const ESC = (s) => String(s).replace(/&/g, '&amp;');
+JSON.parse(fs.readFileSync(process.env.HOME + '/code/sla-capital-marketing/data/commercial-types.json', 'utf8')).types.forEach(function (t) {
+  PAGES.push({ slug: 'commercial-' + t.slug, eyebrow: 'Commercial loans · ' + ESC(t.name), l1: ESC(t.name) + ' loans,', l2: 'bridge to DSCR.' });
+});
+
 function svg(p) {
   return `<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
 <rect width="1200" height="630" fill="#281D28"/>

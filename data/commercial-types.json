@@ -1,0 +1,525 @@
+{
+  "note": "Commercial property-type landing pages (/commercial/<slug>/), built by scripts/generate-commercial-pages.mjs. Plain text; the generator escapes everything. Rules (Mike, 2026-11-21): never a rate, LTV or DSCR minimum for commercial (priced case by case), never an investor or capital-partner name. Limits: Commercial Bridge up to $20,000,000; Commercial DSCR up to $3,000,000. Owner-occupied commercial (business-purpose occupancy) is eligible.",
+  "types": [
+    {
+      "slug": "multifamily",
+      "name": "Multifamily",
+      "h1": "Multifamily Loans for Apartment Investors",
+      "title": "Multifamily Loans — Apartment Bridge & DSCR Financing | SLA Capital",
+      "description": "Apartment building loans: bridge up to $20M to buy or reposition, and DSCR loans up to $3M for stabilized buildings, qualified on rental income.",
+      "lede": "Apartment buildings are the most common commercial property we see, and the one where the business plan matters most. Buying a tired building to renovate and raise rents is a bridge-loan deal. Holding a stabilized building for cash flow is a DSCR deal. SLA Capital finances both.",
+      "bridgeUse": "Acquire, renovate and lease up a value-add building, or refinance out of a maturing loan while occupancy recovers.",
+      "dscrUse": "Long-term financing for a stabilized building, qualified on its rent roll rather than your personal income.",
+      "underwriting": [
+        "The current rent roll, and how in-place rents compare with market rents",
+        "Trailing operating statements: taxes, insurance, utilities, repairs and management",
+        "Occupancy history and how quickly vacant units re-lease",
+        "Physical condition, deferred maintenance and your renovation budget",
+        "Your experience owning and operating rental property"
+      ],
+      "scenarios": [
+        "Buying a 20-unit building with below-market rents and a renovation plan",
+        "Refinancing a stabilized complex to pull cash out for the next acquisition",
+        "Moving off a short-term loan once renovations are finished and units are leased"
+      ],
+      "faqs": [
+        {
+          "q": "Does SLA Capital finance small apartment buildings?",
+          "a": "Yes. Buildings with five or more units are commercial multifamily. For two to four units, our residential DSCR rental loans are usually the better fit."
+        },
+        {
+          "q": "Can I use a bridge loan to renovate an apartment building?",
+          "a": "Yes. Commercial bridge loans up to $20,000,000 are built for value-add plans: buy, renovate, re-lease, then refinance into long-term financing once the property is stabilized."
+        },
+        {
+          "q": "Is a multifamily DSCR loan based on my personal income?",
+          "a": "No. A commercial DSCR loan is qualified on the property's income. Your experience and credit still matter, but the building's rents carry the qualification."
+        },
+        {
+          "q": "Can I take cash out of an apartment building?",
+          "a": "Yes. Both commercial products cover purchases, refinances and cash-out refinances."
+        }
+      ]
+    },
+    {
+      "slug": "mixed-use",
+      "name": "Mixed-Use",
+      "h1": "Mixed-Use Property Loans",
+      "title": "Mixed-Use Property Loans — Retail + Residential Financing | SLA Capital",
+      "description": "Mixed-use loans for buildings with storefronts below and apartments or offices above. Bridge up to $20M, DSCR up to $3M. Investor and owner-occupied.",
+      "lede": "Ground-floor retail with apartments or offices above is the classic main-street building, and a hard one for lenders that only do residential or only do commercial. We underwrite the whole building: every lease and every use.",
+      "bridgeUse": "Buy a building with empty storefronts or units, renovate it, and lease it up.",
+      "dscrUse": "Long-term financing for a stabilized building, qualified on the combined income of its commercial and residential space.",
+      "underwriting": [
+        "The split between commercial and residential space, and the income from each",
+        "Commercial lease terms: length, renewals and who pays expenses",
+        "The residential rent roll and occupancy",
+        "Zoning and the permitted uses for each floor",
+        "Whether you'll occupy the commercial space yourself"
+      ],
+      "scenarios": [
+        "Buying a downtown building with a café below and four apartments above",
+        "A business owner buying the building their shop operates from and renting the units upstairs",
+        "Refinancing a renovated mixed-use building to pull out equity"
+      ],
+      "faqs": [
+        {
+          "q": "Can my business operate in a mixed-use building I finance with SLA Capital?",
+          "a": "Yes. Owner-occupied commercial is eligible: a business can buy or refinance the building it operates from. These are business-purpose loans, so ask your loan officer if you also plan to live in one of the units."
+        },
+        {
+          "q": "How do you value a building with both retail and apartments?",
+          "a": "We look at the income from each space and at the building as a whole, with an appraisal that accounts for both uses."
+        },
+        {
+          "q": "Can I finance a mixed-use building with vacant storefronts?",
+          "a": "Yes. That's a bridge-loan scenario: buy, renovate and lease up, then refinance into a commercial DSCR loan once the building is stabilized."
+        },
+        {
+          "q": "What loan sizes are available for mixed-use property?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "retail",
+      "name": "Retail & Strip Center",
+      "h1": "Retail and Strip Center Loans",
+      "title": "Retail & Strip Center Loans — Shopping Center Financing | SLA Capital",
+      "description": "Retail and strip center loans: bridge up to $20M to buy or re-tenant, DSCR up to $3M for stabilized centers. Purchase, refinance and cash-out.",
+      "lede": "A strip center is only as good as its tenants and its leases. Whether you're buying a center with vacancies to re-tenant or holding a fully leased one for income, we start with the rent roll and price the deal case by case.",
+      "bridgeUse": "Acquire a center with vacancies, re-tenant it, and stabilize it before long-term financing.",
+      "dscrUse": "Long-term financing for a leased center, qualified on its operating income.",
+      "underwriting": [
+        "The tenant roster: who the tenants are and how long they've been there",
+        "Lease terms, expiration dates and renewal options",
+        "Who pays taxes, insurance and maintenance (gross versus net leases)",
+        "Anchor tenants and how dependent the center is on them",
+        "Location, traffic counts and visibility"
+      ],
+      "scenarios": [
+        "Buying a half-vacant strip center to re-lease",
+        "Refinancing a fully leased neighborhood center",
+        "A business owner buying the freestanding retail building they operate from"
+      ],
+      "faqs": [
+        {
+          "q": "Do you finance single-tenant retail buildings?",
+          "a": "Yes, along with multi-tenant strip centers. Single-tenant deals depend heavily on the tenant and the remaining lease term, which we review case by case."
+        },
+        {
+          "q": "Can I finance a strip center with vacancies?",
+          "a": "Yes. A commercial bridge loan can fund the acquisition while you re-tenant, followed by a commercial DSCR loan once the center is stabilized."
+        },
+        {
+          "q": "Does lease expiration affect a retail loan?",
+          "a": "Yes. Leases that roll soon after closing add risk, so we look closely at expiration dates, renewal options and how easily the space would re-lease."
+        },
+        {
+          "q": "Is owner-occupied retail property eligible?",
+          "a": "Yes. A business can buy or refinance the retail building it operates from."
+        }
+      ]
+    },
+    {
+      "slug": "office",
+      "name": "Office",
+      "h1": "Office Building Loans",
+      "title": "Office Building Loans — Bridge & DSCR Financing | SLA Capital",
+      "description": "Office building loans for investors and owner-occupiers, including medical office: bridge up to $20M to buy or reposition, DSCR up to $3M.",
+      "lede": "Office is the property type many lenders have pulled back from, which is exactly why good deals need a lender willing to look. Small and mid-size office, medical office and owner-occupied professional buildings all get a real review here.",
+      "bridgeUse": "Buy or reposition an office building: re-tenant it, reconfigure the space, or refinance a maturing loan.",
+      "dscrUse": "Long-term financing for a leased office building, qualified on its income.",
+      "underwriting": [
+        "The tenant roster and lease rollover over the next few years",
+        "The tenant improvements and leasing commissions needed to fill vacant space",
+        "Building condition, parking and mechanical systems",
+        "Local office demand and vacancy",
+        "Your plan if a major tenant leaves"
+      ],
+      "scenarios": [
+        "A medical practice buying its own office building",
+        "Buying a partially vacant suburban office building to re-lease",
+        "Refinancing a fully leased professional building"
+      ],
+      "faqs": [
+        {
+          "q": "Do you finance medical office buildings?",
+          "a": "Yes. Medical and professional office buildings are reviewed case by case, for investors and for owner-occupiers."
+        },
+        {
+          "q": "Can a business buy its own office building with an SLA Capital loan?",
+          "a": "Yes. Owner-occupied commercial is eligible: a business can buy or refinance the building it operates from."
+        },
+        {
+          "q": "Do you lend on partially vacant office buildings?",
+          "a": "Yes, typically with a commercial bridge loan. We look at your leasing plan, the cost to fill the space and the local market."
+        },
+        {
+          "q": "What loan sizes are available for office buildings?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "light-industrial",
+      "name": "Light Industrial",
+      "h1": "Light Industrial Property Loans",
+      "title": "Light Industrial Loans — Flex & Small-Bay Financing | SLA Capital",
+      "description": "Loans for light industrial, flex and small-bay buildings. Bridge financing up to $20M and DSCR loans up to $3M, for investors and owner-operators.",
+      "lede": "Flex space, small-bay industrial and light manufacturing buildings house the trades and small businesses every town depends on. They're simple to operate and consistently in demand, and we finance them for investors and for the businesses that work out of them.",
+      "bridgeUse": "Acquire, upgrade or re-tenant a light industrial building.",
+      "dscrUse": "Long-term financing for a leased or owner-occupied building, qualified on its income.",
+      "underwriting": [
+        "The tenant mix and lease terms",
+        "Clear height, loading, power and yard space",
+        "Environmental history (an environmental report is common for industrial property)",
+        "Zoning and permitted uses",
+        "For owner-occupiers, the operating business"
+      ],
+      "scenarios": [
+        "A contractor buying the flex building they work out of",
+        "Buying a multi-tenant small-bay building",
+        "Refinancing a fully leased light industrial property"
+      ],
+      "faqs": [
+        {
+          "q": "What counts as light industrial property?",
+          "a": "Flex buildings, small-bay industrial, light manufacturing and contractor space: industrial property without heavy manufacturing or hazardous uses."
+        },
+        {
+          "q": "Will I need an environmental report?",
+          "a": "Often, for industrial property. We'll tell you early in the process what your property needs."
+        },
+        {
+          "q": "Can my business buy the light industrial building it operates from?",
+          "a": "Yes. Owner-occupied commercial is eligible."
+        },
+        {
+          "q": "What loan sizes are available for light industrial property?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "warehouse",
+      "name": "Warehouse",
+      "h1": "Warehouse Loans",
+      "title": "Warehouse Loans — Distribution & Storage Building Financing | SLA Capital",
+      "description": "Warehouse and distribution building loans: bridge up to $20M to buy or reposition, DSCR up to $3M for leased warehouses. Investor and owner-occupied.",
+      "lede": "Warehouses earn their keep through simple leases and steady demand from distribution, e-commerce and storage users. We finance single- and multi-tenant warehouses for investors, and for businesses buying the space they ship out of.",
+      "bridgeUse": "Acquire a vacant or under-leased warehouse, make improvements, and lease it up.",
+      "dscrUse": "Long-term financing for a leased warehouse, qualified on its income.",
+      "underwriting": [
+        "Lease terms and the strength of the tenant",
+        "Clear height, dock doors, truck access and parking",
+        "Building age and roof condition",
+        "Environmental history",
+        "Location relative to highways and population centers"
+      ],
+      "scenarios": [
+        "A distributor buying its own warehouse instead of leasing",
+        "Buying a vacant warehouse to lease to a single tenant",
+        "Refinancing a multi-tenant warehouse"
+      ],
+      "faqs": [
+        {
+          "q": "Do you finance single-tenant warehouses?",
+          "a": "Yes. With one tenant, the lease term and the tenant's strength carry more weight, and we review them case by case."
+        },
+        {
+          "q": "Can I finance a vacant warehouse?",
+          "a": "Yes, typically with a commercial bridge loan while you lease it up, followed by a commercial DSCR loan once it's stabilized."
+        },
+        {
+          "q": "Is owner-occupied warehouse space eligible?",
+          "a": "Yes. A business can buy or refinance the warehouse it operates from."
+        },
+        {
+          "q": "What loan sizes are available for warehouses?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "self-storage",
+      "name": "Self-Storage",
+      "h1": "Self-Storage Loans",
+      "title": "Self-Storage Loans — Facility Acquisition & Refinance | SLA Capital",
+      "description": "Self-storage loans: bridge up to $20M for acquisitions, expansions and lease-up, and DSCR up to $3M for stabilized facilities.",
+      "lede": "Self-storage runs on occupancy and rate management, not long leases. A facility in lease-up or under poor management is a bridge deal; a stabilized facility with steady occupancy is a DSCR deal. We finance both.",
+      "bridgeUse": "Acquire a facility in lease-up, add units or climate control, or take over an under-managed property.",
+      "dscrUse": "Long-term financing for a stabilized facility, qualified on its operating income.",
+      "underwriting": [
+        "Occupancy history and seasonality",
+        "Street rates versus in-place rates",
+        "Unit mix, including climate-controlled and vehicle storage",
+        "Operating expenses, management and the software the facility runs on",
+        "Expansion land and local competition"
+      ],
+      "scenarios": [
+        "Buying an under-managed facility to raise rates and occupancy",
+        "Financing a facility expansion",
+        "Refinancing a stabilized facility to pull cash out"
+      ],
+      "faqs": [
+        {
+          "q": "Do you finance self-storage facilities in lease-up?",
+          "a": "Yes. A commercial bridge loan fits a facility that's still filling up; once occupancy stabilizes, a commercial DSCR loan can take it long term."
+        },
+        {
+          "q": "How do you underwrite a self-storage facility?",
+          "a": "On its income: occupancy, rates, expenses and history. Because storage units rent month to month, we look at trends over time rather than lease terms."
+        },
+        {
+          "q": "Do you finance vehicle and outdoor storage?",
+          "a": "Vehicle storage as part of a facility, yes. Stand-alone outdoor storage is reviewed case by case."
+        },
+        {
+          "q": "Can I take cash out of a self-storage facility?",
+          "a": "Yes. Both commercial products cover purchases, refinances and cash-out refinances."
+        }
+      ]
+    },
+    {
+      "slug": "mobile-home-parks",
+      "name": "Mobile Home Park",
+      "h1": "Mobile Home Park Loans",
+      "title": "Mobile Home Park Loans — Manufactured Housing Community Financing | SLA Capital",
+      "description": "Mobile home park and manufactured housing community loans: bridge up to $20M and DSCR up to $3M. Purchase, refinance and cash-out for park investors.",
+      "lede": "Manufactured housing communities produce durable, affordable-housing income, and they're often bought from long-time owners who left value on the table. We finance parks for investors buying, improving and holding them.",
+      "bridgeUse": "Acquire a park, fill vacant lots, bring lot rents to market, or fix infrastructure.",
+      "dscrUse": "Long-term financing for a stabilized park, qualified on its lot rent income.",
+      "underwriting": [
+        "Lot rents and occupancy",
+        "Tenant-owned versus park-owned homes",
+        "Water, sewer and electric: public utilities or private systems",
+        "The condition of roads, pads and utility infrastructure",
+        "Your plan for vacant lots and below-market rents"
+      ],
+      "scenarios": [
+        "Buying a long-held park with below-market lot rents",
+        "Filling vacant lots with new homes",
+        "Refinancing a stabilized community"
+      ],
+      "faqs": [
+        {
+          "q": "Do park-owned homes affect a mobile home park loan?",
+          "a": "Yes. Lot rent from tenant-owned homes is the core income. Park-owned homes add income but also maintenance and turnover, so we look at the mix."
+        },
+        {
+          "q": "Do you finance parks with private water or sewer systems?",
+          "a": "Private utility systems are reviewed case by case. Their condition, capacity and permits matter."
+        },
+        {
+          "q": "Can I finance a park with vacant lots?",
+          "a": "Yes. A commercial bridge loan fits a park you plan to fill, followed by a commercial DSCR loan once it's stabilized."
+        },
+        {
+          "q": "What loan sizes are available for mobile home parks?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-condos",
+      "name": "Commercial Condo",
+      "h1": "Commercial Condo Loans",
+      "title": "Commercial Condo Loans — Office, Retail & Industrial Units | SLA Capital",
+      "description": "Loans for commercial condominium units: office, retail, medical and industrial condos. Bridge up to $20M, DSCR up to $3M, for investors and owner-occupiers.",
+      "lede": "Buying one office suite or one industrial unit instead of a whole building is often the smartest way for a business to own its space. We finance commercial condo units for owner-occupiers and for investors.",
+      "bridgeUse": "Buy a vacant unit to build out and lease, or close quickly on an owner-occupied purchase.",
+      "dscrUse": "Long-term financing for a leased or owner-occupied unit.",
+      "underwriting": [
+        "The condo association: its budget, reserves, dues and rules",
+        "The uses the condo declaration permits",
+        "The unit's lease, or your business's operations",
+        "Comparable unit sales in the building or area",
+        "How many units any single owner holds in the project"
+      ],
+      "scenarios": [
+        "A dental practice buying its office suite",
+        "An investor buying a leased industrial condo",
+        "A small business refinancing the retail unit it owns"
+      ],
+      "faqs": [
+        {
+          "q": "Can a business buy its own commercial condo with SLA Capital?",
+          "a": "Yes. Owner-occupied commercial is eligible: a business can buy or refinance the unit it operates from."
+        },
+        {
+          "q": "What do you review on the condo association?",
+          "a": "Its budget, reserves, dues, any special assessments, and whether the declaration allows your use of the unit."
+        },
+        {
+          "q": "Do you finance office, retail and industrial condos?",
+          "a": "Yes. All three are eligible and reviewed case by case."
+        },
+        {
+          "q": "What loan sizes are available for commercial condos?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "automotive",
+      "name": "Automotive",
+      "h1": "Automotive Property Loans",
+      "title": "Automotive Property Loans — Auto Repair & Dealership Financing | SLA Capital",
+      "description": "Loans for automotive properties such as repair shops, service centers and dealerships. Bridge up to $20M, DSCR up to $3M, for investors and owner-operators.",
+      "lede": "Auto repair shops, service centers and dealerships are specialized buildings that many lenders avoid. We review them case by case, for owner-operators buying their shop and for investors leasing to automotive tenants.",
+      "bridgeUse": "Buy, renovate or reposition an automotive property, or close quickly on an acquisition.",
+      "dscrUse": "Long-term financing for a leased or owner-occupied automotive property, qualified on its income.",
+      "underwriting": [
+        "Environmental history: automotive uses typically need an environmental review",
+        "The lease, or the operating business for owner-occupiers",
+        "Service bays, layout, and how easily the building could be reused",
+        "Zoning for automotive use",
+        "Location and visibility"
+      ],
+      "scenarios": [
+        "A mechanic buying the shop they've leased for years",
+        "An investor buying a building leased to a tire and service operator",
+        "Refinancing a dealership property"
+      ],
+      "faqs": [
+        {
+          "q": "Do you finance auto repair shops?",
+          "a": "Yes. Auto repair and service properties are reviewed case by case, for investors and owner-operators."
+        },
+        {
+          "q": "Why does environmental review matter for automotive property?",
+          "a": "Fuel, oil and solvents are common at automotive sites, so an environmental report is typically required. We'll tell you early in the process what your property needs."
+        },
+        {
+          "q": "Do you finance the business or the equipment?",
+          "a": "No. These are commercial real estate loans. We finance the property, not the business, its equipment or its inventory."
+        },
+        {
+          "q": "What loan sizes are available for automotive property?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "restaurants-bars",
+      "name": "Restaurant & Bar",
+      "h1": "Restaurant and Bar Property Loans",
+      "title": "Restaurant & Bar Property Loans — Commercial Real Estate Financing | SLA Capital",
+      "description": "Commercial real estate loans for restaurant and bar buildings, for owner-operators and investors. Bridge up to $20M, DSCR up to $3M, reviewed case by case.",
+      "lede": "Restaurants and bars are among the hardest buildings to finance because the building and the business are so intertwined. We finance the real estate, for operators who want to own their building and for investors who lease to them.",
+      "bridgeUse": "Buy a restaurant building, renovate it, or close quickly on an acquisition.",
+      "dscrUse": "Long-term financing for a leased or owner-occupied restaurant building.",
+      "underwriting": [
+        "For owner-operators, the restaurant's operating history and financials",
+        "For investors, the tenant's lease and track record",
+        "How reusable the building is: kitchen, layout and parking",
+        "Liquor license and zoning considerations",
+        "Location, traffic and visibility"
+      ],
+      "scenarios": [
+        "A restaurant owner buying the building they've been leasing",
+        "An investor buying a freestanding restaurant leased to an operator",
+        "Refinancing a bar building to fund renovations"
+      ],
+      "faqs": [
+        {
+          "q": "Can I buy the building my restaurant operates in?",
+          "a": "Yes. Owner-occupied commercial is eligible: a restaurant can buy or refinance the building it operates from."
+        },
+        {
+          "q": "Do you finance the restaurant business or its equipment?",
+          "a": "No. We finance the real estate. Kitchen equipment, furniture and the business itself aren't part of the loan."
+        },
+        {
+          "q": "Do you finance bar buildings?",
+          "a": "Yes. Bar and tavern buildings are eligible and reviewed case by case."
+        },
+        {
+          "q": "What loan sizes are available for restaurant property?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "day-care",
+      "name": "Day Care",
+      "h1": "Day Care and Child Care Center Loans",
+      "title": "Day Care Center Loans — Child Care Property Financing | SLA Capital",
+      "description": "Real estate loans for day care and child care centers, for owner-operators and investors. Bridge up to $20M, DSCR up to $3M, reviewed case by case.",
+      "lede": "Child care centers are built around licensing requirements (outdoor play space, ratios and safety features), and established operators often want to own their buildings. We finance day care properties for operators and for investors leasing to them.",
+      "bridgeUse": "Buy a center, expand capacity, or renovate to meet licensing requirements.",
+      "dscrUse": "Long-term financing for a leased or owner-occupied center.",
+      "underwriting": [
+        "State licensing and licensed capacity",
+        "Enrollment and the center's operating history",
+        "For investors, the operator's lease and track record",
+        "Building layout, outdoor play space and safety features",
+        "Zoning and permitted use"
+      ],
+      "scenarios": [
+        "A day care owner buying the building they lease",
+        "An investor buying a center leased to an established operator",
+        "Expanding a center into adjacent space"
+      ],
+      "faqs": [
+        {
+          "q": "Can a child care operator buy their own building?",
+          "a": "Yes. Owner-occupied commercial is eligible: an operator can buy or refinance the building its center runs from."
+        },
+        {
+          "q": "What do you review for a day care property?",
+          "a": "Licensing, capacity, enrollment and operating history, along with the building itself."
+        },
+        {
+          "q": "Do you finance the child care business?",
+          "a": "No. We finance the real estate, not the business or its equipment."
+        },
+        {
+          "q": "What loan sizes are available for day care centers?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    },
+    {
+      "slug": "bulk-residential",
+      "name": "Bulk Residential",
+      "h1": "Bulk Residential Portfolio Loans",
+      "title": "Bulk Residential Loans — Financing Packages of Homes & Units | SLA Capital",
+      "description": "Commercial loans for bulk residential purchases: packages of single-family homes, townhomes or condo units bought together. Bridge up to $20M, DSCR up to $3M.",
+      "lede": "When a package of homes or a block of units comes up for sale together, one loan beats a dozen. Bulk residential deals, such as a scattered-site single-family portfolio, a builder's remaining townhomes or a block of condos, can be financed as one commercial loan.",
+      "bridgeUse": "Buy a package of homes or units, renovate them, and lease up or sell off.",
+      "dscrUse": "Long-term financing for a stabilized group of rentals, qualified on their combined rental income.",
+      "underwriting": [
+        "The rent roll and condition of each home or unit",
+        "Where the properties are and how spread out they are",
+        "Your plan: hold, renovate, or sell individual homes later",
+        "Property management",
+        "Your track record with rentals at this scale"
+      ],
+      "scenarios": [
+        "Buying a 25-home single-family rental portfolio from a retiring owner",
+        "Buying a builder's unsold townhomes to rent",
+        "Refinancing a scattered-site portfolio into one loan"
+      ],
+      "faqs": [
+        {
+          "q": "What is bulk residential?",
+          "a": "A group of residential properties bought or refinanced together in one transaction: a portfolio of single-family rentals, a builder's remaining townhomes, or a block of condo units."
+        },
+        {
+          "q": "How is this different from a residential portfolio loan?",
+          "a": "Our residential portfolio loans put two to ten rentals on one note. Larger packages, or homes bought together in one transaction, can be financed as a commercial bulk residential loan. Your loan officer will point you to the right fit."
+        },
+        {
+          "q": "Can the homes be in different cities?",
+          "a": "Scattered-site portfolios are reviewed case by case. Where the homes are matters for valuation and management."
+        },
+        {
+          "q": "What loan sizes are available for bulk residential?",
+          "a": "Commercial bridge loans up to $20,000,000 and commercial DSCR loans up to $3,000,000, each reviewed and priced case by case."
+        }
+      ]
+    }
+  ]
+}

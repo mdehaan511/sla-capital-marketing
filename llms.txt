@@ -46,6 +46,20 @@ Contact: apply@slacapital.com · (509) 846-7349
   light industrial, warehouse, self-storage, mobile home parks, commercial
   condos, automotive, restaurants and bars, day care, bulk residential.
   Apply: https://portal.slacapital.ai/commercial
+  Financing by commercial property type:
+  - [Multifamily Loans](https://slacapital.ai/commercial/multifamily/): Apartment building loans: bridge up to $20M to buy or reposition, and DSCR loans up to $3M for stabilized buildings, qualified on rental income.
+  - [Mixed-Use Loans](https://slacapital.ai/commercial/mixed-use/): Mixed-use loans for buildings with storefronts below and apartments or offices above. Bridge up to $20M, DSCR up to $3M. Investor and owner-occupied.
+  - [Retail & Strip Center Loans](https://slacapital.ai/commercial/retail/): Retail and strip center loans: bridge up to $20M to buy or re-tenant, DSCR up to $3M for stabilized centers. Purchase, refinance and cash-out.
+  - [Office Loans](https://slacapital.ai/commercial/office/): Office building loans for investors and owner-occupiers, including medical office: bridge up to $20M to buy or reposition, DSCR up to $3M.
+  - [Light Industrial Loans](https://slacapital.ai/commercial/light-industrial/): Loans for light industrial, flex and small-bay buildings. Bridge financing up to $20M and DSCR loans up to $3M, for investors and owner-operators.
+  - [Warehouse Loans](https://slacapital.ai/commercial/warehouse/): Warehouse and distribution building loans: bridge up to $20M to buy or reposition, DSCR up to $3M for leased warehouses. Investor and owner-occupied.
+  - [Self-Storage Loans](https://slacapital.ai/commercial/self-storage/): Self-storage loans: bridge up to $20M for acquisitions, expansions and lease-up, and DSCR up to $3M for stabilized facilities.
+  - [Mobile Home Park Loans](https://slacapital.ai/commercial/mobile-home-parks/): Mobile home park and manufactured housing community loans: bridge up to $20M and DSCR up to $3M. Purchase, refinance and cash-out for park investors.
+  - [Commercial Condo Loans](https://slacapital.ai/commercial/commercial-condos/): Loans for commercial condominium units: office, retail, medical and industrial condos. Bridge up to $20M, DSCR up to $3M, for investors and owner-occupiers.
+  - [Automotive Loans](https://slacapital.ai/commercial/automotive/): Loans for automotive properties such as repair shops, service centers and dealerships. Bridge up to $20M, DSCR up to $3M, for investors and owner-operators.
+  - [Restaurant & Bar Loans](https://slacapital.ai/commercial/restaurants-bars/): Commercial real estate loans for restaurant and bar buildings, for owner-operators and investors. Bridge up to $20M, DSCR up to $3M, reviewed case by case.
+  - [Day Care Loans](https://slacapital.ai/commercial/day-care/): Real estate loans for day care and child care centers, for owner-operators and investors. Bridge up to $20M, DSCR up to $3M, reviewed case by case.
+  - [Bulk Residential Loans](https://slacapital.ai/commercial/bulk-residential/): Commercial loans for bulk residential purchases: packages of single-family homes, townhomes or condo units bought together. Bridge up to $20M, DSCR up to $3M.
 
 ## Rates
 
