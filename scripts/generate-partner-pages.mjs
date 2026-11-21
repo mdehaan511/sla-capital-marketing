@@ -65,6 +65,7 @@ function page(p) {
         <li><a href="/rental/">DSCR</a></li>
         <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
         <li><a href="/new-construction/">New Construction</a></li>
+        <li><a href="/commercial/">Commercial</a></li>
         <li><a href="/rates/">Rates</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="${applyUrl}" class="btn btn-primary">Apply Now</a></li>

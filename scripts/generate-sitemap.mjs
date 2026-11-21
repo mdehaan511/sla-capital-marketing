@@ -75,6 +75,9 @@ for (const slug of PRODUCT_SLUGS) {
   urls.push({ loc: `/${slug}/`, priority: '0.9', changefreq: 'weekly', lastmod: today });
 }
 
+// Commercial hub (no state pages)
+urls.push({ loc: '/commercial/', priority: '0.9', changefreq: 'monthly', lastmod: today });
+
 // State pages — 41 × 3 = 123
 for (const slug of PRODUCT_SLUGS) {
   for (const state of states) {

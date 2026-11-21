@@ -40,6 +40,7 @@ const PAGES = [
   { slug: 'ltv-ltc-arv-explained', eyebrow: 'Investor guide · Strategy', l1: 'LTV, LTC, ARV:', l2: 'the lowest wins.' },
   { slug: 'investment-property-insurance-requirements', eyebrow: 'Investor guide · Strategy', l1: 'Insurance that', l2: 'closes on time.' },
   { slug: 'knights-referral', eyebrow: '&#9876; Knights of the Realm · Referral program', l1: 'Refer investors.', l2: 'Get paid when they close.' },
+  { slug: 'commercial', eyebrow: 'Now offering · Commercial loans', l1: 'Commercial loans,', l2: 'up to $20M.' },
   { slug: 'brokers', eyebrow: 'Preferred Partners · For mortgage brokers', l1: 'Price it yourself.', l2: 'Close it with us.' },
 ];
 

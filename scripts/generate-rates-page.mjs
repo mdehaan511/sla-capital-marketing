@@ -167,6 +167,7 @@ const html = `<!DOCTYPE html>
         <li><a href="/rental/">DSCR</a></li>
         <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
         <li><a href="/new-construction/">New Construction</a></li>
+        <li><a href="/commercial/">Commercial</a></li>
         <li><a href="/rates/" style="color:var(--primary)">Rates</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/current-jobs/">Careers</a></li>
@@ -262,6 +263,7 @@ const html = `<!DOCTYPE html>
             <li><a href="/rental/">DSCR</a></li>
             <li><a href="/fix-n-flip/">Fix &amp; Flip</a></li>
             <li><a href="/new-construction/">New Construction</a></li>
+            <li><a href="/commercial/">Commercial</a></li>
             <li><a href="/rates/">Rates</a></li>
           </ul>
         </div>
