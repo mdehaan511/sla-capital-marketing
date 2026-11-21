@@ -1,0 +1,77 @@
+# DSCR rate sync -- the cloud version of the "SLA dscr rate sync" scheduled task that ran on Mike's computer
+# (daily ~7:35 am, only while that computer was on).
+#
+# WHERE THIS FILE GOES: the sla-capital-marketing repository, as .github/workflows/dscr-rate-sync.yml.
+# (It is kept here in the portal repo only as the copy to install; nothing in this repo runs it.)
+#
+# WHAT IT DOES, every 30 minutes, on GitHub's machines:
+#   node scripts/sync-dscr-floor.mjs      the same script the desktop task ran. It reads the live floor from
+#                                         https://portal.slacapital.ai/api/public-dscr-floor and prints
+#                                         NO CHANGE | UPDATED: <old> -> <new> in N files | STALE ARTWORK: ... | SYNC ABORT (exit 2)
+#   NO CHANGE    nothing is committed.
+#   UPDATED      the change is committed and pushed; Netlify publishes slacapital.ai from that push.
+#   SYNC ABORT / any failure   nothing is committed and the run FAILS, so GitHub emails the repository owner.
+# Fix & Flip and New Construction rates are never touched (the script only moves the DSCR floor).
+#
+# THE BACKSTOP: the portal's own pricing-watch-cron compares slacapital.ai/rates/ with the live floor every 30 minutes
+# and says so in #pricing, by email and on the bell when the website is more than two hours behind a new sheet.
+#
+# AFTER INSTALLING: Actions tab -> "DSCR rate sync" -> Run workflow (once, to see it green), then turn OFF the
+# desktop scheduled task so the two never push at the same moment.
+name: DSCR rate sync
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: dscr-rate-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+      - name: Install the script's dependencies (when the repository has any)
+        run: |
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; fi
+      - name: Sync the DSCR floor
+        id: sync
+        run: |
+          set +e
+          node scripts/sync-dscr-floor.mjs > "$RUNNER_TEMP/sync.txt" 2>&1
+          CODE=$?
+          set -e
+          cat "$RUNNER_TEMP/sync.txt"
+          if [ "$CODE" -ne 0 ] || grep -q 'SYNC ABORT' "$RUNNER_TEMP/sync.txt"; then
+            echo "::error::The DSCR rate sync did not finish (exit $CODE). Nothing was changed on the site."
+            git checkout -- . || true
+            exit 1
+          fi
+          if grep -q '^STALE ARTWORK' "$RUNNER_TEMP/sync.txt"; then
+            echo "::warning::$(grep '^STALE ARTWORK' "$RUNNER_TEMP/sync.txt" | head -1) -- re-render those cards under a NEW filename."
+          fi
+          if grep -q '^UPDATED' "$RUNNER_TEMP/sync.txt"; then
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+            echo "summary=$(grep '^UPDATED' "$RUNNER_TEMP/sync.txt" | head -1 | cut -c1-160)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Commit and push the new rate
+        if: steps.sync.outputs.updated == 'true'
+        env:
+          SUMMARY: ${{ steps.sync.outputs.summary }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "The script said UPDATED but changed no file."; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "DSCR floor sync: ${SUMMARY#UPDATED: }"
+          git push
