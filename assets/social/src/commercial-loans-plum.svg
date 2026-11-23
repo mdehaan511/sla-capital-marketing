@@ -1,0 +1,18 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- Variant A: plum background. Rotate variants across posts: plum / orange / light. -->
+<!-- Social quote card: commercial real estate loans launch (/commercial/). Drafted 2026-11-23 for 2026-11-24. No rates, LTV or seasoning baked in (commercial is priced case by case, nothing published). Loan-size caps match the /commercial/ page: bridge up to $20,000,000, DSCR up to $3,000,000. New filename. -->
+<rect width="1080" height="1080" fill="#281D28"/>
+<rect x="84" y="84" width="10" height="120" fill="#DA7238"/>
+<rect x="104" y="84" width="10" height="120" fill="#DA7238"/>
+<text x="140" y="150" font-family="DejaVu Sans, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">SLA <tspan fill="#DA7238">Capital</tspan></text>
+<text x="140" y="192" font-family="DejaVu Sans, sans-serif" font-size="26" fill="#B8AFB8">Private lending for real estate investors</text>
+<text x="84" y="340" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" letter-spacing="4" fill="#FFBC7D">Now offering: commercial</text>
+<text x="84" y="440" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#FFFFFF">Commercial deals,</text>
+<text x="84" y="540" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#FFFFFF">from bridge</text>
+<text x="84" y="640" font-family="DejaVu Serif, Georgia, serif" font-size="76" font-weight="bold" fill="#FFFFFF">to long-term.</text>
+<text x="84" y="735" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#D9D2D9"><tspan fill="#FFBC7D" font-weight="bold">Bridge up to $20M</tspan> &#183; short-term</text>
+<text x="84" y="793" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#D9D2D9"><tspan fill="#FFBC7D" font-weight="bold">DSCR up to $3M</tspan> &#183; long-term</text>
+<text x="84" y="851" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#D9D2D9"><tspan fill="#FFBC7D" font-weight="bold">Investor</tspan> and owner-occupied</text>
+<text x="84" y="922" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#8F858F">Reviewed and priced case by case. Send the scenario.</text>
+<text x="84" y="1020" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#8F858F">slacapital.ai &#183; NMLS #2863552</text>
+</svg>
